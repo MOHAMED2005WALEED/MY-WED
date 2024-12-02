@@ -1,3 +1,4 @@
+/* General Reset and Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -17,15 +18,20 @@ body {
     padding: 20px;
 }
 
+/* Header Section */
 header {
-    background-color: #007bff;
+    background-image: url('background.jpg'); /* Path to your background image */
+    background-size: cover;                /* Ensures the image covers the entire header */
+    background-position: center center;    /* Centers the background image */
+    background-attachment: fixed;          /* Keeps the background fixed when scrolling */
     color: white;
     text-align: center;
-    padding: 60px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    padding: 100px 20px;
+    position: relative;
+}
+
+header .container {
+    z-index: 2; /* Ensures that the text and profile picture are above the background */
 }
 
 .profile-img-container {
