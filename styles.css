@@ -68,13 +68,6 @@ header p {
 }
 
 .section {
-    background-image: url('https://www.cisco.com/content/dam/cisco-cdc/site/images/heroes/solutions/hp-header-ai-animation-tablet-v2-2048x1500.jpg');
-    background-size: cover;                /* Ensures the image covers the entire header */
-    background-position: center center;    /* Centers the background image */
-    background-attachment: fixed;          /* Keeps the background fixed when scrolling */
-    backdrop-filter: blur(50px);
-    webkit-backdrop-filter: blur(50px);
-    filter-background-image: blur(5px);
     opacity: 1.0;
     padding: 60px 0;
     background-color: #ECE9F4;
@@ -82,6 +75,17 @@ header p {
     border-radius: 10px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
+
+section{
+    background-image: url('https://www.cisco.com/content/dam/cisco-cdc/site/images/heroes/solutions/hp-header-ai-animation-tablet-v2-2048x1500.jpg');
+    background-size: cover;                /* Ensures the image covers the entire header */
+    background-position: center center;    /* Centers the background image */
+    background-attachment: fixed;          /* Keeps the background fixed when scrolling */
+    backdrop-filter: blur(50px);
+    webkit-backdrop-filter: blur(50px);
+    filter-background-image: blur(5px);
+}
+
 
 h2 {
     opacity: 1.0;
