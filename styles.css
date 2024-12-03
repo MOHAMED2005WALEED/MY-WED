@@ -68,15 +68,6 @@ header p {
 }
 
 .section {
-    opacity: 1.0;
-    padding: 60px 0;
-    background-color: #ECE9F4;
-    margin-top: 30px;
-    border-radius: 10px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-section{
     background-image: url('https://www.cisco.com/content/dam/cisco-cdc/site/images/heroes/solutions/hp-header-ai-animation-tablet-v2-2048x1500.jpg');
     background-size: cover;                /* Ensures the image covers the entire header */
     background-position: center center;    /* Centers the background image */
@@ -84,6 +75,15 @@ section{
     backdrop-filter: blur(5px);
     webkit-backdrop-filter: blur(5px);
     filter: blur(5px);
+}
+
+section{
+    opacity: 1.0;
+    padding: 60px 0;
+    background-color: #ECE9F4;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 
