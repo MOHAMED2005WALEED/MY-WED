@@ -9,6 +9,8 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #f9f9f9;
     color: #333;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
@@ -87,20 +89,52 @@ ul li {
     flex-wrap: wrap;
 }
 
-.certificate-item {
-    width: 45%;
-    margin-right: 5%;
-    margin-bottom: 30px;
-    padding: 20px;
-    background-color: #f4f4f4;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.certification-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
 }
 
-.certificate-item h3 {
-    font-size: 1.5rem;
-    color: #007bff;
+.certification {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
 }
+
+.certification h2 {
+    font-size: 20px;
+    color: #333;
+}
+
+.certification p {
+    color: #777;
+}
+
+.download-link {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.download-link:hover {
+    background-color: #45a049;
+}
+
+.certificate-img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
 
 footer {
     background-color: #333;
