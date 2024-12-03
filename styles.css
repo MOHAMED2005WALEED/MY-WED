@@ -24,8 +24,7 @@ body {
     margin: 0 auto;
     padding: 20px;
 }
-/*<img style="display: block;-webkit-user-select: none;margin: auto;cursor: zoom-in;background-color: hsl(0, 0%, 90%);transition: background-color 300ms;" src="https://www.cisco.com/content/dam/cisco-cdc/site/images/heroes/solutions/hp-header-ai-animation-tablet-v2-2048x1500.jpg" width="1302" height="953">*/
-/* Header Section background.jpg */
+
 header {
     background-image: url('https://www.cisco.com/content/dam/cisco-cdc/site/images/heroes/solutions/hp-header-ai-animation-tablet-v2-2048x1500.jpg'); /* Path to your background image */
     background-size: cover;                /* Ensures the image covers the entire header */
@@ -91,6 +90,7 @@ ul li {
 }
 
 .certificates {
+    
     display: flex;
     flex-wrap: wrap;
 }
@@ -103,7 +103,6 @@ ul li {
 }
 
 .certification {
-    opacity: 0.7;
     background-color: #ECE9F4;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
