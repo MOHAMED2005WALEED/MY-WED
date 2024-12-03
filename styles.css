@@ -73,6 +73,7 @@ header p {
     background-attachment: fixed;          /* Keeps the background fixed when scrolling */
     backdrop-filter: blur(9px);
     -webkit-backdrop-filter: blur(10px);
+    /*background-color: #ECE9F4;*/
     opacity: 1.0;
     padding: 60px 0;
     margin-top: 30px;
@@ -117,7 +118,7 @@ ul li {
     backdrop-filter: blur(9px);
     filter: blur(9px);
     opacity: 1.0;
-    background-color: #ECE9F4;
+    /*background-color: #ECE9F4;*/
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     width: 35%;
