@@ -203,7 +203,7 @@ a:hover {
   display: inline-block;  
   text-decoration: none;  
   margin-top: 3px;
-  /*margin: 100px;*/
+  margin: 1px;
   padding: 10px 15px;
   border: none;
   outline: none;
