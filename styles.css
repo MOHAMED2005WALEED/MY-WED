@@ -152,13 +152,13 @@ ul li {
     background-color: #4CAF50;
     color: white;
     text-decoration: none;
-    border-radius: 5px;*/
-}
+    border-radius: 5px;
+}*/
 
-/**/.download-link:hover::before {
+/*.download-link:hover::before {
     opacity: 1.0;
     background-color: #45a049;
-}
+}*/
 
 .certificate-img {
     opacity: 1.0;
