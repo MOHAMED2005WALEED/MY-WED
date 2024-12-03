@@ -26,7 +26,7 @@ header {
     background-size: cover;                /* Ensures the image covers the entire header */
     background-position: center center;    /* Centers the background image */
     background-attachment: fixed;          /* Keeps the background fixed when scrolling */
-    color: #39005F;
+    color: white;
     text-align: center;
     padding: 100px 20px;
     position: relative;
