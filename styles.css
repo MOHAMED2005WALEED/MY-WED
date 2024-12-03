@@ -133,6 +133,11 @@ ul li {
     text-align: center;
 }
 
+/* Card Hover Effect */
+.certification-card:hover {
+    transform: scale(1.05);
+}
+
 .certification h2 {
     opacity: 1.0;
     font-size: 20px;
