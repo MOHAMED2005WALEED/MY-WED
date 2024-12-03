@@ -155,7 +155,7 @@ ul li {
     border-radius: 5px;*/
 }
 
-/**/.download-link:hover {
+/**/.download-link:hover::before {
     opacity: 1.0;
     background-color: #45a049;
 }
@@ -247,7 +247,7 @@ a:hover {
 
 /* hover */
 .download-link:hover::before {
-  opacity: 1;
+  opacity: 1.0;
 }
 
 .download-link:active:after {
