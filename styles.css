@@ -7,6 +7,9 @@
 
 body {
     background-image: url('https://www.cisco.com/content/dam/cisco-cdc/site/images/heroes/solutions/hp-header-ai-animation-tablet-v2-2048x1500.jpg'); /* Path to your background image */
+    background-size: cover;                /* Ensures the image covers the entire header */
+    background-position: center center;    /* Centers the background image */
+    background-attachment: fixed;          /* Keeps the background fixed when scrolling */
     font-family: 'Arial', sans-serif;
     background-color: #061528;
     color: #333;
