@@ -67,6 +67,9 @@ header p {
 }
 
 .section {
+    background-size: cover;                /* Ensures the image covers the entire header */
+    background-position: center center;    /* Centers the background image */
+    background-attachment: fixed;          /* Keeps the background fixed when scrolling */
    /* backdrop-filter: blur(9px);
     -webkit-backdrop-filter: blur(10px);*/
     opacity: 1.0;
