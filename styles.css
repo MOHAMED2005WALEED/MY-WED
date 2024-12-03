@@ -67,8 +67,8 @@ header p {
 }
 
 .section {
-    backdrop-filter: blur(9px);
-    -webkit-backdrop-filter: blur(10px);
+   /* backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(10px);*/
     opacity: 1.0;
     padding: 60px 0;
     background-color: #ECE9F4;
