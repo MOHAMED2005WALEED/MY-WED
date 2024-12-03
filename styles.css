@@ -155,9 +155,9 @@ ul li {
     border-radius: 5px;*/
 }
 
-.download-link:hover {
+/*.download-link:hover {
     opacity: 1.0;
-    background-color: #45a049;/**/
+    background-color: #45a049;*/
 }
 
 .certificate-img {
@@ -241,7 +241,7 @@ a:hover {
 
 @keyframes glowing {
   0% {background-position: 0 0;}
-  50% {background-position: 400% 0;}
+  50% {background-position: 100% 0;}
   100% {background-position: 0 0;}
 }
 
