@@ -115,7 +115,7 @@ ul li {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 20px;
+    margin: 1px;
 }
 
 .certification {
