@@ -68,7 +68,8 @@ header p {
 
 .section {
     background-image: url('https://www.cisco.com/content/dam/cisco-cdc/site/images/heroes/solutions/hp-header-ai-animation-tablet-v2-2048x1500.jpg');
-    filter: blur(50px);
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(10px);
     opacity: 1.0;
     padding: 60px 0;
     background-color: #ECE9F4;
