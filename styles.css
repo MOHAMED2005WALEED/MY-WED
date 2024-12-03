@@ -198,7 +198,8 @@ a:hover {
   display: inline-block;  
   text-decoration: none;  
   margin-top: 15px;
-  padding: 10px 15px;
+  margin: 100px;
+  padding: 15px 40px;
   border: none;
   outline: none;
   color: #FFF;
@@ -248,7 +249,7 @@ a:hover {
 
 /* hover */
 .download-link:hover::before {
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .download-link:active:after {
