@@ -144,7 +144,7 @@ ul li {
     color: white;
 }
 
-/*.download-link {
+.download-link {
     opacity: 1.0;
     display: inline-block;
     margin-top: 15px;
@@ -155,7 +155,7 @@ ul li {
     border-radius: 5px;
 }
 
-.download-link:hover {
+/*.download-link:hover {
     opacity: 1.0;
     background-color: #45a049;*/
 }
