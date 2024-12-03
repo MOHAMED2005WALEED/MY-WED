@@ -81,8 +81,8 @@ section{
     background-size: cover;                /* Ensures the image covers the entire header */
     background-position: center center;    /* Centers the background image */
     background-attachment: fixed;          /* Keeps the background fixed when scrolling */
-    backdrop-filter: blur(50px);
-    webkit-backdrop-filter: blur(50px);
+    backdrop-filter: blur(5px);
+    webkit-backdrop-filter: blur(5px);
     filter: blur(5px);
 }
 
