@@ -184,7 +184,7 @@ a:hover {
     text-decoration: underline;
 }
 /* button */
-.btn {
+.download-link {
   margin: 100px;
   padding: 15px 40px;
   border: none;
@@ -195,7 +195,7 @@ a:hover {
   z-index: 0;
   border-radius: 12px;
 }
-.btn::after {
+.download-link::after {
   content: "";
   z-index: -1;
   position: absolute;
@@ -207,7 +207,7 @@ a:hover {
   border-radius: 10px;
 }
 /* glow */
-.btn::before {
+.download-link::before {
   content: "";
   background: linear-gradient(
     45deg,
@@ -235,15 +235,15 @@ a:hover {
 }
 
 /* hover */
-.btn:hover::before {
+.download-link:hover::before {
   opacity: 1;
 }
 
-.btn:active:after {
+.download-link:active:after {
   background: transparent;
 }
 
-.btn:active {
+.download-link:active {
   color: #000;
   font-weight: bold;
 }
