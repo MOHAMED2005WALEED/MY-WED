@@ -134,7 +134,7 @@ ul li {
 }
 
 /* Card Hover Effect */
-.certification-card:hover {
+.certification:hover::before {
     transform: scale(1.05);
 }
 
@@ -202,7 +202,7 @@ a:hover {
 .download-link {
   display: inline-block;  
   text-decoration: none;  
-  margin-top: 15px;
+  /*margin-top: 15px;*/
   /*margin: 100px;*/
   padding: 10px 15px;
   border: none;
