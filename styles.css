@@ -62,11 +62,14 @@ header .container {
 
 header h1 {
     font-size: 3rem;
+    color: white;
+    text-shadow: 2px 2px 4px #888888;
 }
 
 header p {
     font-size: 1.4rem;
     margin-top: 10px;
+    text-shadow: 2px 2px 4px #888888;
 }
 
 .section {
