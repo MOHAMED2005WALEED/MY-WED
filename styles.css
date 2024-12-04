@@ -152,21 +152,22 @@ ul li {
     color: white;
 }
 
-/*.download-link {
+.ddownload-link {
     opacity: 1.0;
     display: inline-block;
     margin-top: 15px;
     padding: 10px 15px;
     background-color: #4CAF50;
+    background: linear-gradient(to right, #1345e6 0%, #ed239f 51%, #1345e6 100%);
     color: white;
     text-decoration: none;
     border-radius: 5px;
-}*/
+}
 
-/*.download-link:hover::before {
+.ddownload-link:hover::before {
     opacity: 1.0;
     background-color: #45a049;
-}*/
+}
 
 .certificate-img {
     opacity: 1.0;
