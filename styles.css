@@ -184,11 +184,11 @@ ul li {
     z-index: -1;
     width: calc(100% + 4px);
     height:  calc(100% + 4px);
-    /*filter: blur(8px);*/
+    filter: blur(8px);
     animation: glowing 20s linear infinite;
     transition: opacity .3s ease-in-out;
-    /*border-radius: 10px;
-    opacity: 0;*/
+    /*border-radius: 10px;*/
+    opacity: 0;
 }
 
 .ddownload-link:hover::before {
