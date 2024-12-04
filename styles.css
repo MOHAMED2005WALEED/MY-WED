@@ -343,7 +343,7 @@ h1 {
 
 /* button */
 .links a {
-  /*display: inline-block;  */
+  display: inline-block;  
   text-decoration: none;  
   margin-top: 3px;
   font-size: 18px;  
