@@ -188,7 +188,7 @@ ul li {
     animation: glowing 20s linear infinite;
     transition: opacity .3s ease-in-out;
     /*background-size: 600%;*/
-    /*filter: blur(8px);*/
+    filter: blur(8px);
     /*border-radius: 10px;*/
     /*opacity: 0;*/
 }
