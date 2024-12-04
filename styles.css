@@ -266,6 +266,24 @@ a:hover {
   font-weight: bold;
 }
 
+.ssection {
+    /*background-image: url('https://www.cisco.com/content/dam/cisco-cdc/site/images/heroes/solutions/hp-header-ai-animation-tablet-v2-2048x1500.jpg');*/
+    border: 2px solid rgba(255,255,255,.2);
+    background-size: cover;                /* Ensures the image covers the entire header */
+    background-position: center center;    /* Centers the background image */
+    background-attachment: fixed;          /* Keeps the background fixed when scrolling */
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(10px);
+    /*background-color: #ECE9F4;*/
+    opacity: 1.0;
+    padding: 60px 0;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    justify-content: center;
+    align-items: center;
+}
+
 .ccontainer {
     text-align: center;
     border: 2px solid rgba(255,255,255,.2);
