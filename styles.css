@@ -176,20 +176,20 @@ ul li {
     background: linear-gradient(to right, #1345e6 0%, #ed239f 51%, #1345e6 100%);
     /*color: white;*/
     text-decoration: none;
-    /*border-radius: 5px;*/
+    border-radius: 10px;
     
-    /*position: absolute;
+    position: absolute;
     top: -2px;
     left: -2px;
-    background-size: 600%;
+    /*background-size: 600%;*/
     z-index: -1;
     width: calc(100% + 4px);
     height:  calc(100% + 4px);
     filter: blur(8px);
     animation: glowing 20s linear infinite;
     transition: opacity .3s ease-in-out;
-    border-radius: 10px;
-    opacity: 0;*/
+    /*border-radius: 10px;*/
+    /*opacity: 0;*/
 }
 
 /*@keyframes glowing {
