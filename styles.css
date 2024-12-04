@@ -312,13 +312,15 @@ a:hover {
 
 h1 {
     font-size: 24px;
-    color: #333;
+    color: white;
+    text-shadow: 2px 2px 4px #888888;
     margin-bottom: 5px;
 }
 
 .bio {
     font-size: 14px;
-    color: #666;
+    color: white;
+    text-shadow: 2px 2px 4px #888888;
     margin-bottom: 20px;
 }
 
