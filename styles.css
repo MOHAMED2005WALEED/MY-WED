@@ -167,16 +167,15 @@ ul li {
     border-radius: 5px;
     background-size: 200% auto;
     text-decoration: none;
-}
     opacity: 1.0;
     display: inline-block;
     margin-top: 15px;
-    padding: 10px 15px;
-    background-color: #4CAF50;
+    /*padding: 10px 15px;*/
+    /*background-color: #4CAF50;*/
     background: linear-gradient(to right, #1345e6 0%, #ed239f 51%, #1345e6 100%);
-    color: white;
+    /*color: white;*/
     text-decoration: none;
-    border-radius: 5px;
+    /*border-radius: 5px;*/
 }
 
 .ddownload-link:hover::before {
