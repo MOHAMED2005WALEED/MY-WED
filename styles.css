@@ -162,7 +162,7 @@ ul li {
     font-weight: 500;
     font-size: 14px;
     line-height: 50px;
-    padding: 0 38px;
+    /*padding: 0 38px;*/
     outline: none !important;
     text-align: center;
     cursor: pointer;
@@ -172,8 +172,8 @@ ul li {
     text-decoration: none;
     
     margin-top: 15px;
-    /*padding: 10px 15px;
-    background-color: #4CAF50;*/
+    padding: 10px 15px;
+    /*background-color: #4CAF50;*/
     /*content: "";
     color: white;
     text-decoration: none;
