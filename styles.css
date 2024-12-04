@@ -162,7 +162,7 @@ ul li {
     padding: 0 38px;
     outline: none !important;
     text-align: center;
-    cursor: pointer;
+    /*cursor: pointer;*/
     text-transform: uppercase;
     border-radius: 5px;
     /*background-size: 200% auto;*/
