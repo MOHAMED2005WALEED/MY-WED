@@ -162,17 +162,17 @@ ul li {
     /*padding: 0 38px;*/
     outline: none !important;
     text-align: center;
-    /*cursor: pointer;*/
+    cursor: pointer;
     text-transform: uppercase;
     /*border-radius: 5px;*/
-    /*background-size: 200% auto;*/
+    background-size: 200% auto;
     text-decoration: none;
     opacity: 1.0;
     display: inline-block;
     margin-top: 15px;
     padding: 10px 15px;
     /*background-color: #4CAF50;*/
-    /*content: "";*/
+    content: "";
     background: linear-gradient(to right, #1345e6 0%, #ed239f 51%, #1345e6 100%);
     /*color: white;*/
     text-decoration: none;
@@ -181,13 +181,13 @@ ul li {
     position: absolute;
     top: -2px;
     left: -2px;
-    /*background-size: 600%;*/
     z-index: -1;
     width: calc(100% + 4px);
     height:  calc(100% + 4px);
-    filter: blur(8px);
     animation: glowing 20s linear infinite;
     transition: opacity .3s ease-in-out;
+    /*background-size: 600%;*/
+    /*filter: blur(8px);*/
     /*border-radius: 10px;*/
     /*opacity: 0;*/
 }
