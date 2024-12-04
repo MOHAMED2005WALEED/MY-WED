@@ -293,7 +293,9 @@ a:hover {
     justify-content: center;
     align-items: center;
     max-width: 600px;
-    background: #ffffff;
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(10px);
+    /*background: #ffffff;*/
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     padding: 20px;
