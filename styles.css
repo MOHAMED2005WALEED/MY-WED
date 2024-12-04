@@ -269,7 +269,7 @@ a:hover {
   font-weight: bold;
 }
 
-.ssection {
+.sssection {
     /*background-image: url('https://www.cisco.com/content/dam/cisco-cdc/site/images/heroes/solutions/hp-header-ai-animation-tablet-v2-2048x1500.jpg');*/
     border: 2px solid rgba(255,255,255,.2);
     background-size: cover;                /* Ensures the image covers the entire header */
@@ -282,6 +282,7 @@ a:hover {
     padding: 60px 0;
     margin-top: 30px;
     border-radius: 10px;
+    display: flex;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
     justify-content: center;
     align-items: center;
