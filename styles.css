@@ -172,7 +172,8 @@ ul li {
     margin-top: 15px;
     /*padding: 10px 15px;*/
     /*background-color: #4CAF50;*/
-    background: linear-gradient(to right, #1345e6 0%, #ed239f 51%, #1345e6 100%);
+    content: "";
+    background: linear-gradient(45deg, #1345e6 0%, #ed239f 51%, #1345e6 100%);
     /*color: white;*/
     text-decoration: none;
     /*border-radius: 5px;*/
@@ -180,7 +181,7 @@ ul li {
     position: absolute;
     top: -2px;
     left: -2px;
-    /*background-size: 600%;*/
+    background-size: 600%;
     z-index: -1;
     width: calc(100% + 4px);
     height:  calc(100% + 4px);
@@ -189,6 +190,12 @@ ul li {
     transition: opacity .3s ease-in-out;
     border-radius: 10px;
     opacity: 0;
+}
+
+@keyframes glowing {
+  0% {background-position: 0 0;}
+  50% {background-position: 400% 0;}
+  100% {background-position: 0 0;}
 }
 
 .ddownload-link:hover::before {
