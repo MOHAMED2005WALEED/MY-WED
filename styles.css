@@ -173,15 +173,15 @@ ul li {
     padding: 10px 15px;
     /*background-color: #4CAF50;*/
     content: "";
-    background: linear-gradient(to right, #1345e6 0%, #ed239f 51%, #1345e6 100%);
+    background: linear-gradient(45deg, #1345e6 0%, #ed239f 51%, #1345e6 100%);
     /*color: white;*/
     text-decoration: none;
     border-radius: 10px;
     
     position: absolute;
+    z-index: -1;
     /*top: -2px;
     left: -2px;
-    z-index: -1;
     width: calc(100% + 4px);
     height:  calc(100% + 4px);*/
     animation: glowing 20s linear infinite;
