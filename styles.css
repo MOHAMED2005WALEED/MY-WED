@@ -159,7 +159,7 @@ ul li {
     font-weight: 500;
     font-size: 14px;
     line-height: 50px;
-    padding: 0 38px;
+    /*padding: 0 38px;*/
     outline: none !important;
     text-align: center;
     /*cursor: pointer;*/
@@ -170,7 +170,7 @@ ul li {
     opacity: 1.0;
     display: inline-block;
     margin-top: 15px;
-    /*padding: 10px 15px;*/
+    padding: 10px 15px;
     /*background-color: #4CAF50;*/
     /*content: "";*/
     background: linear-gradient(45deg, #1345e6 0%, #ed239f 51%, #1345e6 100%);
