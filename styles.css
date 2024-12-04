@@ -165,7 +165,7 @@ ul li {
     cursor: pointer;
     text-transform: uppercase;
     /*border-radius: 5px;*/
-    background-size: 200% auto;
+    /*background-size: 200% auto;*/
     text-decoration: none;
     opacity: 1.0;
     display: inline-block;
