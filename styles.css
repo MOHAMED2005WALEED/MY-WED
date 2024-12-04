@@ -192,7 +192,7 @@ ul li {
     left: -2px;
     width: calc(100% + 4px);
     height:  calc(100% + 4px);*/
-    animation: glowing 10s linear infinite;
+    animation: glowing 20s linear infinite;
     transition: opacity .3s ease-in-out;
     /*background-size: 600%;*/
     /*filter: blur(8px);*/
