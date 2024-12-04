@@ -173,7 +173,7 @@ ul li {
     padding: 10px 15px;
     /*background-color: #4CAF50;*/
     /*content: "";*/
-    background: linear-gradient(45deg, #1345e6 0%, #ed239f 51%, #1345e6 100%);
+    background: linear-gradient(to right, #1345e6 0%, #ed239f 51%, #1345e6 100%);
     /*color: white;*/
     text-decoration: none;
     /*border-radius: 5px;*/
