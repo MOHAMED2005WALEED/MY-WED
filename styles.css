@@ -176,6 +176,19 @@ ul li {
     /*color: white;*/
     text-decoration: none;
     /*border-radius: 5px;*/
+    
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height:  calc(100% + 4px);
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+    opacity: 0;
 }
 
 .ddownload-link:hover::before {
