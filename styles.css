@@ -162,7 +162,7 @@ ul li {
     letter-spacing: 0px;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
-    line-height: 30px;
+    line-height: 25px;
     /*padding: 0 38px;
     font-size: 14px;*/
     outline: none !important;
@@ -173,7 +173,7 @@ ul li {
     background-size: 200% auto;
     text-decoration: none;
     
-    margin-top: 5px;
+    margin-top: 7px;
     padding: 10px 15px;
     /*background-color: #4CAF50;*/
     /*content: "";
