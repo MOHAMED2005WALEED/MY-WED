@@ -155,7 +155,9 @@ ul li {
 .ddownload-link {
     opacity: 1.0;
     display: inline-block;
-    background: linear-gradient(to right, #1345e6 0%, #1345e6 25%, #ed239f 75%,#ed239f 51%, #1345e6 100%,#1345e6 50%);
+    background: linear-gradient(to right,
+                                #1345e6 0%, #1345e6 25%, #ed239f 75%,#ed239f 51%, #1345e6 100%,#1345e6 50%,
+                                #1345e6 0%, #1345e6 25%, #ed239f 75%,#ed239f 51%, #1345e6 100%,#1345e6 50%);
     color: #fff;
     letter-spacing: 0px;
     font-family: "Roboto", sans-serif;
