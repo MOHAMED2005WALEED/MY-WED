@@ -177,6 +177,12 @@ const certificates = [
         issuer: "Cisco",
         image: "uploads/certificate_wajiwaleed-gmail-com_b039ef56-0375-4342-8889-f907ba316858 (1).png",
         pdf: "uploads/CCNAITNUpdated20250723-31-ovgeq6.pdf"
+    },
+    {
+        title: "CCNA: Switching, Routing, and Wireless Essentials",
+        issuer: "Cisco",
+        image: "uploads/CCNA-_Switching-_Routing-_and_Wireless_Essentials_certificate_wajiwaleed-gmail-com_fd3798d0-18e8-495a-ab4e-f122f8368a46.png",
+        pdf: "uploads/CCNA-_Switching-_Routing-_and_Wireless_Essentials_certificate_wajiwaleed-gmail-com_fd3798d0-18e8-495a-ab4e-f122f8368a46.pdf"
     }
 ];
 
