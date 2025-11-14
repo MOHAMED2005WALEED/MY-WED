@@ -238,7 +238,8 @@ const projectPhotos = {
         { src: 'projects/asd16.jpg', title: 'Project Success', desc: 'Successful project completion' },
         { src: 'projects/asd17.jpg', title: 'Lab Ready', desc: 'ASD Lab ready for use' },
         { src: 'projects/asd18.jpg', title: 'Network Operational', desc: 'Fully operational network' },
-        { src: 'projects/asd19.jpg', title: 'Team Achievement', desc: 'Project team achievement' }
+        { src: 'projects/asd19.jpg', title: 'Team Achievement', desc: 'Project team achievement' },
+        { src: 'projects/asd20.jpg', title: 'Team Achievement', desc: 'Project team achievement' }
     ],
     nat: [
         { src: 'projects/nat1.jpg', title: 'OSPF Configuration', desc: 'Open Shortest Path First setup' },
