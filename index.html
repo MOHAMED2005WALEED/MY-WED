@@ -21,6 +21,7 @@
     <nav class="floating-nav">
         <a href="#about" class="nav-link"><i class="fas fa-user"></i> About</a>
         <a href="#skills" class="nav-link"><i class="fas fa-code"></i> Skills</a>
+        <a href="#projects" class="nav-link"><i class="fas fa-project-diagram"></i> Projects</a>
         <a href="#certificates" class="nav-link"><i class="fas fa-certificate"></i> Certificates</a>
         <a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
     </nav>
@@ -211,11 +212,220 @@
         </div>
     </section>
 
+    <!-- Projects Section -->
+    <section id="projects" class="modern-section fade-in">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <h2 class="section-title">My Projects</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <!-- Project Filter Buttons -->
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">
+                    <i class="fas fa-th"></i> All Projects
+                </button>
+                <button class="filter-btn" data-filter="server">
+                    <i class="fas fa-server"></i> Server
+                </button>
+                <button class="filter-btn" data-filter="networking">
+                    <i class="fas fa-network-wired"></i> Networking
+                </button>
+                <button class="filter-btn" data-filter="hardware">
+                    <i class="fas fa-tools"></i> Hardware
+                </button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid">
+                <!-- Project 1: Server Deployment -->
+                <div class="project-item glass-card" data-category="server">
+                    <div class="project-images">
+                        <img src="projects/server1.jpg" alt="Server Project" class="project-main-img">
+                        <div class="project-gallery">
+                            <img src="projects/server1.jpg" onclick="openProjectModal('server', 0)">
+                            <img src="projects/server2.jpg" onclick="openProjectModal('server', 1)">
+                            <img src="projects/server3.jpg" onclick="openProjectModal('server', 2)">
+                            <span class="more-photos" onclick="openProjectModal('server', 0)">+5 more</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Windows Server Deployment</h3>
+                        <p>Complete practical server deployment with RAID configuration, Active Directory, DNS, DHCP & Windows Deployment Services</p>
+                        <div class="project-tags">
+                            <span>Windows Server</span>
+                            <span>RAID</span>
+                            <span>Active Directory</span>
+                            <span>DNS/DHCP</span>
+                        </div>
+                        <button class="view-project-btn" onclick="openProjectModal('server', 0)">
+                            <i class="fas fa-images"></i> View All Photos
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project 2: Cisco ACLs -->
+                <div class="project-item glass-card" data-category="networking">
+                    <div class="project-images">
+                        <img src="projects/cisco1.jpg" alt="Cisco Project" class="project-main-img">
+                        <div class="project-gallery">
+                            <img src="projects/cisco1.jpg" onclick="openProjectModal('cisco', 0)">
+                            <img src="projects/cisco2.jpg" onclick="openProjectModal('cisco', 1)">
+                            <img src="projects/cisco3.jpg" onclick="openProjectModal('cisco', 2)">
+                            <span class="more-photos" onclick="openProjectModal('cisco', 0)">+2 more</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Cisco Extended ACLs Security</h3>
+                        <p>Secured custom web page with Cisco Extended ACLs. Tested access control for all devices including phones and laptops via Wi-Fi</p>
+                        <div class="project-tags">
+                            <span>Cisco Router</span>
+                            <span>ACLs</span>
+                            <span>Security</span>
+                            <span>Wi-Fi</span>
+                        </div>
+                        <button class="view-project-btn" onclick="openProjectModal('cisco', 0)">
+                            <i class="fas fa-images"></i> View All Photos
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project 3: Mac Repair -->
+                <div class="project-item glass-card" data-category="hardware">
+                    <div class="project-images">
+                        <img src="projects/mac1.jpg" alt="Mac Repair" class="project-main-img">
+                        <div class="project-gallery">
+                            <img src="projects/mac1.jpg" onclick="openProjectModal('mac', 0)">
+                            <img src="projects/mac2.jpg" onclick="openProjectModal('mac', 1)">
+                            <img src="projects/mac3.jpg" onclick="openProjectModal('mac', 2)">
+                            <span class="more-photos" onclick="openProjectModal('mac', 0)">+1 more</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Mac Desktop & Workstation Repair</h3>
+                        <p>Full service repair including power supply and display replacement. Successfully restored essential tech</p>
+                        <div class="project-tags">
+                            <span>Mac Desktop</span>
+                            <span>Hardware</span>
+                            <span>Repair</span>
+                        </div>
+                        <button class="view-project-btn" onclick="openProjectModal('mac', 0)">
+                            <i class="fas fa-images"></i> View All Photos
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project 4: ISP Lab -->
+                <div class="project-item glass-card" data-category="networking">
+                    <div class="project-images">
+                        <img src="projects/isp1.jpg" alt="ISP Lab" class="project-main-img">
+                        <div class="project-gallery">
+                            <img src="projects/isp1.jpg" onclick="openProjectModal('isp', 0)">
+                            <img src="projects/isp2.jpg" onclick="openProjectModal('isp', 1)">
+                            <img src="projects/isp3.jpg" onclick="openProjectModal('isp', 2)">
+                            <span class="more-photos" onclick="openProjectModal('isp', 0)">+1 more</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>ISP Environment Simulation</h3>
+                        <p>Simulated ISP environment using 4G router, configured Cisco router with NAT overload (PAT)</p>
+                        <div class="project-tags">
+                            <span>4G Router</span>
+                            <span>NAT/PAT</span>
+                            <span>Cisco</span>
+                            <span>Packet Tracer</span>
+                        </div>
+                        <button class="view-project-btn" onclick="openProjectModal('isp', 0)">
+                            <i class="fas fa-images"></i> View All Photos
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project 5: ASD Lab -->
+                <div class="project-item glass-card" data-category="networking">
+                    <div class="project-images">
+                        <img src="projects/asd1.jpg" alt="ASD Lab" class="project-main-img">
+                        <div class="project-gallery">
+                            <img src="projects/asd1.jpg" onclick="openProjectModal('asd', 0)">
+                            <img src="projects/asd2.jpg" onclick="openProjectModal('asd', 1)">
+                            <img src="projects/asd3.jpg" onclick="openProjectModal('asd', 2)">
+                            <span class="more-photos" onclick="openProjectModal('asd', 0)">+16 more</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>ASD Lab Network Infrastructure</h3>
+                        <p>Built complete wired and wireless network for ASD Lab including CAT6 cabling, access point installation</p>
+                        <div class="project-tags">
+                            <span>CAT6 Cabling</span>
+                            <span>Access Points</span>
+                            <span>LAN Setup</span>
+                            <span>NVTI</span>
+                        </div>
+                        <button class="view-project-btn" onclick="openProjectModal('asd', 0)">
+                            <i class="fas fa-images"></i> View All Photos
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project 6: NAT OSPF -->
+                <div class="project-item glass-card" data-category="networking">
+                    <div class="project-images">
+                        <img src="projects/nat1.jpg" alt="NAT OSPF" class="project-main-img">
+                        <div class="project-gallery">
+                            <img src="projects/nat1.jpg" onclick="openProjectModal('nat', 0)">
+                            <img src="projects/nat2.jpg" onclick="openProjectModal('nat', 1)">
+                            <img src="projects/nat3.jpg" onclick="openProjectModal('nat', 2)">
+                            <span class="more-photos" onclick="openProjectModal('nat', 0)">+1 more</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>NAT Overload with OSPF</h3>
+                        <p>Implemented Cisco CCNA NAT Overload setup with OSPF routing protocol integration</p>
+                        <div class="project-tags">
+                            <span>NAT Overload</span>
+                            <span>OSPF</span>
+                            <span>Cisco CCNA</span>
+                            <span>Routing</span>
+                        </div>
+                        <button class="view-project-btn" onclick="openProjectModal('nat', 0)">
+                            <i class="fas fa-images"></i> View All Photos
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal (Lightbox) -->
+    <div id="projectModal" class="project-modal">
+        <button class="modal-close" onclick="closeProjectModal()">
+            <i class="fas fa-times"></i>
+        </button>
+        <button class="modal-prev" onclick="changeProjectPhoto(-1)">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="modal-next" onclick="changeProjectPhoto(1)">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="Project Photo">
+            <div class="modal-caption">
+                <h3 id="modalTitle"></h3>
+                <p id="modalDescription"></p>
+                <span class="photo-counter">
+                    <span id="currentPhoto">1</span> / <span id="totalPhotos">10</span>
+                </span>
+            </div>
+        </div>
+        <div class="modal-thumbnails" id="modalThumbnails"></div>
+    </div>
+
     <!-- Social Links Section -->
     <section id="social" class="modern-section fade-in">
         <div class="container">
             <div class="section-header">
-                <span class="section-number">03</span>
+                <span class="section-number">04</span>
                 <h2 class="section-title">Connect With Me</h2>
                 <div class="title-underline"></div>
             </div>
@@ -276,7 +486,7 @@
     <section id="certificates" class="modern-section fade-in">
         <div class="container">
             <div class="section-header">
-                <span class="section-number">04</span>
+                <span class="section-number">05</span>
                 <h2 class="section-title">Certifications</h2>
                 <div class="title-underline"></div>
             </div>
@@ -301,7 +511,7 @@
                 </div>
 
                 <div class="carousel-counter">
-                    <span class="current-cert">1</span> / <span class="total-certs">29</span>
+                    <span class="current-cert">1</span> / <span class="total-certs">30</span>
                 </div>
             </div>
         </div>
@@ -311,7 +521,7 @@
     <section id="contact" class="modern-section fade-in">
         <div class="container">
             <div class="section-header">
-                <span class="section-number">05</span>
+                <span class="section-number">06</span>
                 <h2 class="section-title">Get In Touch</h2>
                 <div class="title-underline"></div>
             </div>
@@ -351,6 +561,7 @@
             <div class="footer-links">
                 <a href="#about">About</a>
                 <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
                 <a href="#certificates">Certificates</a>
                 <a href="#contact">Contact</a>
             </div>
@@ -364,4 +575,4 @@
 
     <script src="script.js"></script>
 </body>
-</html>
+                    </html>
