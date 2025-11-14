@@ -197,7 +197,8 @@ const projectPhotos = {
         { src: 'projects/server5.jpg', title: 'WDS Deployment', desc: 'Windows Deployment Services setup' },
         { src: 'projects/server6.jpg', title: 'PXE Boot Testing', desc: 'Testing simultaneous deployment' },
         { src: 'projects/server7.jpg', title: 'Client PC Configuration', desc: 'Joining clients to domain' },
-        { src: 'projects/server8.jpg', title: 'Final Testing', desc: 'Complete system testing and verification' }
+        { src: 'projects/server8.jpg', title: 'Final Testing', desc: 'Complete system testing and verification' },
+        { src: 'projects/server9.jpg', title: 'Final Testing', desc: 'Complete system testing and verification' }
     ],
     cisco: [
         { src: 'projects/cisco1.jpg', title: 'Cisco Router Setup', desc: 'Initial router configuration' },
