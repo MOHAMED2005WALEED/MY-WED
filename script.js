@@ -242,11 +242,11 @@ const projectPhotos = {
         { src: 'projects/asd20.jpg', title: 'Alta Access Point', desc: 'Alta wireless access point ready for deployment' }
     ],
     nat: [
-        { src: 'projects/nat1.jpg', title: 'OSPF Configuration', desc: 'Open Shortest Path First setup' },
-        { src: 'projects/nat2.jpg', title: 'NAT Overload Setup', desc: 'Port Address Translation config' },
-        { src: 'projects/nat3.jpg', title: 'Network Testing', desc: 'Routing protocol verification' },
-        { src: 'projects/nat4.jpg', title: 'Final Verification', desc: 'Complete network testing' },
-        { src: 'projects/nat5.jpg', title: 'Final Verification', desc: 'Complete network testing' }
+        { src: 'projects/nat1.jpg', title: 'Network Lab Setup', desc: 'Cisco router and switch topology with dual workstations' },
+        { src: 'projects/nat2.jpg', title: 'OSPF Network Design', desc: 'Multi-area OSPF topology in Packet Tracer simulation' },
+        { src: 'projects/nat3.jpg', title: 'Lab Configuration', desc: 'Physical network lab with routers and testing equipment' },
+        { src: 'projects/nat4.jpg', title: 'Router Verification', desc: 'Checking OSPF and NAT configuration via CLI' },
+        { src: 'projects/nat5.jpg', title: 'Completed Lab Topology', desc: 'Fully configured routing lab with Dialog router integration' }
     ]
 };
 
