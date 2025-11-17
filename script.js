@@ -190,15 +190,15 @@ const certificates = [
 // Project photos data
 const projectPhotos = {
     server: [
-        { src: 'projects/server1.jpg', title: 'Windows Server Setup', desc: 'Initial server configuration with RAID setup' },
-        { src: 'projects/server2.jpg', title: 'RAID Configuration', desc: 'Setting up RAID arrays for data redundancy' },
-        { src: 'projects/server3.jpg', title: 'Active Directory Setup', desc: 'Configuring Active Directory and user accounts' },
-        { src: 'projects/server4.jpg', title: 'DNS & DHCP Services', desc: 'Network services configuration' },
-        { src: 'projects/server5.jpg', title: 'WDS Deployment', desc: 'Windows Deployment Services setup' },
-        { src: 'projects/server6.jpg', title: 'PXE Boot Testing', desc: 'Testing simultaneous deployment' },
-        { src: 'projects/server7.jpg', title: 'Client PC Configuration', desc: 'Joining clients to domain' },
-        { src: 'projects/server8.jpg', title: 'Final Testing', desc: 'Complete system testing and verification' },
-        { src: 'projects/server9.jpg', title: 'Final Testing', desc: 'Complete system testing and verification' }
+        { src: 'projects/server1.jpg', title: 'Server Lab Setup', desc: 'Physical server infrastructure with multiple workstations' },
+        { src: 'projects/server2.jpg', title: 'Network Topology Design', desc: 'WDS and DHCP server architecture planning' },
+        { src: 'projects/server3.jpg', title: 'RAID Storage System', desc: 'HP Smart Array RAID controller with dual drive configuration' },
+        { src: 'projects/server4.jpg', title: 'Assessment Documentation', desc: 'NVTI Level 4 practical assessment requirements' },
+        { src: 'projects/server5.jpg', title: 'WDS Configuration Tasks', desc: 'Windows Deployment Services implementation steps' },
+        { src: 'projects/server6.jpg', title: 'Network Planning', desc: 'Server topology design with IP addressing scheme' },
+        { src: 'projects/server7.jpg', title: 'RAID Array Status', desc: 'HP Array configuration showing RAID 1 with 146GB drives' },
+        { src: 'projects/server8.jpg', title: 'System Verification', desc: 'Testing server connectivity with Cisco equipment' },
+        { src: 'projects/server9.jpg', title: 'Complete Lab Setup', desc: 'Fully deployed server lab with client workstations' }
     ],
     cisco: [
         { src: 'projects/cisco1.jpg', title: 'Cisco Router Setup', desc: 'Initial router configuration' },
