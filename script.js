@@ -245,7 +245,8 @@ const projectPhotos = {
         { src: 'projects/nat1.jpg', title: 'OSPF Configuration', desc: 'Open Shortest Path First setup' },
         { src: 'projects/nat2.jpg', title: 'NAT Overload Setup', desc: 'Port Address Translation config' },
         { src: 'projects/nat3.jpg', title: 'Network Testing', desc: 'Routing protocol verification' },
-        { src: 'projects/nat4.jpg', title: 'Final Verification', desc: 'Complete network testing' }
+        { src: 'projects/nat4.jpg', title: 'Final Verification', desc: 'Complete network testing' },
+        { src: 'projects/nat5.jpg', title: 'Final Verification', desc: 'Complete network testing' }
     ]
 };
 
