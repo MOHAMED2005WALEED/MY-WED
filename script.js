@@ -208,10 +208,10 @@ const projectPhotos = {
         { src: 'projects/cisco5.jpg', title: 'Windows Server Integration', desc: 'Cisco equipment integrated with Windows Server environment' }
     ],
     mac: [
-        { src: 'projects/mac1.jpg', title: 'Initial Assessment', desc: 'Diagnosing hardware issues' },
-        { src: 'projects/mac2.jpg', title: 'Component Replacement', desc: 'Power supply and display replacement' },
-        { src: 'projects/mac3.jpg', title: 'Testing Phase', desc: 'System testing after repair' },
-        { src: 'projects/mac4.jpg', title: 'Final Setup', desc: 'Complete system restoration' }
+        { src: 'projects/mac1.jpg', title: 'iMac Disassembly', desc: 'Opening iMac case for internal hardware access' },
+        { src: 'projects/mac2.jpg', title: 'Hardware Diagnosis', desc: 'Inspecting internal components and circuit boards' },
+        { src: 'projects/mac3.jpg', title: 'Workspace Overview', desc: 'Complete repair station with tools and parts' },
+        { src: 'projects/mac4.jpg', title: 'Power Filter Module', desc: 'EMI filter component for power supply replacement' }
     ],
     isp: [
         { src: 'projects/isp1.jpg', title: 'ISP Simulation Setup', desc: '4G router configuration' },
