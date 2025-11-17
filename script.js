@@ -201,11 +201,11 @@ const projectPhotos = {
         { src: 'projects/server9.jpg', title: 'Complete Lab Setup', desc: 'Fully deployed server lab with client workstations' }
     ],
     cisco: [
-        { src: 'projects/cisco1.jpg', title: 'Cisco Router Setup', desc: 'Initial router configuration' },
-        { src: 'projects/cisco2.jpg', title: 'ACL Configuration', desc: 'Extended Access Control Lists setup' },
-        { src: 'projects/cisco3.jpg', title: 'Network Testing', desc: 'Testing device access control' },
-        { src: 'projects/cisco4.jpg', title: 'Wi-Fi Security', desc: 'Wireless network security testing' },
-        { src: 'projects/cisco5.jpg', title: 'Final Verification', desc: 'Complete security verification' }
+        { src: 'projects/cisco1.jpg', title: 'Multi-Station Router Lab', desc: 'Cisco router lab setup with multiple workstations' },
+        { src: 'projects/cisco2.jpg', title: 'Mobile SSH Access', desc: 'Remote router configuration via mobile SSH terminal' },
+        { src: 'projects/cisco3.jpg', title: 'Router Configuration Lab', desc: 'Multi-router topology with switches and workstations' },
+        { src: 'projects/cisco4.jpg', title: 'Network Documentation', desc: 'Router configuration commands and security testing' },
+        { src: 'projects/cisco5.jpg', title: 'Windows Server Integration', desc: 'Cisco equipment integrated with Windows Server environment' }
     ],
     mac: [
         { src: 'projects/mac1.jpg', title: 'Initial Assessment', desc: 'Diagnosing hardware issues' },
