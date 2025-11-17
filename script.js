@@ -214,10 +214,10 @@ const projectPhotos = {
         { src: 'projects/mac4.jpg', title: 'Power Filter Module', desc: 'EMI filter component for power supply replacement' }
     ],
     isp: [
-        { src: 'projects/isp1.jpg', title: 'ISP Simulation Setup', desc: '4G router configuration' },
-        { src: 'projects/isp2.jpg', title: 'Cisco Router Config', desc: 'NAT overload (PAT) configuration' },
-        { src: 'projects/isp3.jpg', title: 'Network Topology', desc: 'Packet Tracer simulation' },
-        { src: 'projects/isp4.jpg', title: 'Testing Results', desc: 'Internet access verification' }
+        { src: 'projects/isp1.jpg', title: 'Network Topology Design', desc: 'Packet Tracer ISP simulation with multiple routers' },
+        { src: 'projects/isp2.jpg', title: '4G Router Integration', desc: 'Physical lab setup with 4G router and Cisco equipment' },
+        { src: 'projects/isp3.jpg', title: 'Multi-Workstation Lab', desc: 'Complete ISP simulation lab with multiple endpoints' },
+        { src: 'projects/isp4.jpg', title: 'Configuration Testing', desc: 'Router CLI configuration and connectivity verification' }
     ],
     asd: [
         { src: 'projects/asd1.jpg', title: 'Equipment Delivery', desc: 'Receiving Alta wireless access point equipment' },
