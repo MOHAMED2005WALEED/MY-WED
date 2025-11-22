@@ -1,6 +1,6 @@
 // ============================================
 // MODERN PORTFOLIO - COMPLETE JAVASCRIPT
-// With Projects Section
+// With NEW Projects Added
 // ============================================
 
 // Certificate Data
@@ -187,8 +187,50 @@ const certificates = [
     }
 ];
 
-// Project photos data
+// Project photos data - INCLUDING NEW PROJECTS
 const projectPhotos = {
+    // NEW PROJECT 1: Wi-Fi NVR System
+    nvr: [
+        { src: 'projects/nvr1.jpg', title: 'Wi-Fi NVR Router Setup', desc: 'White wireless router with dual antennas for NVR system connectivity' },
+        { src: 'projects/nvr2.jpg', title: 'Multi-Camera Monitoring', desc: 'Live surveillance feed showing multiple camera views on monitoring screen' },
+        { src: 'projects/nvr3.jpg', title: 'Network Topology Design', desc: 'Detailed network diagram showing NVR system architecture and connections' },
+        { src: 'projects/nvr4.jpg', title: 'Router Configuration', desc: 'Physical setup with network equipment and testing tools' },
+        { src: 'projects/nvr5.jpg', title: 'Remote Access Setup', desc: 'Mobile and PC monitoring interface configuration' }
+    ],
+
+    // NEW PROJECT 2: Access Point Configuration
+    accesspoint: [
+        { src: 'projects/ap1.jpg', title: 'Dual Workstation Lab', desc: 'Two workstations configured with Linksys access point for wireless testing' },
+        { src: 'projects/ap2.jpg', title: 'Access Point Web Interface', desc: 'Linksys router configuration showing wireless settings and SSID setup' },
+        { src: 'projects/ap3.jpg', title: 'Multi-Station Configuration', desc: 'Complete lab setup with access point and multiple testing devices' },
+        { src: 'projects/ap4.jpg', title: 'Connectivity Verification', desc: 'Testing wireless connectivity with IP configuration and ping tests' }
+    ],
+
+    // NEW PROJECT 3: CCNA Practical Assessment
+    ccnatest: [
+        { src: 'projects/ccna1.jpg', title: 'Network Lab Overview', desc: 'Complete CCNA practical assessment lab with router, switches, and PCs' },
+        { src: 'projects/ccna2.jpg', title: 'Packet Tracer Topology', desc: 'CCNAv7 SRWE Skills Assessment network diagram showing VLANs and routing' },
+        { src: 'projects/ccna3.jpg', title: 'Physical Lab Setup', desc: 'Real Cisco equipment configuration with multiple workstations' },
+        { src: 'projects/ccna4.jpg', title: 'Router CLI Configuration', desc: 'Command-line interface showing VLAN and routing configuration verification' }
+    ],
+
+    // NEW PROJECT 4: CCTV DVR Setup
+    cctv: [
+        { src: 'projects/dvr1.jpg', title: 'DVR System Configuration', desc: 'Two technicians setting up CCTV DVR system with monitor display' },
+        { src: 'projects/dvr2.jpg', title: 'Camera Configuration', desc: 'Configuring camera connections and DVR settings in lab environment' },
+        { src: 'projects/dvr3.jpg', title: 'Multi-Screen Monitoring', desc: 'Multiple monitor setup displaying live CCTV camera feeds' },
+        { src: 'projects/dvr4.jpg', title: 'Complete CCTV Lab', desc: 'Fully operational CCTV system with DVR and monitoring equipment' }
+    ],
+
+    // NEW PROJECT 5: DHCP Relay Agent
+    dhcprelay: [
+        { src: 'projects/dhcp1.jpg', title: 'Multi-Router Network', desc: 'Complex network topology with multiple Cisco routers and switches' },
+        { src: 'projects/dhcp2.jpg', title: 'Server Configuration Display', desc: 'Windows Server showing DHCP Active Leases and IPv4 configuration' },
+        { src: 'projects/dhcp3.jpg', title: 'Physical Lab Infrastructure', desc: 'Complete lab setup with routers, switches, and server equipment' },
+        { src: 'projects/dhcp4.jpg', title: 'Network Verification', desc: 'Testing DHCP relay functionality across multiple network segments' }
+    ],
+
+    // EXISTING PROJECTS
     server: [
         { src: 'projects/server1.jpg', title: 'Server Lab Setup', desc: 'Physical server infrastructure with multiple workstations' },
         { src: 'projects/server2.jpg', title: 'Network Topology Design', desc: 'WDS and DHCP server architecture planning' },
@@ -261,6 +303,7 @@ let currentPhotoIndex = 0;
 const typingTexts = [
     "Full-Stack Web Developer",
     "Network Technician",
+    "CCNA Student",
     "Tech Enthusiast",
     "Problem Solver",
     "Open Source Contributor"
@@ -348,6 +391,59 @@ function initScrollToTop() {
     const scrollBtn = document.querySelector('.scroll-top');
     
     window.addEventListener('scroll', () => {
+        let current = '';
+        
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if (pageYOffset >= sectionTop - 200) {
+                current = section.getAttribute('id');
+            }
+        });
+        
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === '#' + current) {
+                link.classList.add('active');
+            }
+        });
+    });
+}
+
+// ============================================
+// INITIALIZE EVERYTHING
+// ============================================
+function init() {
+    console.log('🚀 Initializing Modern Portfolio...');
+    
+    setTimeout(typeText, 1000);
+    initScrollAnimations();
+    initSmoothScroll();
+    initScrollToTop();
+    initCertificateCarousel();
+    initProjectFilter();
+    highlightActiveNav();
+    
+    console.log('✅ Portfolio Initialized Successfully!');
+    console.log('📊 Total Projects: ' + Object.keys(projectPhotos).length);
+    console.log('🎓 Total Certificates: ' + certificates.length);
+}
+
+// Run initialization
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+} else {
+    init();
+}
+
+// Performance monitoring
+window.addEventListener('load', () => {
+    if (window.performance) {
+        const perfData = window.performance.timing;
+        const pageLoadTime = perfData.loadEventEnd - perfData.navigationStart;
+        console.log(`⚡ Page Load Time: ${pageLoadTime}ms`);
+    }
+});', () => {
         if (window.pageYOffset > 300) {
             scrollBtn.classList.add('visible');
         } else {
@@ -576,55 +672,4 @@ function highlightActiveNav() {
     const sections = document.querySelectorAll('.modern-section');
     const navLinks = document.querySelectorAll('.nav-link');
     
-    window.addEventListener('scroll', () => {
-        let current = '';
-        
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop;
-            const sectionHeight = section.clientHeight;
-            if (pageYOffset >= sectionTop - 200) {
-                current = section.getAttribute('id');
-            }
-        });
-        
-        navLinks.forEach(link => {
-            link.classList.remove('active');
-            if (link.getAttribute('href') === '#' + current) {
-                link.classList.add('active');
-            }
-        });
-    });
-}
-
-// ============================================
-// INITIALIZE EVERYTHING
-// ============================================
-function init() {
-    console.log('🚀 Initializing Modern Portfolio...');
-    
-    setTimeout(typeText, 1000);
-    initScrollAnimations();
-    initSmoothScroll();
-    initScrollToTop();
-    initCertificateCarousel();
-    initProjectFilter();
-    highlightActiveNav();
-    
-    console.log('✅ Portfolio Initialized Successfully!');
-}
-
-// Run initialization
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
-} else {
-    init();
-}
-
-// Performance monitoring
-window.addEventListener('load', () => {
-    if (window.performance) {
-        const perfData = window.performance.timing;
-        const pageLoadTime = perfData.loadEventEnd - perfData.navigationStart;
-        console.log(`⚡ Page Load Time: ${pageLoadTime}ms`);
-    }
-});
+    window.addEventListener('scroll
