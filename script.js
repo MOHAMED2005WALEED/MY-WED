@@ -195,11 +195,7 @@ const projectPhotos = {
         { src: 'projects/nvr2.jpg', title: 'Multi-Camera Monitoring', desc: 'Live surveillance feed showing multiple camera views on monitoring screen' },
         { src: 'projects/nvr3.jpg', title: 'Network Topology Design', desc: 'Detailed network diagram showing NVR system architecture and connections' },
         { src: 'projects/nvr4.jpg', title: 'Router Configuration', desc: 'Physical setup with network equipment and testing tools' },
-        { src: 'projects/nvr5.jpg', title: 'Remote Access Setup', desc: 'Mobile and PC monitoring interface configuration' },
-        { src: 'projects/nvr6.jpg', title: 'Multi-Camera Monitoring', desc: 'Live surveillance feed showing multiple camera views on monitoring screen' },
-        { src: 'projects/nvr7.jpg', title: 'Network Topology Design', desc: 'Detailed network diagram showing NVR system architecture and connections' },
-        { src: 'projects/nvr8.jpg', title: 'Router Configuration', desc: 'Physical setup with network equipment and testing tools' },
-        { src: 'projects/nvr9.jpg', title: 'Remote Access Setup', desc: 'Mobile and PC monitoring interface configuration' }
+        { src: 'projects/nvr5.jpg', title: 'Remote Access Setup', desc: 'Mobile and PC monitoring interface configuration' }
     ],
 
     // NEW PROJECT 2: Access Point Configuration
@@ -223,9 +219,7 @@ const projectPhotos = {
         { src: 'projects/dvr1.jpg', title: 'DVR System Configuration', desc: 'Two technicians setting up CCTV DVR system with monitor display' },
         { src: 'projects/dvr2.jpg', title: 'Camera Configuration', desc: 'Configuring camera connections and DVR settings in lab environment' },
         { src: 'projects/dvr3.jpg', title: 'Multi-Screen Monitoring', desc: 'Multiple monitor setup displaying live CCTV camera feeds' },
-        { src: 'projects/dvr4.jpg', title: 'Complete CCTV Lab', desc: 'Fully operational CCTV system with DVR and monitoring equipment' },
-        { src: 'projects/dvr5.jpg', title: 'Multi-Screen Monitoring', desc: 'Multiple monitor setup displaying live CCTV camera feeds' },
-        { src: 'projects/dvr6.jpg', title: 'Complete CCTV Lab', desc: 'Fully operational CCTV system with DVR and monitoring equipment' }
+        { src: 'projects/dvr4.jpg', title: 'Complete CCTV Lab', desc: 'Fully operational CCTV system with DVR and monitoring equipment' }
     ],
 
     // NEW PROJECT 5: DHCP Relay Agent
@@ -397,59 +391,6 @@ function initScrollToTop() {
     const scrollBtn = document.querySelector('.scroll-top');
     
     window.addEventListener('scroll', () => {
-        let current = '';
-        
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop;
-            const sectionHeight = section.clientHeight;
-            if (pageYOffset >= sectionTop - 200) {
-                current = section.getAttribute('id');
-            }
-        });
-        
-        navLinks.forEach(link => {
-            link.classList.remove('active');
-            if (link.getAttribute('href') === '#' + current) {
-                link.classList.add('active');
-            }
-        });
-    });
-}
-
-// ============================================
-// INITIALIZE EVERYTHING
-// ============================================
-function init() {
-    console.log('🚀 Initializing Modern Portfolio...');
-    
-    setTimeout(typeText, 1000);
-    initScrollAnimations();
-    initSmoothScroll();
-    initScrollToTop();
-    initCertificateCarousel();
-    initProjectFilter();
-    highlightActiveNav();
-    
-    console.log('✅ Portfolio Initialized Successfully!');
-    console.log('📊 Total Projects: ' + Object.keys(projectPhotos).length);
-    console.log('🎓 Total Certificates: ' + certificates.length);
-}
-
-// Run initialization
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
-} else {
-    init();
-}
-
-// Performance monitoring
-window.addEventListener('load', () => {
-    if (window.performance) {
-        const perfData = window.performance.timing;
-        const pageLoadTime = perfData.loadEventEnd - perfData.navigationStart;
-        console.log(`⚡ Page Load Time: ${pageLoadTime}ms`);
-    }
-});', () => {
         if (window.pageYOffset > 300) {
             scrollBtn.classList.add('visible');
         } else {
@@ -678,4 +619,57 @@ function highlightActiveNav() {
     const sections = document.querySelectorAll('.modern-section');
     const navLinks = document.querySelectorAll('.nav-link');
     
-    window.addEventListener('scroll
+    window.addEventListener('scroll', () => {
+        let current = '';
+        
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if (pageYOffset >= sectionTop - 200) {
+                current = section.getAttribute('id');
+            }
+        });
+        
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === '#' + current) {
+                link.classList.add('active');
+            }
+        });
+    });
+}
+
+// ============================================
+// INITIALIZE EVERYTHING
+// ============================================
+function init() {
+    console.log('🚀 Initializing Modern Portfolio...');
+    
+    setTimeout(typeText, 1000);
+    initScrollAnimations();
+    initSmoothScroll();
+    initScrollToTop();
+    initCertificateCarousel();
+    initProjectFilter();
+    highlightActiveNav();
+    
+    console.log('✅ Portfolio Initialized Successfully!');
+    console.log('📊 Total Projects: ' + Object.keys(projectPhotos).length);
+    console.log('🎓 Total Certificates: ' + certificates.length);
+}
+
+// Run initialization
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+} else {
+    init();
+}
+
+// Performance monitoring
+window.addEventListener('load', () => {
+    if (window.performance) {
+        const perfData = window.performance.timing;
+        const pageLoadTime = perfData.loadEventEnd - perfData.navigationStart;
+        console.log(`⚡ Page Load Time: ${pageLoadTime}ms`);
+    }
+});
