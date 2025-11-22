@@ -1,6 +1,6 @@
 /* ============================================
    MODERN PORTFOLIO - COMPLETE STYLES
-   With Projects Section
+   With Projects Section + New Badge
    ============================================ */
 
 /* Reset & Base Styles */
@@ -19,6 +19,7 @@
     --text-primary: #f1f5f9;
     --text-secondary: #cbd5e1;
     --glass-border: rgba(255, 255, 255, 0.1);
+    --success-color: #10b981;
 }
 
 html {
@@ -505,10 +506,38 @@ body {
     overflow: hidden;
     transition: all 0.4s;
     animation: fadeIn 0.6s ease-out;
+    position: relative;
 }
 
 .project-item.hidden {
     display: none;
+}
+
+/* NEW Badge Styling */
+.project-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, var(--success-color), #059669);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    z-index: 10;
+    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 6px 20px rgba(16, 185, 129, 0.6);
+    }
 }
 
 @keyframes fadeIn {
@@ -1130,4 +1159,11 @@ body {
     .filter-btn i {
         display: none;
     }
-   }
+
+    .project-badge {
+        top: 10px;
+        right: 10px;
+        padding: 6px 12px;
+        font-size: 0.75rem;
+    }
+}
