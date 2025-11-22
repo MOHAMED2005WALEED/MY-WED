@@ -1,7 +1,93 @@
 // ============================================
 // MODERN PORTFOLIO - COMPLETE JAVASCRIPT
-// With NEW Projects Added
+// With Loading Animation & EmailJS Contact Form
 // ============================================
+
+// ============================================
+// LOADING SCREEN
+// ============================================
+window.addEventListener('load', () => {
+    const loadingScreen = document.getElementById('loading-screen');
+    
+    setTimeout(() => {
+        loadingScreen.classList.add('hidden');
+    }, 2000);
+    
+    // Performance monitoring
+    if (window.performance) {
+        const perfData = window.performance.timing;
+        const pageLoadTime = perfData.loadEventEnd - perfData.navigationStart;
+        console.log(`⚡ Page Load Time: ${pageLoadTime}ms`);
+    }
+});
+
+// ============================================
+// EMAIL JS CONTACT FORM
+// ============================================
+document.addEventListener('DOMContentLoaded', function() {
+    const contactForm = document.getElementById('contact-form');
+    const formStatus = document.getElementById('form-status');
+    
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const submitBtn = contactForm.querySelector('.submit-btn');
+            const originalText = submitBtn.innerHTML;
+            
+            // Disable button and show loading
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+            
+            // Get form data
+            const templateParams = {
+                from_name: document.getElementById('name').value,
+                from_email: document.getElementById('email').value,
+                subject: document.getElementById('subject').value,
+                message: document.getElementById('message').value,
+                to_name: 'Mohamed Waleed'
+            };
+            
+            // Send email using EmailJS
+            emailjs.send('service_yvkz2tu', 'template_qc0v5uk', templateParams)
+                .then(function(response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    
+                    // Show success message
+                    formStatus.className = 'form-status success';
+                    formStatus.innerHTML = '<i class="fas fa-check-circle"></i> Message sent successfully! I\'ll get back to you soon.';
+                    
+                    // Reset form
+                    contactForm.reset();
+                    
+                    // Re-enable button
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = originalText;
+                    
+                    // Hide success message after 5 seconds
+                    setTimeout(() => {
+                        formStatus.style.display = 'none';
+                    }, 5000);
+                    
+                }, function(error) {
+                    console.log('FAILED...', error);
+                    
+                    // Show error message
+                    formStatus.className = 'form-status error';
+                    formStatus.innerHTML = '<i class="fas fa-exclamation-circle"></i> Failed to send message. Please try again or email directly.';
+                    
+                    // Re-enable button
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = originalText;
+                    
+                    // Hide error message after 5 seconds
+                    setTimeout(() => {
+                        formStatus.style.display = 'none';
+                    }, 5000);
+                });
+        });
+    }
+});
 
 // Certificate Data
 const certificates = [
@@ -191,48 +277,42 @@ const certificates = [
 const projectPhotos = {
     // NEW PROJECT 1: Wi-Fi NVR System
     nvr: [
-        { src: 'projects/nvr1.jpg', title: 'Live Monitoring Display', desc: 'Multi-view surveillance feed showing lab environment in real-time' },
-        { src: 'projects/nvr2.jpg', title: 'PTZ Camera Hardware', desc: 'Pan-tilt-zoom surveillance camera with infrared LEDs' },
-        { src: 'projects/nvr3.jpg', title: 'Network Configuration', desc: 'NVR network settings with QR code for mobile access' },
-        { src: 'projects/nvr4.jpg', title: 'Configuration Interface', desc: 'Technician configuring NVR network parameters with Cisco equipment' },
-        { src: 'projects/nvr5.jpg', title: 'Mobile Remote Access', desc: 'Smartphone displaying live camera feeds from NVR system' },
-        { src: 'projects/nvr6.jpg', title: 'Lab Testing Setup', desc: 'Students testing NVR system with multiple cameras and network equipment' },
-        { src: 'projects/nvr7.jpg', title: 'System Architecture Diagram', desc: 'Network topology showing NVR cloud connectivity and operations' },
-        { src: 'projects/nvr8.jpg', title: 'Multi-Camera Feed', desc: 'Split-screen surveillance display showing different lab areas' },
-        { src: 'projects/nvr9.jpg', title: 'Project Overview', desc: 'Complete Wi-Fi NVR surveillance system documentation and results' }
+        { src: 'projects/nvr1.jpg', title: 'Wi-Fi NVR Router Setup', desc: 'White wireless router with dual antennas for NVR system connectivity' },
+        { src: 'projects/nvr2.jpg', title: 'Multi-Camera Monitoring', desc: 'Live surveillance feed showing multiple camera views on monitoring screen' },
+        { src: 'projects/nvr3.jpg', title: 'Network Topology Design', desc: 'Detailed network diagram showing NVR system architecture and connections' },
+        { src: 'projects/nvr4.jpg', title: 'Router Configuration', desc: 'Physical setup with network equipment and testing tools' },
+        { src: 'projects/nvr5.jpg', title: 'Remote Access Setup', desc: 'Mobile and PC monitoring interface configuration' }
     ],
 
     // NEW PROJECT 2: Access Point Configuration
     accesspoint: [
-        { src: 'projects/ap1.jpg', title: 'Dual Configuration Display', desc: 'Split-screen showing Linksys web interface and command-line connectivity testing' },
-        { src: 'projects/ap2.jpg', title: 'Linksys Web Administration', desc: 'Wireless access point configuration interface with router password settings' },
-        { src: 'projects/ap3.jpg', title: 'Connectivity Verification', desc: 'Terminal window showing ping tests and Linksys configuration interface' },
-        { src: 'projects/ap4.jpg', title: 'Complete Testing Setup', desc: 'Workstation with Linksys router displaying wireless configuration and diagnostics' }
+        { src: 'projects/ap1.jpg', title: 'Dual Workstation Lab', desc: 'Two workstations configured with Linksys access point for wireless testing' },
+        { src: 'projects/ap2.jpg', title: 'Access Point Web Interface', desc: 'Linksys router configuration showing wireless settings and SSID setup' },
+        { src: 'projects/ap3.jpg', title: 'Multi-Station Configuration', desc: 'Complete lab setup with access point and multiple testing devices' },
+        { src: 'projects/ap4.jpg', title: 'Connectivity Verification', desc: 'Testing wireless connectivity with IP configuration and ping tests' }
     ],
 
     // NEW PROJECT 3: CCNA Practical Assessment
     ccnatest: [
-        { src: 'projects/ccna1.jpg', title: 'Router CLI Configuration', desc: 'Command-line interface showing VLAN and routing configuration on Cisco equipment' },
-        { src: 'projects/ccna2.jpg', title: 'Physical Lab Infrastructure', desc: 'Complete lab with Cisco routers, switches, and dual workstations for CCNA testing' },
-        { src: 'projects/ccna3.jpg', title: 'Dual-Monitor Lab Setup', desc: 'Two workstations with terminal windows showing router configurations and VLANs' },
-        { src: 'projects/ccna4.jpg', title: 'CCNA Skills Assessment', desc: 'Cisco Networking Academy CCNAv7 SRWE topology documentation and requirements' }
+        { src: 'projects/ccna1.jpg', title: 'Network Lab Overview', desc: 'Complete CCNA practical assessment lab with router, switches, and PCs' },
+        { src: 'projects/ccna2.jpg', title: 'Packet Tracer Topology', desc: 'CCNAv7 SRWE Skills Assessment network diagram showing VLANs and routing' },
+        { src: 'projects/ccna3.jpg', title: 'Physical Lab Setup', desc: 'Real Cisco equipment configuration with multiple workstations' },
+        { src: 'projects/ccna4.jpg', title: 'Router CLI Configuration', desc: 'Command-line interface showing VLAN and routing configuration verification' }
     ],
 
     // NEW PROJECT 4: CCTV DVR Setup
     cctv: [
-        { src: 'projects/dvr1.jpg', title: 'Night Monitoring Display', desc: 'Live CCTV feed showing surveillance footage on monitor in dark environment' },
-        { src: 'projects/dvr2.jpg', title: 'System Configuration', desc: 'Technician configuring DVR settings with Cisco equipment visible' },
-        { src: 'projects/dvr3.jpg', title: 'Mobile Integration Testing', desc: 'Testing mobile app connectivity with CCTV system' },
-        { src: 'projects/dvr4.jpg', title: 'Camera Installation Setup', desc: 'Installing and positioning PTZ dome camera with DVR system' },
-        { src: 'projects/dvr5.jpg', title: 'Multi-Channel Display', desc: 'Monitor showing multiple camera feed grid layout' },
-        { src: 'projects/dvr6.jpg', title: 'Lab Infrastructure Setup', desc: 'Overhead view of complete CCTV lab with DVR and networking equipment' }
+        { src: 'projects/dvr1.jpg', title: 'DVR System Configuration', desc: 'Two technicians setting up CCTV DVR system with monitor display' },
+        { src: 'projects/dvr2.jpg', title: 'Camera Configuration', desc: 'Configuring camera connections and DVR settings in lab environment' },
+        { src: 'projects/dvr3.jpg', title: 'Multi-Screen Monitoring', desc: 'Multiple monitor setup displaying live CCTV camera feeds' },
+        { src: 'projects/dvr4.jpg', title: 'Complete CCTV Lab', desc: 'Fully operational CCTV system with DVR and monitoring equipment' }
     ],
 
     // NEW PROJECT 5: DHCP Relay Agent
     dhcprelay: [
-        { src: 'projects/dhcp1.jpg', title: 'Multi-Router Topology', desc: 'Cisco routers and switches stacked with cable management for DHCP relay testing' },
-        { src: 'projects/dhcp2.jpg', title: 'DHCP Server Configuration', desc: 'Windows Server DHCP management console showing active lease assignments' },
-        { src: 'projects/dhcp3.jpg', title: 'Dual-Workstation Setup', desc: 'Complete lab with Windows Server DHCP and client workstations for testing' },
+        { src: 'projects/dhcp1.jpg', title: 'Multi-Router Network', desc: 'Complex network topology with multiple Cisco routers and switches' },
+        { src: 'projects/dhcp2.jpg', title: 'Server Configuration Display', desc: 'Windows Server showing DHCP Active Leases and IPv4 configuration' },
+        { src: 'projects/dhcp3.jpg', title: 'Physical Lab Infrastructure', desc: 'Complete lab setup with routers, switches, and server equipment' },
         { src: 'projects/dhcp4.jpg', title: 'Network Verification', desc: 'Testing DHCP relay functionality across multiple network segments' }
     ],
 
@@ -662,6 +742,7 @@ function init() {
     console.log('✅ Portfolio Initialized Successfully!');
     console.log('📊 Total Projects: ' + Object.keys(projectPhotos).length);
     console.log('🎓 Total Certificates: ' + certificates.length);
+    console.log('📧 EmailJS Configured');
 }
 
 // Run initialization
@@ -670,12 +751,3 @@ if (document.readyState === 'loading') {
 } else {
     init();
 }
-
-// Performance monitoring
-window.addEventListener('load', () => {
-    if (window.performance) {
-        const perfData = window.performance.timing;
-        const pageLoadTime = perfData.loadEventEnd - perfData.navigationStart;
-        console.log(`⚡ Page Load Time: ${pageLoadTime}ms`);
-    }
-});
