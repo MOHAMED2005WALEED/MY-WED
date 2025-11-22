@@ -460,6 +460,44 @@ body {
    PROJECTS SECTION STYLES
    ======================================== */
 
+/* Project Stats */
+.project-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.stat-card {
+    text-align: center;
+    padding: 30px 20px;
+    transition: all 0.3s;
+}
+
+.stat-card i {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.stat-card h3 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 5px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.stat-card p {
+    color: var(--text-secondary);
+    font-size: 1rem;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px) scale(1.05);
+}
+
 .projects-filter {
     display: flex;
     gap: 15px;
