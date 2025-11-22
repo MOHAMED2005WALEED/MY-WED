@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mohamed Wajihadeen Mohamed Waleed - Modern Portfolio</title>
+    <meta name="description" content="Full-Stack Web Developer & Network Technician specializing in CCNA, React, Node.js, and modern web technologies">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="https://portfolio-5ff36.web.app/assets/logo.png">
@@ -106,13 +107,13 @@
                     I'm deeply passionate about learning, problem-solving, and contributing to open-source projects. Let's build something amazing together!
                 </p>
                 <div class="social-links">
-                    <a href="https://github.com/MOHAMED2005WALEED" target="_blank" class="social-icon">
+                    <a href="https://github.com/MOHAMED2005WALEED" target="_blank" class="social-icon" aria-label="GitHub">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/mohamed-waleed-669457227" target="_blank" class="social-icon">
+                    <a href="https://www.linkedin.com/in/mohamed-waleed-669457227" target="_blank" class="social-icon" aria-label="LinkedIn">
                         <i class="fab fa-linkedin"></i>
                     </a>
-                    <a href="https://www.credly.com/users/mohamed-wajihadeen-mohamed-waleed" target="_blank" class="social-icon">
+                    <a href="https://www.credly.com/users/mohamed-wajihadeen-mohamed-waleed" target="_blank" class="social-icon" aria-label="Credly">
                         <i class="fas fa-award"></i>
                     </a>
                 </div>
@@ -221,6 +222,30 @@
                 <div class="title-underline"></div>
             </div>
 
+            <!-- Project Stats -->
+            <div class="project-stats">
+                <div class="stat-card glass-card">
+                    <i class="fas fa-project-diagram"></i>
+                    <h3>11</h3>
+                    <p>Total Projects</p>
+                </div>
+                <div class="stat-card glass-card">
+                    <i class="fas fa-network-wired"></i>
+                    <h3>8</h3>
+                    <p>Networking</p>
+                </div>
+                <div class="stat-card glass-card">
+                    <i class="fas fa-server"></i>
+                    <h3>1</h3>
+                    <p>Server</p>
+                </div>
+                <div class="stat-card glass-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>1</h3>
+                    <p>Security</p>
+                </div>
+            </div>
+
             <!-- Project Filter Buttons -->
             <div class="projects-filter">
                 <button class="filter-btn active" data-filter="all">
@@ -246,12 +271,12 @@
                 <div class="project-item glass-card" data-category="networking">
                     <div class="project-badge">NEW</div>
                     <div class="project-images">
-                        <img src="projects/nvr1.jpg" alt="Wi-Fi NVR System" class="project-main-img">
+                        <img src="projects/nvr1.jpg" alt="Wi-Fi NVR System" class="project-main-img" onerror="this.src='https://via.placeholder.com/400x250?text=Wi-Fi+NVR+System'">
                         <div class="project-gallery">
-                            <img src="projects/nvr1.jpg" onclick="openProjectModal('nvr', 0)">
-                            <img src="projects/nvr2.jpg" onclick="openProjectModal('nvr', 1)">
-                            <img src="projects/nvr3.jpg" onclick="openProjectModal('nvr', 2)">
-                            <span class="more-photos" onclick="openProjectModal('nvr', 0)">+6 more</span>
+                            <img src="projects/nvr1.jpg" onclick="openProjectModal('nvr', 0)" onerror="this.src='https://via.placeholder.com/60x45?text=1'">
+                            <img src="projects/nvr2.jpg" onclick="openProjectModal('nvr', 1)" onerror="this.src='https://via.placeholder.com/60x45?text=2'">
+                            <img src="projects/nvr3.jpg" onclick="openProjectModal('nvr', 2)" onerror="this.src='https://via.placeholder.com/60x45?text=3'">
+                            <span class="more-photos" onclick="openProjectModal('nvr', 0)">+2 more</span>
                         </div>
                     </div>
                     <div class="project-info">
@@ -273,11 +298,11 @@
                 <div class="project-item glass-card" data-category="networking">
                     <div class="project-badge">NEW</div>
                     <div class="project-images">
-                        <img src="projects/ap1.jpg" alt="Access Point Config" class="project-main-img">
+                        <img src="projects/ap1.jpg" alt="Access Point Config" class="project-main-img" onerror="this.src='https://via.placeholder.com/400x250?text=Access+Point+Configuration'">
                         <div class="project-gallery">
-                            <img src="projects/ap1.jpg" onclick="openProjectModal('accesspoint', 0)">
-                            <img src="projects/ap2.jpg" onclick="openProjectModal('accesspoint', 1)">
-                            <img src="projects/ap3.jpg" onclick="openProjectModal('accesspoint', 2)">
+                            <img src="projects/ap1.jpg" onclick="openProjectModal('accesspoint', 0)" onerror="this.src='https://via.placeholder.com/60x45?text=1'">
+                            <img src="projects/ap2.jpg" onclick="openProjectModal('accesspoint', 1)" onerror="this.src='https://via.placeholder.com/60x45?text=2'">
+                            <img src="projects/ap3.jpg" onclick="openProjectModal('accesspoint', 2)" onerror="this.src='https://via.placeholder.com/60x45?text=3'">
                             <span class="more-photos" onclick="openProjectModal('accesspoint', 0)">+1 more</span>
                         </div>
                     </div>
@@ -300,11 +325,11 @@
                 <div class="project-item glass-card" data-category="networking">
                     <div class="project-badge">NEW</div>
                     <div class="project-images">
-                        <img src="projects/ccna1.jpg" alt="CCNA Assessment" class="project-main-img">
+                        <img src="projects/ccna1.jpg" alt="CCNA Assessment" class="project-main-img" onerror="this.src='https://via.placeholder.com/400x250?text=CCNA+Assessment'">
                         <div class="project-gallery">
-                            <img src="projects/ccna1.jpg" onclick="openProjectModal('ccnatest', 0)">
-                            <img src="projects/ccna2.jpg" onclick="openProjectModal('ccnatest', 1)">
-                            <img src="projects/ccna3.jpg" onclick="openProjectModal('ccnatest', 2)">
+                            <img src="projects/ccna1.jpg" onclick="openProjectModal('ccnatest', 0)" onerror="this.src='https://via.placeholder.com/60x45?text=1'">
+                            <img src="projects/ccna2.jpg" onclick="openProjectModal('ccnatest', 1)" onerror="this.src='https://via.placeholder.com/60x45?text=2'">
+                            <img src="projects/ccna3.jpg" onclick="openProjectModal('ccnatest', 2)" onerror="this.src='https://via.placeholder.com/60x45?text=3'">
                             <span class="more-photos" onclick="openProjectModal('ccnatest', 0)">+1 more</span>
                         </div>
                     </div>
@@ -328,12 +353,12 @@
                 <div class="project-item glass-card" data-category="security">
                     <div class="project-badge">NEW</div>
                     <div class="project-images">
-                        <img src="projects/dvr1.jpg" alt="CCTV DVR" class="project-main-img">
+                        <img src="projects/dvr1.jpg" alt="CCTV DVR" class="project-main-img" onerror="this.src='https://via.placeholder.com/400x250?text=CCTV+DVR+Setup'">
                         <div class="project-gallery">
-                            <img src="projects/dvr1.jpg" onclick="openProjectModal('cctv', 0)">
-                            <img src="projects/dvr2.jpg" onclick="openProjectModal('cctv', 1)">
-                            <img src="projects/dvr3.jpg" onclick="openProjectModal('cctv', 2)">
-                            <span class="more-photos" onclick="openProjectModal('cctv', 0)">+3 more</span>
+                            <img src="projects/dvr1.jpg" onclick="openProjectModal('cctv', 0)" onerror="this.src='https://via.placeholder.com/60x45?text=1'">
+                            <img src="projects/dvr2.jpg" onclick="openProjectModal('cctv', 1)" onerror="this.src='https://via.placeholder.com/60x45?text=2'">
+                            <img src="projects/dvr3.jpg" onclick="openProjectModal('cctv', 2)" onerror="this.src='https://via.placeholder.com/60x45?text=3'">
+                            <span class="more-photos" onclick="openProjectModal('cctv', 0)">+1 more</span>
                         </div>
                     </div>
                     <div class="project-info">
@@ -355,11 +380,11 @@
                 <div class="project-item glass-card" data-category="networking">
                     <div class="project-badge">NEW</div>
                     <div class="project-images">
-                        <img src="projects/dhcp1.jpg" alt="DHCP Relay" class="project-main-img">
+                        <img src="projects/dhcp1.jpg" alt="DHCP Relay" class="project-main-img" onerror="this.src='https://via.placeholder.com/400x250?text=DHCP+Relay+Agent'">
                         <div class="project-gallery">
-                            <img src="projects/dhcp1.jpg" onclick="openProjectModal('dhcprelay', 0)">
-                            <img src="projects/dhcp2.jpg" onclick="openProjectModal('dhcprelay', 1)">
-                            <img src="projects/dhcp3.jpg" onclick="openProjectModal('dhcprelay', 2)">
+                            <img src="projects/dhcp1.jpg" onclick="openProjectModal('dhcprelay', 0)" onerror="this.src='https://via.placeholder.com/60x45?text=1'">
+                            <img src="projects/dhcp2.jpg" onclick="openProjectModal('dhcprelay', 1)" onerror="this.src='https://via.placeholder.com/60x45?text=2'">
+                            <img src="projects/dhcp3.jpg" onclick="openProjectModal('dhcprelay', 2)" onerror="this.src='https://via.placeholder.com/60x45?text=3'">
                             <span class="more-photos" onclick="openProjectModal('dhcprelay', 0)">+1 more</span>
                         </div>
                     </div>
@@ -539,13 +564,13 @@
 
     <!-- Project Modal (Lightbox) -->
     <div id="projectModal" class="project-modal">
-        <button class="modal-close" onclick="closeProjectModal()">
+        <button class="modal-close" onclick="closeProjectModal()" aria-label="Close Modal">
             <i class="fas fa-times"></i>
         </button>
-        <button class="modal-prev" onclick="changeProjectPhoto(-1)">
+        <button class="modal-prev" onclick="changeProjectPhoto(-1)" aria-label="Previous Photo">
             <i class="fas fa-chevron-left"></i>
         </button>
-        <button class="modal-next" onclick="changeProjectPhoto(1)">
+        <button class="modal-next" onclick="changeProjectPhoto(1)" aria-label="Next Photo">
             <i class="fas fa-chevron-right"></i>
         </button>
         <div class="modal-content">
@@ -561,79 +586,18 @@
         <div class="modal-thumbnails" id="modalThumbnails"></div>
     </div>
 
-    <!-- Social Links Section -->
-    <section id="social" class="modern-section fade-in">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-number">04</span>
-                <h2 class="section-title">Connect With Me</h2>
-                <div class="title-underline"></div>
-            </div>
-            
-            <div class="social-profile glass-card">
-                <div class="social-avatar">
-                    <img src="IMG_20240803_165730_105.webp" alt="Profile">
-                </div>
-                <h2 class="social-name">𝕎𝕒𝕝𝕚𝕚..𝕆𝕗𝕗𝕚𝕔𝕚𝕒𝕝</h2>
-                <p class="social-bio">Connecting the dots between dreams and reality ✨</p>
-                
-                <div class="social-grid">
-                    <a href="https://www.credly.com/users/mohamed-wajihadeen-mohamed-waleed" target="_blank" class="social-card">
-                        <i class="fas fa-award"></i>
-                        <span>Credly</span>
-                    </a>
-                    <a href="https://www.instagram.com/waleed_2005" target="_blank" class="social-card">
-                        <i class="fab fa-instagram"></i>
-                        <span>Instagram</span>
-                    </a>
-                    <a href="https://www.tiktok.com/@walii..official" target="_blank" class="social-card">
-                        <i class="fab fa-tiktok"></i>
-                        <span>TikTok</span>
-                    </a>
-                    <a href="https://wa.me/message/MEXSYHLOWL5CD1" target="_blank" class="social-card">
-                        <i class="fab fa-whatsapp"></i>
-                        <span>WhatsApp</span>
-                    </a>
-                    <a href="https://www.facebook.com/profile.php?id=100075124244357" target="_blank" class="social-card">
-                        <i class="fab fa-facebook"></i>
-                        <span>Facebook</span>
-                    </a>
-                    <a href="https://x.com/WALEED_2005" target="_blank" class="social-card">
-                        <i class="fab fa-twitter"></i>
-                        <span>Twitter</span>
-                    </a>
-                    <a href="https://www.snapchat.com/add/waleed20050325" target="_blank" class="social-card">
-                        <i class="fab fa-snapchat"></i>
-                        <span>Snapchat</span>
-                    </a>
-                    <a href="https://github.com/MOHAMED2005WALEED" target="_blank" class="social-card">
-                        <i class="fab fa-github"></i>
-                        <span>GitHub</span>
-                    </a>
-                </div>
-
-                <div class="youtube-embed">
-                    <iframe src="https://www.youtube.com/embed/9WanQhhrsd4" 
-                            frameborder="0" 
-                            allowfullscreen>
-                    </iframe>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Certificates Section -->
     <section id="certificates" class="modern-section fade-in">
         <div class="container">
             <div class="section-header">
-                <span class="section-number">05</span>
+                <span class="section-number">04</span>
                 <h2 class="section-title">Certifications</h2>
                 <div class="title-underline"></div>
             </div>
 
             <div class="certificates-carousel">
                 <div class="carousel-main">
-                    <button class="carousel-btn prev-btn" onclick="navigateCert(-1)">
+                    <button class="carousel-btn prev-btn" onclick="navigateCert(-1)" aria-label="Previous Certificate">
                         <i class="fas fa-chevron-left"></i>
                     </button>
                     
@@ -641,7 +605,7 @@
                         <!-- Certificates will be dynamically loaded -->
                     </div>
                     
-                    <button class="carousel-btn next-btn" onclick="navigateCert(1)">
+                    <button class="carousel-btn next-btn" onclick="navigateCert(1)" aria-label="Next Certificate">
                         <i class="fas fa-chevron-right"></i>
                     </button>
                 </div>
@@ -661,7 +625,7 @@
     <section id="contact" class="modern-section fade-in">
         <div class="container">
             <div class="section-header">
-                <span class="section-number">06</span>
+                <span class="section-number">05</span>
                 <h2 class="section-title">Get In Touch</h2>
                 <div class="title-underline"></div>
             </div>
@@ -691,6 +655,58 @@
                     <a href="https://github.com/MOHAMED2005WALEED" target="_blank">View My Projects</a>
                 </div>
             </div>
+
+            <!-- Social Links in Contact -->
+            <div class="social-profile glass-card">
+                <div class="social-avatar">
+                    <img src="IMG_20240803_165730_105.webp" alt="Mohamed Waleed Profile">
+                </div>
+                <h2 class="social-name">𝕎𝕒𝕝𝕚𝕚..𝕆𝕗𝕗𝕚𝕔𝕚𝕒𝕝</h2>
+                <p class="social-bio">Connecting the dots between dreams and reality ✨</p>
+                
+                <div class="social-grid">
+                    <a href="https://www.credly.com/users/mohamed-wajihadeen-mohamed-waleed" target="_blank" class="social-card" aria-label="Credly Profile">
+                        <i class="fas fa-award"></i>
+                        <span>Credly</span>
+                    </a>
+                    <a href="https://www.instagram.com/waleed_2005" target="_blank" class="social-card" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="https://www.tiktok.com/@walii..official" target="_blank" class="social-card" aria-label="TikTok">
+                        <i class="fab fa-tiktok"></i>
+                        <span>TikTok</span>
+                    </a>
+                    <a href="https://wa.me/message/MEXSYHLOWL5CD1" target="_blank" class="social-card" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>WhatsApp</span>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=100075124244357" target="_blank" class="social-card" aria-label="Facebook">
+                        <i class="fab fa-facebook"></i>
+                        <span>Facebook</span>
+                    </a>
+                    <a href="https://x.com/WALEED_2005" target="_blank" class="social-card" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                        <span>Twitter</span>
+                    </a>
+                    <a href="https://www.snapchat.com/add/waleed20050325" target="_blank" class="social-card" aria-label="Snapchat">
+                        <i class="fab fa-snapchat"></i>
+                        <span>Snapchat</span>
+                    </a>
+                    <a href="https://github.com/MOHAMED2005WALEED" target="_blank" class="social-card" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+
+                <div class="youtube-embed">
+                    <iframe src="https://www.youtube.com/embed/9WanQhhrsd4" 
+                            title="YouTube Video"
+                            frameborder="0" 
+                            allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -709,7 +725,7 @@
     </footer>
 
     <!-- Scroll to Top Button -->
-    <button class="scroll-top" onclick="scrollToTop()">
+    <button class="scroll-top" onclick="scrollToTop()" aria-label="Scroll to Top">
         <i class="fas fa-arrow-up"></i>
     </button>
 
