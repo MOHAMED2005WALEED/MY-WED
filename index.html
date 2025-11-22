@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -235,10 +236,150 @@
                 <button class="filter-btn" data-filter="hardware">
                     <i class="fas fa-tools"></i> Hardware
                 </button>
+                <button class="filter-btn" data-filter="security">
+                    <i class="fas fa-shield-alt"></i> Security
+                </button>
             </div>
 
             <!-- Projects Grid -->
             <div class="projects-grid">
+                <!-- NEW PROJECT 1: Wi-Fi NVR System -->
+                <div class="project-item glass-card" data-category="networking">
+                    <div class="project-badge">NEW</div>
+                    <div class="project-images">
+                        <img src="projects/nvr1.jpg" alt="Wi-Fi NVR System" class="project-main-img">
+                        <div class="project-gallery">
+                            <img src="projects/nvr1.jpg" onclick="openProjectModal('nvr', 0)">
+                            <img src="projects/nvr2.jpg" onclick="openProjectModal('nvr', 1)">
+                            <img src="projects/nvr3.jpg" onclick="openProjectModal('nvr', 2)">
+                            <span class="more-photos" onclick="openProjectModal('nvr', 0)">+2 more</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Wi-Fi NVR Surveillance System</h3>
+                        <p>Complete configuration of Wi-Fi NVR system with dual LAN and Wi-Fi connectivity. Wireless camera pairing, mobile app access, and smooth live streaming capabilities.</p>
+                        <div class="project-tags">
+                            <span>NVR System</span>
+                            <span>Wi-Fi</span>
+                            <span>CCTV</span>
+                            <span>Remote Monitoring</span>
+                        </div>
+                        <button class="view-project-btn" onclick="openProjectModal('nvr', 0)">
+                            <i class="fas fa-images"></i> View All Photos
+                        </button>
+                    </div>
+                </div>
+
+                <!-- NEW PROJECT 2: Access Point Configuration -->
+                <div class="project-item glass-card" data-category="networking">
+                    <div class="project-badge">NEW</div>
+                    <div class="project-images">
+                        <img src="projects/ap1.jpg" alt="Access Point Config" class="project-main-img">
+                        <div class="project-gallery">
+                            <img src="projects/ap1.jpg" onclick="openProjectModal('accesspoint', 0)">
+                            <img src="projects/ap2.jpg" onclick="openProjectModal('accesspoint', 1)">
+                            <img src="projects/ap3.jpg" onclick="openProjectModal('accesspoint', 2)">
+                            <span class="more-photos" onclick="openProjectModal('accesspoint', 0)">+1 more</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Wireless Access Point Configuration</h3>
+                        <p>Complete wireless access point setup with SSID configuration, WPA2 security implementation, and wireless connectivity verification through IP checks and ping tests.</p>
+                        <div class="project-tags">
+                            <span>Linksys</span>
+                            <span>WPA2</span>
+                            <span>Wireless</span>
+                            <span>SSID Config</span>
+                        </div>
+                        <button class="view-project-btn" onclick="openProjectModal('accesspoint', 0)">
+                            <i class="fas fa-images"></i> View All Photos
+                        </button>
+                    </div>
+                </div>
+
+                <!-- NEW PROJECT 3: CCNA Practical Assessment -->
+                <div class="project-item glass-card" data-category="networking">
+                    <div class="project-badge">NEW</div>
+                    <div class="project-images">
+                        <img src="projects/ccna1.jpg" alt="CCNA Assessment" class="project-main-img">
+                        <div class="project-gallery">
+                            <img src="projects/ccna1.jpg" onclick="openProjectModal('ccnatest', 0)">
+                            <img src="projects/ccna2.jpg" onclick="openProjectModal('ccnatest', 1)">
+                            <img src="projects/ccna3.jpg" onclick="openProjectModal('ccnatest', 2)">
+                            <span class="more-photos" onclick="openProjectModal('ccnatest', 0)">+1 more</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>CCNA Semester 02 Practical Skills Assessment</h3>
+                        <p>Comprehensive networking practical test demonstrating VLAN configuration, trunking, inter-VLAN routing, EtherChannel, DHCP services, IPv6 setup, and port security on real Cisco equipment.</p>
+                        <div class="project-tags">
+                            <span>CCNAv7</span>
+                            <span>VLANs</span>
+                            <span>Trunking</span>
+                            <span>IPv6</span>
+                            <span>Port Security</span>
+                        </div>
+                        <button class="view-project-btn" onclick="openProjectModal('ccnatest', 0)">
+                            <i class="fas fa-images"></i> View All Photos
+                        </button>
+                    </div>
+                </div>
+
+                <!-- NEW PROJECT 4: CCTV DVR Setup -->
+                <div class="project-item glass-card" data-category="security">
+                    <div class="project-badge">NEW</div>
+                    <div class="project-images">
+                        <img src="projects/dvr1.jpg" alt="CCTV DVR" class="project-main-img">
+                        <div class="project-gallery">
+                            <img src="projects/dvr1.jpg" onclick="openProjectModal('cctv', 0)">
+                            <img src="projects/dvr2.jpg" onclick="openProjectModal('cctv', 1)">
+                            <img src="projects/dvr3.jpg" onclick="openProjectModal('cctv', 2)">
+                            <span class="more-photos" onclick="openProjectModal('cctv', 0)">+1 more</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>CCTV DVR Setup & Integration</h3>
+                        <p>Professional CCTV system deployment with camera configuration, network and remote access setup, secure system login, and mobile/PC monitoring capabilities.</p>
+                        <div class="project-tags">
+                            <span>CCTV</span>
+                            <span>DVR</span>
+                            <span>Remote Access</span>
+                            <span>Surveillance</span>
+                        </div>
+                        <button class="view-project-btn" onclick="openProjectModal('cctv', 0)">
+                            <i class="fas fa-images"></i> View All Photos
+                        </button>
+                    </div>
+                </div>
+
+                <!-- NEW PROJECT 5: DHCP Relay Agent -->
+                <div class="project-item glass-card" data-category="networking">
+                    <div class="project-badge">NEW</div>
+                    <div class="project-images">
+                        <img src="projects/dhcp1.jpg" alt="DHCP Relay" class="project-main-img">
+                        <div class="project-gallery">
+                            <img src="projects/dhcp1.jpg" onclick="openProjectModal('dhcprelay', 0)">
+                            <img src="projects/dhcp2.jpg" onclick="openProjectModal('dhcprelay', 1)">
+                            <img src="projects/dhcp3.jpg" onclick="openProjectModal('dhcprelay', 2)">
+                            <span class="more-photos" onclick="openProjectModal('dhcprelay', 0)">+1 more</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>DHCP Relay Agent Configuration</h3>
+                        <p>Multi-router DHCP relay implementation with static routing, Windows Server OS configuration, and broadcast to unicast/multicast message conversion across network segments.</p>
+                        <div class="project-tags">
+                            <span>DHCP Relay</span>
+                            <span>Static Routing</span>
+                            <span>Server OS</span>
+                            <span>Multi-Router</span>
+                        </div>
+                        <button class="view-project-btn" onclick="openProjectModal('dhcprelay', 0)">
+                            <i class="fas fa-images"></i> View All Photos
+                        </button>
+                    </div>
+                </div>
+
+                <!-- EXISTING PROJECTS -->
                 <!-- Project 1: Server Deployment -->
                 <div class="project-item glass-card" data-category="server">
                     <div class="project-images">
