@@ -195,7 +195,11 @@ const projectPhotos = {
         { src: 'projects/nvr2.jpg', title: 'Multi-Camera Monitoring', desc: 'Live surveillance feed showing multiple camera views on monitoring screen' },
         { src: 'projects/nvr3.jpg', title: 'Network Topology Design', desc: 'Detailed network diagram showing NVR system architecture and connections' },
         { src: 'projects/nvr4.jpg', title: 'Router Configuration', desc: 'Physical setup with network equipment and testing tools' },
-        { src: 'projects/nvr5.jpg', title: 'Remote Access Setup', desc: 'Mobile and PC monitoring interface configuration' }
+        { src: 'projects/nvr5.jpg', title: 'Remote Access Setup', desc: 'Mobile and PC monitoring interface configuration' },
+        { src: 'projects/nvr6.jpg', title: 'Multi-Camera Monitoring', desc: 'Live surveillance feed showing multiple camera views on monitoring screen' },
+        { src: 'projects/nvr7.jpg', title: 'Network Topology Design', desc: 'Detailed network diagram showing NVR system architecture and connections' },
+        { src: 'projects/nvr8.jpg', title: 'Router Configuration', desc: 'Physical setup with network equipment and testing tools' },
+        { src: 'projects/nvr9.jpg', title: 'Remote Access Setup', desc: 'Mobile and PC monitoring interface configuration' }
     ],
 
     // NEW PROJECT 2: Access Point Configuration
@@ -219,7 +223,9 @@ const projectPhotos = {
         { src: 'projects/dvr1.jpg', title: 'DVR System Configuration', desc: 'Two technicians setting up CCTV DVR system with monitor display' },
         { src: 'projects/dvr2.jpg', title: 'Camera Configuration', desc: 'Configuring camera connections and DVR settings in lab environment' },
         { src: 'projects/dvr3.jpg', title: 'Multi-Screen Monitoring', desc: 'Multiple monitor setup displaying live CCTV camera feeds' },
-        { src: 'projects/dvr4.jpg', title: 'Complete CCTV Lab', desc: 'Fully operational CCTV system with DVR and monitoring equipment' }
+        { src: 'projects/dvr4.jpg', title: 'Complete CCTV Lab', desc: 'Fully operational CCTV system with DVR and monitoring equipment' },
+        { src: 'projects/dvr5.jpg', title: 'Multi-Screen Monitoring', desc: 'Multiple monitor setup displaying live CCTV camera feeds' },
+        { src: 'projects/dvr6.jpg', title: 'Complete CCTV Lab', desc: 'Fully operational CCTV system with DVR and monitoring equipment' }
     ],
 
     // NEW PROJECT 5: DHCP Relay Agent
