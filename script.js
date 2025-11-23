@@ -22,7 +22,7 @@ window.addEventListener('load', () => {
 });
 
 // ============================================
-// EMAIL JS CONTACT FORM
+// EMAIL JS CONTACT FORM WITH AUTO REPLY
 // ============================================
 document.addEventListener('DOMContentLoaded', function() {
     const contactForm = document.getElementById('contact-form');
@@ -48,14 +48,28 @@ document.addEventListener('DOMContentLoaded', function() {
                 to_name: 'Mohamed Waleed'
             };
             
-            // Send email using EmailJS
+            // Send email to you
             emailjs.send('service_yvkz2tu', 'template_qc0v5uk', templateParams)
                 .then(function(response) {
-                    console.log('SUCCESS!', response.status, response.text);
+                    console.log('Main email sent!', response.status);
+                    
+                    // Send Auto Reply to User
+                    const autoReplyParams = {
+                        from_name: templateParams.from_name,
+                        from_email: templateParams.from_email,
+                        subject: templateParams.subject,
+                        message: templateParams.message
+                    };
+                    
+                    // Send auto reply
+                    return emailjs.send('service_yvkz2tu', 'template_autoreply', autoReplyParams);
+                })
+                .then(function(autoResponse) {
+                    console.log('Auto-reply sent!', autoResponse.status);
                     
                     // Show success message
                     formStatus.className = 'form-status success';
-                    formStatus.innerHTML = '<i class="fas fa-check-circle"></i> Message sent successfully! I\'ll get back to you soon.';
+                    formStatus.innerHTML = '<i class="fas fa-check-circle"></i> Message sent! Check your email for confirmation.';
                     
                     // Reset form
                     contactForm.reset();
@@ -68,13 +82,13 @@ document.addEventListener('DOMContentLoaded', function() {
                     setTimeout(() => {
                         formStatus.style.display = 'none';
                     }, 5000);
-                    
-                }, function(error) {
+                })
+                .catch(function(error) {
                     console.log('FAILED...', error);
                     
                     // Show error message
                     formStatus.className = 'form-status error';
-                    formStatus.innerHTML = '<i class="fas fa-exclamation-circle"></i> Failed to send message. Please try again or email directly.';
+                    formStatus.innerHTML = '<i class="fas fa-exclamation-circle"></i> Failed to send. Please try again.';
                     
                     // Re-enable button
                     submitBtn.disabled = false;
