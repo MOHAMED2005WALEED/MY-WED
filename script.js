@@ -284,6 +284,60 @@ const certificates = [
         issuer: "Cisco",
         image: "uploads/CCNA-_Switching-_Routing-_and_Wireless_Essentials_certificate_wajiwaleed-gmail-com_fd3798d0-18e8-495a-ab4e-f122f8368a46.png",
         pdf: "uploads/CCNA-_Switching-_Routing-_and_Wireless_Essentials_certificate_wajiwaleed-gmail-com_fd3798d0-18e8-495a-ab4e-f122f8368a46.pdf"
+    },
+    {
+        title: "Diploma in English",
+        issuer: "Sri Lanka English Language Graduates'",
+        image: "uploads/Diploma in English.png",
+        pdf: "uploads/Diploma in English.pdf"
+    },
+    {
+        title: "Diploma in English",
+        issuer: "Sri Lanka English Language Graduates'",
+        image: "uploads/Diploma in English 2.png",
+        pdf: "uploads/Diploma in English 2.pdf"
+    },
+    {
+        title: "Diploma in English Language",
+        issuer: "Southern Province English & IT Training Academy",
+        image: "uploads/Diploma in English Language.png",
+        pdf: "uploads/Diploma in English Language.pdf"
+    },
+    {
+        title: "Diploma in Information Technology",
+        issuer: "Southern Province English & IT Training Academy",
+        image: "uploads/Diploma in Information Technology.png",
+        pdf: "uploads/Diploma in Information Technology.pdf"
+    },
+    {
+        title: "Program in Computer Literacy - 2018",
+        issuer: "Explorer - School of Information Technology",
+        image: "uploads/Program in Computer Literacy - 2018.png",
+        pdf: "uploads/Program in Computer Literacy - 2018.pdf"
+    },
+    {
+        title: "Media Club Appreciation Certificate",
+        issuer: "Sudharma College - Galle, Media Club",
+        image: "uploads/Media Club Appreciation Certificate.png",
+        pdf: "uploads/Media Club Appreciation Certificate.pdf"
+    },
+    {
+        title: "Media Workshop Participation Certificate",
+        issuer: "Old Pupils' Association of Olcott College - Galle",
+        image: "uploads/Media Workshop Participation Certificate.png",
+        pdf: "uploads/Media Workshop Participation Certificate.pdf"
+    },
+    {
+        title: "Certificate of Honour - Senior Prefect",
+        issuer: "Olcott College, Galle",
+        image: "uploads/Certificate of Honour - Senior Prefect.png",
+        pdf: "uploads/Certificate of Honour - Senior Prefect.pdf"
+    },
+    {
+        title: "U.S. Embassy Certificate of Award",
+        issuer: "U.S. Embassy Colombo",
+        image: "uploads/U.S. Embassy Certificate of Award.png",
+        pdf: "uploads/U.S. Embassy Certificate of Award.pdf"
     }
 ];
 
