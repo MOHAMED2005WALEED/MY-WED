@@ -287,13 +287,13 @@ const certificates = [
     },
     {
         title: "Diploma in English",
-        issuer: "Sri Lanka English Language Graduates'",
+        issuer: "Sri Lanka English Language Graduates' Association (SLEGA)",
         image: "uploads/Diploma in English.png",
         pdf: "uploads/Diploma in English.pdf"
     },
     {
         title: "Diploma in English",
-        issuer: "Sri Lanka English Language Graduates'",
+        issuer: "Sri Lanka English Language Graduates' Association (SLEGA)",
         image: "uploads/Diploma in English 2.png",
         pdf: "uploads/Diploma in English 2.pdf"
     },
