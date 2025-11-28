@@ -262,8 +262,14 @@ const certificates = [
         pdf: "uploads/LinuxUnhatched20241203-26-aeebkl.pdf"
     },
     {
-        title: "SLIIT University Certificate",
-        issuer: "SLIIT",
+        title: "AI/ML Engineer - Stage 1",
+        issuer: "Centre for Open and Distance Education - SLIIT",
+        image: "uploads/MOHAMED WAJIHADEEN MOHAMED WALEED - 2025-01-21.png",
+        pdf: "uploads/MOHAMED WAJIHADEEN MOHAMED WALEED - 2025-01-21.pdf"
+    },
+    {
+        title: "AI/ML Engineer - Stage 2",
+        issuer: "Centre for Open and Distance Education - SLIIT",
         image: "uploads/MOHAMED WAJIHADEEN MOHAMED WALEED - 2024-11-27.png",
         pdf: "uploads/MOHAMED WAJIHADEEN MOHAMED WALEED - 2024-11-27.pdf"
     },
