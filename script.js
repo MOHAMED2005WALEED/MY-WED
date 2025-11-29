@@ -172,6 +172,12 @@ const certificates = [
         pdf: "uploads/Project_Communication_and_Stakeholder_Management_E-Certificate.pdf"
     },
     {
+        title: "Introduction to Software Quality Assurance",
+        issuer: "Department of Computer Science & Engineering, Faculty of Engineering, University of Moratuwa",
+        image: "uploads/Introduction_to_Software_Quality_Assurance_E-Certificate.png",
+        pdf: "uploads/Introduction_to_Software_Quality_Assurance_E-Certificate.pdf"
+    },
+    {
         title: "ISC2 Candidate",
         issuer: "International Information System Security Certification Consortium",
         image: "uploads/isc2-candidate.png",
