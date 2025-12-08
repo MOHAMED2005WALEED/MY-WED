@@ -232,6 +232,12 @@ const certificates = [
         pdf: "uploads/CCCertified in Cybersecurity (CC).pdf"
     },
     {
+        title: "Introduction to Linux (LFS101)",
+        issuer: "The Linux Foundation",
+        image: "uploads/mohamed-waleed-06239dae-f803-4140-aa8a-566dbff12bf6-certificate.png",
+        pdf: "uploads/mohamed-waleed-06239dae-f803-4140-aa8a-566dbff12bf6-certificate.pdf"
+    },
+    {
         title: "What Is Generative AI?",
         issuer: "LinkedIn Learning",
         image: "uploads/CertificateOfCompletion_What Is Generative AI.png",
