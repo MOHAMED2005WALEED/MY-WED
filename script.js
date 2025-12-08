@@ -232,7 +232,7 @@ const certificates = [
         pdf: "uploads/CCCertified in Cybersecurity (CC).pdf"
     },
     {
-        title: "Introduction to Linux (LFS101)",
+        title: "LFS101: Introduction to Linux",
         issuer: "The Linux Foundation",
         image: "uploads/mohamed-waleed-06239dae-f803-4140-aa8a-566dbff12bf6-certificate.png",
         pdf: "uploads/mohamed-waleed-06239dae-f803-4140-aa8a-566dbff12bf6-certificate.pdf"
