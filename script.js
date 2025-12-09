@@ -365,16 +365,16 @@ const projectPhotos = {
     ospf: [
         { src: 'projects/ospf1.jpg', title: 'OSPF Network Topology', desc: 'Multi-area OSPF network design with Area 0 backbone and multiple LAN segments' },
         { src: 'projects/ospf2.jpg', title: 'Physical Lab Setup', desc: 'Complete lab with Cisco routers, switches, and multiple workstations' },
-        { src: 'projects/ospf3.jpg', title: 'Router Configuration', desc: 'Cisco router setup with OSPF routing and PAT configuration' },
-        { src: 'projects/ospf4.jpg', title: 'Network Verification', desc: 'Testing OSPF connectivity and routing table verification' },
-        { src: 'projects/ospf5.jpg', title: 'Physical Lab Setup', desc: 'Complete lab with Cisco routers, switches, and multiple workstations' },
-        { src: 'projects/ospf6.jpg', title: 'Router Configuration', desc: 'Cisco router setup with OSPF routing and PAT configuration' },
-        { src: 'projects/ospf7.jpg', title: 'Network Verification', desc: 'Testing OSPF connectivity and routing table verification' },
-        { src: 'projects/ospf8.jpg', title: 'Physical Lab Setup', desc: 'Complete lab with Cisco routers, switches, and multiple workstations' },
-        { src: 'projects/ospf9.jpg', title: 'Router Configuration', desc: 'Cisco router setup with OSPF routing and PAT configuration' },
-        { src: 'projects/ospf10.jpg', title: 'Network Verification', desc: 'Testing OSPF connectivity and routing table verification' },
-        { src: 'projects/ospf11.jpg', title: 'Router Configuration', desc: 'Cisco router setup with OSPF routing and PAT configuration' },
-        { src: 'projects/ospf12.jpg', title: 'Network Verification', desc: 'Testing OSPF connectivity and routing table verification' }
+        { src: 'projects/ospf3.jpg', title: 'Router Configuration', desc: 'Cisco router stack setup with OSPF routing and PAT configuration' },
+        { src: 'projects/ospf4.jpg', title: 'Network Verification - ipconfig', desc: 'Testing network connectivity with Windows ipconfig command' },
+        { src: 'projects/ospf5.jpg', title: 'Ping Test Results', desc: 'Successful ping tests verifying OSPF routing between networks' },
+        { src: 'projects/ospf6.jpg', title: 'Router Configuration Terminal', desc: 'Command-line interface showing OSPF and network configuration' },
+        { src: 'projects/ospf7.jpg', title: 'Network Verification - YouTube', desc: 'Testing internet connectivity through configured OSPF network' },
+        { src: 'projects/ospf8.jpg', title: 'Social Media Connectivity Test', desc: 'Verifying external network access through OSPF routing' },
+        { src: 'projects/ospf9.jpg', title: 'Facebook Connectivity Test', desc: 'Testing web application access through the network' },
+        { src: 'projects/ospf10.jpg', title: 'Web Access Verification', desc: 'Accessing external websites to verify NAT and routing configuration' },
+        { src: 'projects/ospf11.jpg', title: 'OSPF Routing Table', desc: 'Detailed routing table showing OSPF learned routes and network topology' },
+        { src: 'projects/ospf12.jpg', title: 'Final Network Verification', desc: 'Complete connectivity test with successful ping to all network segments' }
     ],
 
     // NEW PROJECT 2: Linux Server
@@ -387,13 +387,13 @@ const projectPhotos = {
 
     // NEW PROJECT 3: IP Surveillance
     ptzcam: [
-        { src: 'projects/ptz1.jpg', title: 'Wi-Fi NVR Setup', desc: 'White wireless router configured for NVR system connectivity' },
-        { src: 'projects/ptz2.jpg', title: 'PTZ Camera Configuration', desc: 'Pan-Tilt-Zoom Wi-Fi camera with night vision capabilities' },
-        { src: 'projects/ptz3.jpg', title: 'Camera Pairing', desc: 'Wireless camera pairing with NVR system' },
-        { src: 'projects/ptz4.jpg', title: 'Camera Installation', desc: 'Multiple IP cameras installed and configured' },
-        { src: 'projects/ptz5.jpg', title: 'PTZ Camera Configuration', desc: 'Pan-Tilt-Zoom Wi-Fi camera with night vision capabilities' },
-        { src: 'projects/ptz6.jpg', title: 'Camera Pairing', desc: 'Wireless camera pairing with NVR system' },
-        { src: 'projects/ptz7.jpg', title: 'Camera Installation', desc: 'Multiple IP cameras installed and configured' }
+        { src: 'projects/ptz1.jpg', title: 'Wi-Fi NVR Router Setup', desc: 'White wireless router configured for NVR system connectivity with active status LEDs' },
+        { src: 'projects/ptz2.jpg', title: 'PTZ Camera - Front View', desc: 'Pan-Tilt-Zoom Wi-Fi camera with infrared LEDs for night vision' },
+        { src: 'projects/ptz3.jpg', title: 'PTZ Camera - Side Profile', desc: 'Dual-head PTZ camera showing pan and tilt mechanisms' },
+        { src: 'projects/ptz4.jpg', title: 'Camera Installation Setup', desc: 'Multiple IP cameras being configured with network equipment' },
+        { src: 'projects/ptz5.jpg', title: 'Multi-Camera Configuration', desc: 'Team configuring multiple PTZ cameras with monitoring displays' },
+        { src: 'projects/ptz6.jpg', title: 'Camera Testing and Pairing', desc: 'Hands-on camera pairing and testing with network equipment' },
+        { src: 'projects/ptz7.jpg', title: 'NVR System Interface', desc: 'Camera management interface showing multiple camera feeds and controls' }
     ],
 
     // Wi-Fi NVR System
