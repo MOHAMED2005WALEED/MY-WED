@@ -361,7 +361,42 @@ const certificates = [
 
 // Project photos data - INCLUDING NEW PROJECTS
 const projectPhotos = {
-    // NEW PROJECT 1: Wi-Fi NVR System
+    // NEW PROJECT 1: OSPF Multi-Area Network
+    ospf: [
+        { src: 'projects/ospf1.jpg', title: 'OSPF Network Topology', desc: 'Multi-area OSPF network design with Area 0 backbone and multiple LAN segments' },
+        { src: 'projects/ospf2.jpg', title: 'Physical Lab Setup', desc: 'Complete lab with Cisco routers, switches, and multiple workstations' },
+        { src: 'projects/ospf3.jpg', title: 'Router Configuration', desc: 'Cisco router setup with OSPF routing and PAT configuration' },
+        { src: 'projects/ospf4.jpg', title: 'Network Verification', desc: 'Testing OSPF connectivity and routing table verification' },
+        { src: 'projects/ospf5.jpg', title: 'Physical Lab Setup', desc: 'Complete lab with Cisco routers, switches, and multiple workstations' },
+        { src: 'projects/ospf6.jpg', title: 'Router Configuration', desc: 'Cisco router setup with OSPF routing and PAT configuration' },
+        { src: 'projects/ospf7.jpg', title: 'Network Verification', desc: 'Testing OSPF connectivity and routing table verification' },
+        { src: 'projects/ospf8.jpg', title: 'Physical Lab Setup', desc: 'Complete lab with Cisco routers, switches, and multiple workstations' },
+        { src: 'projects/ospf9.jpg', title: 'Router Configuration', desc: 'Cisco router setup with OSPF routing and PAT configuration' },
+        { src: 'projects/ospf10.jpg', title: 'Network Verification', desc: 'Testing OSPF connectivity and routing table verification' },
+        { src: 'projects/ospf11.jpg', title: 'Router Configuration', desc: 'Cisco router setup with OSPF routing and PAT configuration' },
+        { src: 'projects/ospf12.jpg', title: 'Network Verification', desc: 'Testing OSPF connectivity and routing table verification' }
+    ],
+
+    // NEW PROJECT 2: Linux Server
+    linuxserver: [
+        { src: 'projects/linux1.jpg', title: 'Physical Server Setup', desc: 'HP ProLiant server hardware installation and initialization' },
+        { src: 'projects/linux2.jpg', title: 'Ubuntu Server Boot', desc: 'Ubuntu Server 18.04 LTS installation and initial configuration' },
+        { src: 'projects/linux3.jpg', title: 'Network Configuration', desc: 'Network setup and connectivity testing with secure SSH access' },
+        { src: 'projects/linux4.jpg', title: 'System Administration', desc: 'Command-line administration and system monitoring' }
+    ],
+
+    // NEW PROJECT 3: IP Surveillance
+    ipsurveillance: [
+        { src: 'projects/ipcam1.jpg', title: 'Wi-Fi NVR Setup', desc: 'White wireless router configured for NVR system connectivity' },
+        { src: 'projects/ipcam2.jpg', title: 'PTZ Camera Configuration', desc: 'Pan-Tilt-Zoom Wi-Fi camera with night vision capabilities' },
+        { src: 'projects/ipcam3.jpg', title: 'Camera Pairing', desc: 'Wireless camera pairing with NVR system' },
+        { src: 'projects/ipcam4.jpg', title: 'Camera Installation', desc: 'Multiple IP cameras installed and configured' },
+        { src: 'projects/ipcam5.jpg', title: 'PTZ Camera Configuration', desc: 'Pan-Tilt-Zoom Wi-Fi camera with night vision capabilities' },
+        { src: 'projects/ipcam6.jpg', title: 'Camera Pairing', desc: 'Wireless camera pairing with NVR system' },
+        { src: 'projects/ipcam7.jpg', title: 'Camera Installation', desc: 'Multiple IP cameras installed and configured' }
+    ],
+
+    // Wi-Fi NVR System
     nvr: [
         { src: 'projects/nvr1.jpg', title: 'Wi-Fi NVR Router Setup', desc: 'White wireless router with dual antennas for NVR system connectivity' },
         { src: 'projects/nvr2.jpg', title: 'Multi-Camera Monitoring', desc: 'Live surveillance feed showing multiple camera views on monitoring screen' },
@@ -370,7 +405,7 @@ const projectPhotos = {
         { src: 'projects/nvr5.jpg', title: 'Remote Access Setup', desc: 'Mobile and PC monitoring interface configuration' }
     ],
 
-    // NEW PROJECT 2: Access Point Configuration
+    // Access Point Configuration
     accesspoint: [
         { src: 'projects/ap1.jpg', title: 'Dual Workstation Lab', desc: 'Two workstations configured with Linksys access point for wireless testing' },
         { src: 'projects/ap2.jpg', title: 'Access Point Web Interface', desc: 'Linksys router configuration showing wireless settings and SSID setup' },
@@ -378,7 +413,7 @@ const projectPhotos = {
         { src: 'projects/ap4.jpg', title: 'Connectivity Verification', desc: 'Testing wireless connectivity with IP configuration and ping tests' }
     ],
 
-    // NEW PROJECT 3: CCNA Practical Assessment
+    // CCNA Practical Assessment
     ccnatest: [
         { src: 'projects/ccna1.jpg', title: 'Network Lab Overview', desc: 'Complete CCNA practical assessment lab with router, switches, and PCs' },
         { src: 'projects/ccna2.jpg', title: 'Packet Tracer Topology', desc: 'CCNAv7 SRWE Skills Assessment network diagram showing VLANs and routing' },
@@ -386,7 +421,7 @@ const projectPhotos = {
         { src: 'projects/ccna4.jpg', title: 'Router CLI Configuration', desc: 'Command-line interface showing VLAN and routing configuration verification' }
     ],
 
-    // NEW PROJECT 4: CCTV DVR Setup
+    // CCTV DVR Setup
     cctv: [
         { src: 'projects/dvr1.jpg', title: 'DVR System Configuration', desc: 'Two technicians setting up CCTV DVR system with monitor display' },
         { src: 'projects/dvr2.jpg', title: 'Camera Configuration', desc: 'Configuring camera connections and DVR settings in lab environment' },
@@ -394,7 +429,7 @@ const projectPhotos = {
         { src: 'projects/dvr4.jpg', title: 'Complete CCTV Lab', desc: 'Fully operational CCTV system with DVR and monitoring equipment' }
     ],
 
-    // NEW PROJECT 5: DHCP Relay Agent
+    // DHCP Relay Agent
     dhcprelay: [
         { src: 'projects/dhcp1.jpg', title: 'Multi-Router Network', desc: 'Complex network topology with multiple Cisco routers and switches' },
         { src: 'projects/dhcp2.jpg', title: 'Server Configuration Display', desc: 'Windows Server showing DHCP Active Leases and IPv4 configuration' },
