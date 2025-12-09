@@ -386,14 +386,14 @@ const projectPhotos = {
     ],
 
     // NEW PROJECT 3: IP Surveillance
-    ipsurveillance: [
-        { src: 'projects/ipcam1.jpg', title: 'Wi-Fi NVR Setup', desc: 'White wireless router configured for NVR system connectivity' },
-        { src: 'projects/ipcam2.jpg', title: 'PTZ Camera Configuration', desc: 'Pan-Tilt-Zoom Wi-Fi camera with night vision capabilities' },
-        { src: 'projects/ipcam3.jpg', title: 'Camera Pairing', desc: 'Wireless camera pairing with NVR system' },
-        { src: 'projects/ipcam4.jpg', title: 'Camera Installation', desc: 'Multiple IP cameras installed and configured' },
-        { src: 'projects/ipcam5.jpg', title: 'PTZ Camera Configuration', desc: 'Pan-Tilt-Zoom Wi-Fi camera with night vision capabilities' },
-        { src: 'projects/ipcam6.jpg', title: 'Camera Pairing', desc: 'Wireless camera pairing with NVR system' },
-        { src: 'projects/ipcam7.jpg', title: 'Camera Installation', desc: 'Multiple IP cameras installed and configured' }
+    ptzcam: [
+        { src: 'projects/ptz1.jpg', title: 'Wi-Fi NVR Setup', desc: 'White wireless router configured for NVR system connectivity' },
+        { src: 'projects/ptz2.jpg', title: 'PTZ Camera Configuration', desc: 'Pan-Tilt-Zoom Wi-Fi camera with night vision capabilities' },
+        { src: 'projects/ptz3.jpg', title: 'Camera Pairing', desc: 'Wireless camera pairing with NVR system' },
+        { src: 'projects/ptz4.jpg', title: 'Camera Installation', desc: 'Multiple IP cameras installed and configured' },
+        { src: 'projects/ptz5.jpg', title: 'PTZ Camera Configuration', desc: 'Pan-Tilt-Zoom Wi-Fi camera with night vision capabilities' },
+        { src: 'projects/ptz6.jpg', title: 'Camera Pairing', desc: 'Wireless camera pairing with NVR system' },
+        { src: 'projects/ptz7.jpg', title: 'Camera Installation', desc: 'Multiple IP cameras installed and configured' }
     ],
 
     // Wi-Fi NVR System
