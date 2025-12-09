@@ -381,8 +381,8 @@ const projectPhotos = {
     linuxserver: [
         { src: 'projects/linux1.jpg', title: 'Physical Server Setup', desc: 'HP ProLiant server hardware installation and initialization' },
         { src: 'projects/linux2.jpg', title: 'Ubuntu Server Boot', desc: 'Ubuntu Server 18.04 LTS installation and initial configuration' },
-        { src: 'projects/linux3.jpg', title: 'Network Configuration', desc: 'Network setup and connectivity testing with secure SSH access' },
-        { src: 'projects/linux4.jpg', title: 'System Administration', desc: 'Command-line administration and system monitoring' }
+        { src: 'projects/linux3.jpg', title: 'Network Configuration', desc: 'Network setup and SSH connectivity testing with system information display' },
+        { src: 'projects/linux4.jpg', title: 'System Administration', desc: 'Ubuntu Desktop settings interface showing network adapter configuration' }
     ],
 
     // NEW PROJECT 3: IP Surveillance
