@@ -233,22 +233,22 @@
             <div class="project-stats">
                 <div class="stat-card glass-card">
                     <i class="fas fa-project-diagram"></i>
-                    <h3>11</h3>
+                    <h3>14</h3>
                     <p>Total Projects</p>
                 </div>
                 <div class="stat-card glass-card">
                     <i class="fas fa-network-wired"></i>
-                    <h3>8</h3>
+                    <h3>10</h3>
                     <p>Networking</p>
                 </div>
                 <div class="stat-card glass-card">
                     <i class="fas fa-server"></i>
-                    <h3>1</h3>
+                    <h3>2</h3>
                     <p>Server</p>
                 </div>
                 <div class="stat-card glass-card">
                     <i class="fas fa-shield-alt"></i>
-                    <h3>1</h3>
+                    <h3>2</h3>
                     <p>Security</p>
                 </div>
             </div>
@@ -274,15 +274,98 @@
 
             <!-- Projects Grid -->
             <div class="projects-grid">
-                <!-- NEW PROJECT 1: Wi-Fi NVR System -->
+                <!-- NEW PROJECT 1: OSPF Multi-Area Network -->
                 <div class="project-item glass-card" data-category="networking">
                     <div class="project-badge">NEW</div>
                     <div class="project-images">
-                        <img src="projects/nvr1.jpg" alt="Wi-Fi NVR System" class="project-main-img" onerror="this.src='https://via.placeholder.com/400x250?text=Wi-Fi+NVR+System'">
+                        <img src="projects/ospf1.jpg" alt="OSPF Network" class="project-main-img" onerror="this.src='https://via.placeholder.com/400x250?text=OSPF+Multi-Area+Network'">
                         <div class="project-gallery">
-                            <img src="projects/nvr1.jpg" onclick="openProjectModal('nvr', 0)" onerror="this.src='https://via.placeholder.com/60x45?text=1'">
-                            <img src="projects/nvr2.jpg" onclick="openProjectModal('nvr', 1)" onerror="this.src='https://via.placeholder.com/60x45?text=2'">
-                            <img src="projects/nvr3.jpg" onclick="openProjectModal('nvr', 2)" onerror="this.src='https://via.placeholder.com/60x45?text=3'">
+                            <img src="projects/ospf1.jpg" onclick="openProjectModal('ospf', 0)" onerror="this.src='https://via.placeholder.com/60x45?text=1'">
+                            <img src="projects/ospf2.jpg" onclick="openProjectModal('ospf', 1)" onerror="this.src='https://via.placeholder.com/60x45?text=2'">
+                            <img src="projects/ospf3.jpg" onclick="openProjectModal('ospf', 2)" onerror="this.src='https://via.placeholder.com/60x45?text=3'">
+                            <span class="more-photos" onclick="openProjectModal('ospf', 0)">+8 more</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>OSPF Multi-Area Network Deployment 🔥✨</h3>
+                        <p>Designed and implemented a fully functional multi-area OSPF network using real Cisco routers and switches. The setup included multiple LAN segments, an ISP edge connection, and centralized Internet access.</p>
+                        <div class="project-tags">
+                            <span>OSPF Multi Area</span>
+                            <span>DHCP</span>
+                            <span>PAT</span>
+                            <span>Cisco Routing</span>
+                            <span>Area 0</span>
+                        </div>
+                        <button class="view-project-btn" onclick="openProjectModal('ospf', 0)">
+                            <i class="fas fa-images"></i> View All Photos
+                        </button>
+                    </div>
+                </div>
+
+                <!-- NEW PROJECT 2: Linux Server Configuration -->
+                <div class="project-item glass-card" data-category="server">
+                    <div class="project-badge">NEW</div>
+                    <div class="project-images">
+                        <img src="projects/linux1.jpg" alt="Linux Server" class="project-main-img" onerror="this.src='https://via.placeholder.com/400x250?text=Linux+Server+Configuration'">
+                        <div class="project-gallery">
+                            <img src="projects/linux1.jpg" onclick="openProjectModal('linuxserver', 0)" onerror="this.src='https://via.placeholder.com/60x45?text=1'">
+                            <img src="projects/linux2.jpg" onclick="openProjectModal('linuxserver', 1)" onerror="this.src='https://via.placeholder.com/60x45?text=2'">
+                            <img src="projects/linux3.jpg" onclick="openProjectModal('linuxserver', 2)" onerror="this.src='https://via.placeholder.com/60x45?text=3'">
+                            <span class="more-photos" onclick="openProjectModal('linuxserver', 0)">+1 more</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Full Linux Server Environment Configuration 🖥️🔥</h3>
+                        <p>Successfully completed a full hands-on setup of a Linux-based server, including hardware-level configuration, Ubuntu Server installation, network setup, secure SSH access, system monitoring, and command-line administration.</p>
+                        <div class="project-tags">
+                            <span>Ubuntu Server</span>
+                            <span>SSH Access</span>
+                            <span>System Admin</span>
+                            <span>CLI</span>
+                            <span>Network Config</span>
+                        </div>
+                        <button class="view-project-btn" onclick="openProjectModal('linuxserver', 0)">
+                            <i class="fas fa-images"></i> View All Photos
+                        </button>
+                    </div>
+                </div>
+
+                <!-- NEW PROJECT 3: IP Surveillance PTZ Cameras -->
+                <div class="project-item glass-card" data-category="security">
+                    <div class="project-badge">NEW</div>
+                    <div class="project-images">
+                        <img src="projects/ptz1.jpg" alt="PTZ Cameras" class="project-main-img" onerror="this.src='https://via.placeholder.com/400x250?text=IP+Surveillance+PTZ'">
+                        <div class="project-gallery">
+                            <img src="projects/ptz1.jpg" onclick="openProjectModal('ptzcam', 0)" onerror="this.src='https://via.placeholder.com/60x45?text=1'">
+                            <img src="projects/ptz2.jpg" onclick="openProjectModal('ptzcam', 1)" onerror="this.src='https://via.placeholder.com/60x45?text=2'">
+                            <img src="projects/ptz3.jpg" onclick="openProjectModal('ptzcam', 2)" onerror="this.src='https://via.placeholder.com/60x45?text=3'">
+                            <span class="more-photos" onclick="openProjectModal('ptzcam', 0)">+3 more</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>IP Surveillance & PTZ Camera System 📹</h3>
+                        <p>Successfully completed hands-on CCNA practical session configuring PTZ Wi-Fi cameras to a Wi-Fi NVR with seamless network connectivity, wireless networking proficiency, IP addressing, and integrated mobile phone access for remote monitoring and PTZ control.</p>
+                        <div class="project-tags">
+                            <span>PTZ Camera</span>
+                            <span>Wi-Fi NVR</span>
+                            <span>IP Surveillance</span>
+                            <span>Mobile Access</span>
+                            <span>CCNA</span>
+                        </div>
+                        <button class="view-project-btn" onclick="openProjectModal('ptzcam', 0)">
+                            <i class="fas fa-images"></i> View All Photos
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Existing Wi-Fi NVR Project -->
+                <div class="project-item glass-card" data-category="networking">
+                    <div class="project-images">
+                        <img src="projects/nvr1.jpg" alt="Wi-Fi NVR System" class="project-main-img">
+                        <div class="project-gallery">
+                            <img src="projects/nvr1.jpg" onclick="openProjectModal('nvr', 0)">
+                            <img src="projects/nvr2.jpg" onclick="openProjectModal('nvr', 1)">
+                            <img src="projects/nvr3.jpg" onclick="openProjectModal('nvr', 2)">
                             <span class="more-photos" onclick="openProjectModal('nvr', 0)">+6 more</span>
                         </div>
                     </div>
@@ -301,15 +384,14 @@
                     </div>
                 </div>
 
-                <!-- NEW PROJECT 2: Access Point Configuration -->
+                <!-- Access Point Configuration -->
                 <div class="project-item glass-card" data-category="networking">
-                    <div class="project-badge">NEW</div>
                     <div class="project-images">
-                        <img src="projects/ap1.jpg" alt="Access Point Config" class="project-main-img" onerror="this.src='https://via.placeholder.com/400x250?text=Access+Point+Configuration'">
+                        <img src="projects/ap1.jpg" alt="Access Point Config" class="project-main-img">
                         <div class="project-gallery">
-                            <img src="projects/ap1.jpg" onclick="openProjectModal('accesspoint', 0)" onerror="this.src='https://via.placeholder.com/60x45?text=1'">
-                            <img src="projects/ap2.jpg" onclick="openProjectModal('accesspoint', 1)" onerror="this.src='https://via.placeholder.com/60x45?text=2'">
-                            <img src="projects/ap3.jpg" onclick="openProjectModal('accesspoint', 2)" onerror="this.src='https://via.placeholder.com/60x45?text=3'">
+                            <img src="projects/ap1.jpg" onclick="openProjectModal('accesspoint', 0)">
+                            <img src="projects/ap2.jpg" onclick="openProjectModal('accesspoint', 1)">
+                            <img src="projects/ap3.jpg" onclick="openProjectModal('accesspoint', 2)">
                             <span class="more-photos" onclick="openProjectModal('accesspoint', 0)">+1 more</span>
                         </div>
                     </div>
@@ -328,15 +410,14 @@
                     </div>
                 </div>
 
-                <!-- NEW PROJECT 3: CCNA Practical Assessment -->
+                <!-- CCNA Practical Assessment -->
                 <div class="project-item glass-card" data-category="networking">
-                    <div class="project-badge">NEW</div>
                     <div class="project-images">
-                        <img src="projects/ccna1.jpg" alt="CCNA Assessment" class="project-main-img" onerror="this.src='https://via.placeholder.com/400x250?text=CCNA+Assessment'">
+                        <img src="projects/ccna1.jpg" alt="CCNA Assessment" class="project-main-img">
                         <div class="project-gallery">
-                            <img src="projects/ccna1.jpg" onclick="openProjectModal('ccnatest', 0)" onerror="this.src='https://via.placeholder.com/60x45?text=1'">
-                            <img src="projects/ccna2.jpg" onclick="openProjectModal('ccnatest', 1)" onerror="this.src='https://via.placeholder.com/60x45?text=2'">
-                            <img src="projects/ccna3.jpg" onclick="openProjectModal('ccnatest', 2)" onerror="this.src='https://via.placeholder.com/60x45?text=3'">
+                            <img src="projects/ccna1.jpg" onclick="openProjectModal('ccnatest', 0)">
+                            <img src="projects/ccna2.jpg" onclick="openProjectModal('ccnatest', 1)">
+                            <img src="projects/ccna3.jpg" onclick="openProjectModal('ccnatest', 2)">
                             <span class="more-photos" onclick="openProjectModal('ccnatest', 0)">+1 more</span>
                         </div>
                     </div>
@@ -356,15 +437,14 @@
                     </div>
                 </div>
 
-                <!-- NEW PROJECT 4: CCTV DVR Setup -->
+                <!-- CCTV DVR Setup -->
                 <div class="project-item glass-card" data-category="security">
-                    <div class="project-badge">NEW</div>
                     <div class="project-images">
-                        <img src="projects/dvr1.jpg" alt="CCTV DVR" class="project-main-img" onerror="this.src='https://via.placeholder.com/400x250?text=CCTV+DVR+Setup'">
+                        <img src="projects/dvr1.jpg" alt="CCTV DVR" class="project-main-img">
                         <div class="project-gallery">
-                            <img src="projects/dvr1.jpg" onclick="openProjectModal('cctv', 0)" onerror="this.src='https://via.placeholder.com/60x45?text=1'">
-                            <img src="projects/dvr2.jpg" onclick="openProjectModal('cctv', 1)" onerror="this.src='https://via.placeholder.com/60x45?text=2'">
-                            <img src="projects/dvr3.jpg" onclick="openProjectModal('cctv', 2)" onerror="this.src='https://via.placeholder.com/60x45?text=3'">
+                            <img src="projects/dvr1.jpg" onclick="openProjectModal('cctv', 0)">
+                            <img src="projects/dvr2.jpg" onclick="openProjectModal('cctv', 1)">
+                            <img src="projects/dvr3.jpg" onclick="openProjectModal('cctv', 2)">
                             <span class="more-photos" onclick="openProjectModal('cctv', 0)">+2 more</span>
                         </div>
                     </div>
@@ -383,15 +463,14 @@
                     </div>
                 </div>
 
-                <!-- NEW PROJECT 5: DHCP Relay Agent -->
+                <!-- DHCP Relay Agent -->
                 <div class="project-item glass-card" data-category="networking">
-                    <div class="project-badge">NEW</div>
                     <div class="project-images">
-                        <img src="projects/dhcp1.jpg" alt="DHCP Relay" class="project-main-img" onerror="this.src='https://via.placeholder.com/400x250?text=DHCP+Relay+Agent'">
+                        <img src="projects/dhcp1.jpg" alt="DHCP Relay" class="project-main-img">
                         <div class="project-gallery">
-                            <img src="projects/dhcp1.jpg" onclick="openProjectModal('dhcprelay', 0)" onerror="this.src='https://via.placeholder.com/60x45?text=1'">
-                            <img src="projects/dhcp2.jpg" onclick="openProjectModal('dhcprelay', 1)" onerror="this.src='https://via.placeholder.com/60x45?text=2'">
-                            <img src="projects/dhcp3.jpg" onclick="openProjectModal('dhcprelay', 2)" onerror="this.src='https://via.placeholder.com/60x45?text=3'">
+                            <img src="projects/dhcp1.jpg" onclick="openProjectModal('dhcprelay', 0)">
+                            <img src="projects/dhcp2.jpg" onclick="openProjectModal('dhcprelay', 1)">
+                            <img src="projects/dhcp3.jpg" onclick="openProjectModal('dhcprelay', 2)">
                             <span class="more-photos" onclick="openProjectModal('dhcprelay', 0)">+1 more</span>
                         </div>
                     </div>
@@ -738,7 +817,7 @@
     <!-- Footer -->
     <footer class="modern-footer">
         <div class="footer-content">
-            <p>&copy; 2025 Mohamed Waleed. Crafted with <i class="fas fa-heart"></i> and Code</p>
+            <p>&copy; 2021 - 2025 Mohamed Waleed. Crafted with <i class="fas fa-heart"></i> and Code</p>
             <div class="footer-links">
                 <a href="#about">About</a>
                 <a href="#skills">Skills</a>
