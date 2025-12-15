@@ -304,6 +304,60 @@ const certificates = [
         pdf: "uploads/CCNA-_Switching-_Routing-_and_Wireless_Essentials_certificate_wajiwaleed-gmail-com_fd3798d0-18e8-495a-ab4e-f122f8368a46.pdf"
     },
     {
+        title: "IT Essentials",
+        issuer: "Cisco",
+        image: "uploads/IT_Essentials_certificate_wajiwaleed-gmail-com_e5b99593-e547-42f5-99e4-b0c5be1a3db8.png",
+        pdf: "uploads/IT_Essentials_certificate_wajiwaleed-gmail-com_e5b99593-e547-42f5-99e4-b0c5be1a3db8.pdf"
+    },
+    {
+        title: "Streamlining Your Work with Microsoft Copilot",
+        issuer: "Cisco",
+        image: "uploads/Junior_Cybersecurity_Analyst_Career_Path_certificate_wajiwaleed-gmail-com_0774fca6-50a4-4bf8-b2ab-5d6c7c8eb245.png",
+        pdf: "uploads/Junior_Cybersecurity_Analyst_Career_Path_certificate_wajiwaleed-gmail-com_0774fca6-50a4-4bf8-b2ab-5d6c7c8eb245.pdf"
+    },
+    {
+        title: "Introduction to Artificial Intelligence (2023)",
+        issuer: "Cisco",
+        image: "uploads/Linux_Essentials_certificate_wajiwaleed-gmail-com_7bad24e4-4bc5-4d14-af95-c50bfa1d3449.png",
+        pdf: "uploads/Linux_Essentials_certificate_wajiwaleed-gmail-com_7bad24e4-4bc5-4d14-af95-c50bfa1d3449.pdf"
+    },
+    {
+        title: "Career Essentials in Generative AI",
+        issuer: "Cisco",
+        image: "uploads/Cyber_Threat_Management_certificate_wajiwaleed-gmail-com_55510237-65a1-4f11-a4cf-2497fababaf4.png",
+        pdf: "uploads/Cyber_Threat_Management_certificate_wajiwaleed-gmail-com_55510237-65a1-4f11-a4cf-2497fababaf4.pdf"
+    },
+    {
+        title: "Getting Started in Cybersecurity 3.0",
+        issuer: "Fortinet",
+        image: "uploads/Course_Completion_Certificate.png",
+        pdf: "uploads/Course_Completion_Certificate.pdf"
+    },
+    {
+        title: "Introduction to the Threat Landscape 3.0",
+        issuer: "Fortinet",
+        image: "uploads/Course_Completion_Certificate (1).png",
+        pdf: "uploads/Course_Completion_Certificate (1).pdf"
+    },
+    {
+        title: "mastercard Cybersecurity Completion Certificate",
+        issuer: "Forage",
+        image: "uploads/vcKAB5yYAgvemepGQ_mfxGwGDp6WkQmtmTf_693fb119f5b6d946ccdb7dac_1765787402596_completion_certificate.png",
+        pdf: "uploads/vcKAB5yYAgvemepGQ_mfxGwGDp6WkQmtmTf_693fb119f5b6d946ccdb7dac_1765787402596_completion_certificate.pdf"
+    },
+    {
+        title: "Goodwin Life Sciences Litigation Completion Certificate",
+        issuer: "Forage",
+        image: "uploads/uZqJsKaMTf2dCPEZo_6bkYm7kdJSEgiSubN_693fb119f5b6d946ccdb7dac_1765791447944_completion_certificate.png",
+        pdf: "uploads/uZqJsKaMTf2dCPEZo_6bkYm7kdJSEgiSubN_693fb119f5b6d946ccdb7dac_1765791447944_completion_certificate.pdf"
+    },
+    {
+        title: "Goodwin Private Equity M&A Completion Certificate",
+        issuer: "Forage",
+        image: "uploads/yMFuamWJpSWnwq9HZ_6bkYm7kdJSEgiSubN_693fb119f5b6d946ccdb7dac_1765790198927_completion_certificate.png",
+        pdf: "uploads/yMFuamWJpSWnwq9HZ_6bkYm7kdJSEgiSubN_693fb119f5b6d946ccdb7dac_1765790198927_completion_certificate.pdf"
+    },
+    {
         title: "Diploma in English",
         issuer: "Sri Lanka English Language Graduates' Association (SLEGA)",
         image: "uploads/Diploma in English.png",
