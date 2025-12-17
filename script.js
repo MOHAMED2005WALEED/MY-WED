@@ -310,19 +310,19 @@ const certificates = [
         pdf: "uploads/IT_Essentials_certificate_wajiwaleed-gmail-com_e5b99593-e547-42f5-99e4-b0c5be1a3db8.pdf"
     },
     {
-        title: "Streamlining Your Work with Microsoft Copilot",
+        title: "Cybersecurity Essentials",
         issuer: "Cisco",
         image: "uploads/Junior_Cybersecurity_Analyst_Career_Path_certificate_wajiwaleed-gmail-com_0774fca6-50a4-4bf8-b2ab-5d6c7c8eb245.png",
         pdf: "uploads/Junior_Cybersecurity_Analyst_Career_Path_certificate_wajiwaleed-gmail-com_0774fca6-50a4-4bf8-b2ab-5d6c7c8eb245.pdf"
     },
     {
-        title: "Introduction to Artificial Intelligence (2023)",
+        title: "Linux Essentials",
         issuer: "Cisco",
         image: "uploads/Linux_Essentials_certificate_wajiwaleed-gmail-com_7bad24e4-4bc5-4d14-af95-c50bfa1d3449.png",
         pdf: "uploads/Linux_Essentials_certificate_wajiwaleed-gmail-com_7bad24e4-4bc5-4d14-af95-c50bfa1d3449.pdf"
     },
     {
-        title: "Career Essentials in Generative AI",
+        title: "Cyber Threat Management",
         issuer: "Cisco",
         image: "uploads/Cyber_Threat_Management_certificate_wajiwaleed-gmail-com_55510237-65a1-4f11-a4cf-2497fababaf4.png",
         pdf: "uploads/Cyber_Threat_Management_certificate_wajiwaleed-gmail-com_55510237-65a1-4f11-a4cf-2497fababaf4.pdf"
