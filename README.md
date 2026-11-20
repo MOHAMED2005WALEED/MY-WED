@@ -14,6 +14,10 @@ python -m http.server 8000
 
 Open <http://localhost:8000/MY-WED/> to check the same URL prefix used by GitHub Pages.
 
+## Styling
+
+The responsive layouts use Tailwind CSS 2.2.19 utilities from a version-pinned, prebuilt stylesheet. Component colors, backgrounds, and animations are in `styles.css`. Start with the narrow layout in `index.html` and add `sm:`, `md:`, and `lg:` utilities for wider screens.
+
 ## Update content
 
 - Edit the profile, skills, and project cards in `index.html`.

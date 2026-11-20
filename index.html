@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Mohamed Waleed | Finance & Technology Portfolio</title>
+    <title>Mohamed Waleed | Finance &amp; Technology Portfolio</title>
     <meta name="description" content="Financial Management undergraduate with hands-on experience in networking, server administration, and web development.">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=2">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="styles.css?v=3">
     <link rel="icon" href="DSC6284_01.jpg">
 </head>
 <body>
@@ -19,36 +20,36 @@
     </div>
 
     <!-- Floating Navigation -->
-    <nav class="floating-nav" aria-label="Main navigation">
-        <a href="#about" class="nav-link"><i class="fas fa-user"></i> About</a>
-        <a href="#skills" class="nav-link"><i class="fas fa-code"></i> Skills</a>
-        <a href="#projects" class="nav-link"><i class="fas fa-project-diagram"></i> Projects</a>
-        <a href="#certificates" class="nav-link"><i class="fas fa-certificate"></i> Certificates</a>
-        <a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
+    <nav class="floating-nav sticky top-2 z-50 grid max-w-2xl grid-cols-5 gap-0.5 mx-2 my-2 px-1 py-1 sm:mx-auto sm:gap-1 sm:px-2" aria-label="Main navigation">
+        <a href="#about" class="nav-link flex min-w-0 flex-col items-center justify-center gap-1 px-0.5 py-2 sm:flex-row sm:gap-2"><i class="fas fa-user" aria-hidden="true"></i><span>About</span></a>
+        <a href="#skills" class="nav-link flex min-w-0 flex-col items-center justify-center gap-1 px-0.5 py-2 sm:flex-row sm:gap-2"><i class="fas fa-code" aria-hidden="true"></i><span>Skills</span></a>
+        <a href="#projects" class="nav-link flex min-w-0 flex-col items-center justify-center gap-1 px-0.5 py-2 sm:flex-row sm:gap-2"><i class="fas fa-project-diagram" aria-hidden="true"></i><span>Projects</span></a>
+        <a href="#certificates" class="nav-link flex min-w-0 flex-col items-center justify-center gap-1 px-0.5 py-2 sm:flex-row sm:gap-2"><i class="fas fa-certificate" aria-hidden="true"></i><span>Certificates</span></a>
+        <a href="#contact" class="nav-link flex min-w-0 flex-col items-center justify-center gap-1 px-0.5 py-2 sm:flex-row sm:gap-2"><i class="fas fa-envelope" aria-hidden="true"></i><span>Contact</span></a>
     </nav>
 
     <!-- Header Section with Profile Picture -->
-    <header class="modern-header">
-        <div class="container">
-            <div class="header-content">
+    <header class="px-4 pt-12 pb-14 sm:px-6 sm:pt-16 lg:pt-24 lg:pb-20">
+        <div class="mx-auto w-full max-w-6xl">
+            <div class="mx-auto flex max-w-4xl flex-col items-center gap-8 text-center lg:flex-row lg:gap-14 lg:text-left">
                 <!-- Profile Picture with Animation -->
-                <div class="profile-wrapper">
+                <div class="relative flex-shrink-0">
                     <div class="profile-ring"></div>
-                    <div class="profile-img-container">
-                        <img src="DSC6284_01.jpg" alt="Mohamed Waleed" class="profile-img">
+                    <div class="profile-img-container relative w-36 h-36 sm:w-44 sm:h-44 lg:w-56 lg:h-56">
+                        <img src="DSC6284_01.jpg" alt="Mohamed Waleed" class="profile-img" width="224" height="224">
                     </div>
                 </div>
                 
-                <div class="header-text">
-                    <h1 class="hero-name">Mohamed Waleed</h1>
-                    <p class="hero-role">Financial Management Undergraduate</p>
-                    <p class="subtitle">Sabaragamuwa University of Sri Lanka · Networking, systems and web development</p>
+                <div class="w-full min-w-0 max-w-xl">
+                    <h1 class="hero-name mb-2 text-3xl font-extrabold leading-tight sm:text-4xl lg:text-5xl">Mohamed Waleed</h1>
+                    <p class="hero-role mb-3 text-lg font-semibold leading-snug sm:text-xl lg:text-2xl">Financial Management Undergraduate</p>
+                    <p class="subtitle mb-6 text-base sm:text-lg">Sabaragamuwa University of Sri Lanka · Networking, systems and web development</p>
                     
-                    <div class="header-buttons">
-                        <a href="uploads/Waleed_CV.pdf" target="_blank" rel="noopener noreferrer" class="modern-btn primary-btn">
+                    <div class="mx-auto grid w-full max-w-xs grid-cols-1 gap-3 sm:max-w-md sm:grid-cols-2 lg:mx-0">
+                        <a href="uploads/Waleed_CV.pdf" target="_blank" rel="noopener noreferrer" class="modern-btn primary-btn justify-center">
                             <i class="fas fa-download"></i> Download CV
                         </a>
-                        <a href="#projects" class="modern-btn secondary-btn">
+                        <a href="#projects" class="modern-btn secondary-btn justify-center">
                             <i class="fas fa-project-diagram"></i> View Projects
                         </a>
                     </div>
@@ -59,15 +60,15 @@
 
     <main>
     <!-- About Section -->
-    <section id="about" class="modern-section fade-in">
-        <div class="container">
+    <section id="about" class="modern-section fade-in px-3 py-12 sm:px-6 sm:py-16 lg:py-20">
+        <div class="mx-auto w-full max-w-6xl">
             <div class="section-header">
 
-                <h2 class="section-title">About Me</h2>
+                <h2 class="section-title text-3xl sm:text-4xl lg:text-5xl">About Me</h2>
                 <div class="title-underline"></div>
             </div>
             
-            <div class="about-grid">
+            <div class="mb-8 grid grid-cols-1 gap-4 md:grid-cols-3 lg:gap-6">
                 <div class="about-card glass-card">
                     <div class="card-icon">
                         <i class="fas fa-laptop-code"></i>
@@ -113,15 +114,15 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="modern-section fade-in">
-        <div class="container">
+    <section id="skills" class="modern-section fade-in px-3 py-12 sm:px-6 sm:py-16 lg:py-20">
+        <div class="mx-auto w-full max-w-6xl">
             <div class="section-header">
 
-                <h2 class="section-title">Skills & Coursework</h2>
+                <h2 class="section-title text-3xl sm:text-4xl lg:text-5xl">Skills & Coursework</h2>
                 <div class="title-underline"></div>
             </div>
             
-            <div class="skills-container">
+            <div class="mb-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6">
                 <div class="skill-category glass-card">
                     <div class="category-header">
                         <i class="fas fa-chart-line category-icon" aria-hidden="true"></i>
@@ -209,7 +210,7 @@
                 <p>Check out my verified digital badges and certifications on Credly</p>
                 <a href="https://www.credly.com/users/mohamed-wajihadeen-mohamed-waleed" 
                    target="_blank" rel="noopener noreferrer"
-                   class="modern-btn primary-btn">
+                   class="modern-btn primary-btn justify-center">
                     <i class="fas fa-external-link-alt"></i> Visit Credly Profile
                 </a>
             </div>
@@ -217,37 +218,37 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="modern-section fade-in">
-        <div class="container">
+    <section id="projects" class="modern-section fade-in px-3 py-12 sm:px-6 sm:py-16 lg:py-20">
+        <div class="mx-auto w-full max-w-6xl">
             <div class="section-header">
 
-                <h2 class="section-title">My Projects</h2>
+                <h2 class="section-title text-3xl sm:text-4xl lg:text-5xl">My Projects</h2>
                 <div class="title-underline"></div>
             </div>
 
             <!-- Project Stats -->
-            <div class="project-stats">
-                <div class="stat-card glass-card">
+            <div class="mb-6 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
+                <div class="stat-card glass-card min-w-0">
                     <i class="fas fa-project-diagram"></i>
                     <h3 data-count="all">14</h3>
                     <p>Total Projects</p>
                 </div>
-                <div class="stat-card glass-card">
+                <div class="stat-card glass-card min-w-0">
                     <i class="fas fa-network-wired"></i>
                     <h3 data-count="networking">9</h3>
                     <p>Networking</p>
                 </div>
-                <div class="stat-card glass-card">
+                <div class="stat-card glass-card min-w-0">
                     <i class="fas fa-server"></i>
                     <h3 data-count="server">2</h3>
                     <p>Server</p>
                 </div>
-                <div class="stat-card glass-card">
+                <div class="stat-card glass-card min-w-0">
                     <i class="fas fa-shield-alt"></i>
                     <h3 data-count="security">2</h3>
                     <p>Security</p>
                 </div>
-                <div class="stat-card glass-card">
+                <div class="stat-card glass-card min-w-0">
                     <i class="fas fa-tools"></i>
                     <h3 data-count="hardware">1</h3>
                     <p>Hardware</p>
@@ -255,7 +256,7 @@
             </div>
 
             <!-- Project Filter Buttons -->
-            <div class="projects-filter">
+            <div class="mb-8 flex flex-wrap justify-center gap-2 sm:gap-3">
                 <button class="filter-btn active" data-filter="all" aria-pressed="true">
                     <i class="fas fa-th"></i> All Projects
                 </button>
@@ -274,12 +275,12 @@
             </div>
 
             <!-- Projects Grid -->
-            <div class="projects-grid">
+            <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 lg:gap-6">
                 <!-- NEW PROJECT 1: OSPF Multi-Area Network -->
-                <div class="project-item glass-card featured-project" data-category="networking">
+                <div class="project-item glass-card featured-project min-w-0" data-category="networking">
                     <div class="project-images">
                         <img src="projects/ospf1.jpg" alt="OSPF Network" class="project-main-img" loading="lazy" decoding="async">
-                        <div class="project-gallery">
+                        <div class="project-gallery grid grid-cols-4 gap-1.5 sm:gap-2">
                             <button type="button" class="project-thumb" onclick="openProjectModal('ospf', 0, this)" aria-label="Open photo 1"><img src="projects/ospf1.jpg" alt="" loading="lazy" decoding="async"></button>
                             <button type="button" class="project-thumb" onclick="openProjectModal('ospf', 1, this)" aria-label="Open photo 2"><img src="projects/ospf2.jpg" alt="" loading="lazy" decoding="async"></button>
                             <button type="button" class="project-thumb" onclick="openProjectModal('ospf', 2, this)" aria-label="Open photo 3"><img src="projects/ospf3.jpg" alt="" loading="lazy" decoding="async"></button>
@@ -305,10 +306,10 @@
                 </div>
 
                 <!-- NEW PROJECT 2: Linux Server Configuration -->
-                <div class="project-item glass-card featured-project" data-category="server">
+                <div class="project-item glass-card featured-project min-w-0" data-category="server">
                     <div class="project-images">
                         <img src="projects/linux1.jpg" alt="Linux Server" class="project-main-img" loading="lazy" decoding="async">
-                        <div class="project-gallery">
+                        <div class="project-gallery grid grid-cols-4 gap-1.5 sm:gap-2">
                             <button type="button" class="project-thumb" onclick="openProjectModal('linuxserver', 0, this)" aria-label="Open photo 1"><img src="projects/linux1.jpg" alt="" loading="lazy" decoding="async"></button>
                             <button type="button" class="project-thumb" onclick="openProjectModal('linuxserver', 1, this)" aria-label="Open photo 2"><img src="projects/linux2.jpg" alt="" loading="lazy" decoding="async"></button>
                             <button type="button" class="project-thumb" onclick="openProjectModal('linuxserver', 2, this)" aria-label="Open photo 3"><img src="projects/linux3.jpg" alt="" loading="lazy" decoding="async"></button>
@@ -334,10 +335,10 @@
                 </div>
 
                 <!-- Project: ASD Lab -->
-                <div class="project-item glass-card featured-project" data-category="networking">
+                <div class="project-item glass-card featured-project min-w-0" data-category="networking">
                     <div class="project-images">
                         <img src="projects/asd1.jpg" alt="ASD Lab" class="project-main-img" loading="lazy" decoding="async">
-                        <div class="project-gallery">
+                        <div class="project-gallery grid grid-cols-4 gap-1.5 sm:gap-2">
                             <button type="button" class="project-thumb" onclick="openProjectModal('asd', 0, this)" aria-label="Open photo 1"><img src="projects/asd1.jpg" alt="" loading="lazy" decoding="async"></button>
                             <button type="button" class="project-thumb" onclick="openProjectModal('asd', 1, this)" aria-label="Open photo 2"><img src="projects/asd2.jpg" alt="" loading="lazy" decoding="async"></button>
                             <button type="button" class="project-thumb" onclick="openProjectModal('asd', 2, this)" aria-label="Open photo 3"><img src="projects/asd3.jpg" alt="" loading="lazy" decoding="async"></button>
@@ -362,10 +363,10 @@
                 </div>
 
                 <!-- NEW PROJECT 3: IP Surveillance PTZ Cameras -->
-                <div class="project-item glass-card" data-category="security">
+                <div class="project-item glass-card min-w-0" data-category="security">
                     <div class="project-images">
                         <img src="projects/ptz1.jpg" alt="PTZ Cameras" class="project-main-img" loading="lazy" decoding="async">
-                        <div class="project-gallery">
+                        <div class="project-gallery grid grid-cols-4 gap-1.5 sm:gap-2">
                             <button type="button" class="project-thumb" onclick="openProjectModal('ptzcam', 0, this)" aria-label="Open photo 1"><img src="projects/ptz1.jpg" alt="" loading="lazy" decoding="async"></button>
                             <button type="button" class="project-thumb" onclick="openProjectModal('ptzcam', 1, this)" aria-label="Open photo 2"><img src="projects/ptz2.jpg" alt="" loading="lazy" decoding="async"></button>
                             <button type="button" class="project-thumb" onclick="openProjectModal('ptzcam', 2, this)" aria-label="Open photo 3"><img src="projects/ptz3.jpg" alt="" loading="lazy" decoding="async"></button>
@@ -389,10 +390,10 @@
                 </div>
 
                 <!-- Existing Wi-Fi NVR Project -->
-                <div class="project-item glass-card" data-category="networking">
+                <div class="project-item glass-card min-w-0" data-category="networking">
                     <div class="project-images">
                         <img src="projects/nvr1.jpg" alt="Wi-Fi NVR System" class="project-main-img" loading="lazy" decoding="async">
-                        <div class="project-gallery">
+                        <div class="project-gallery grid grid-cols-4 gap-1.5 sm:gap-2">
                             <button type="button" class="project-thumb" onclick="openProjectModal('nvr', 0, this)" aria-label="Open photo 1"><img src="projects/nvr1.jpg" alt="" loading="lazy" decoding="async"></button>
                             <button type="button" class="project-thumb" onclick="openProjectModal('nvr', 1, this)" aria-label="Open photo 2"><img src="projects/nvr2.jpg" alt="" loading="lazy" decoding="async"></button>
                             <button type="button" class="project-thumb" onclick="openProjectModal('nvr', 2, this)" aria-label="Open photo 3"><img src="projects/nvr3.jpg" alt="" loading="lazy" decoding="async"></button>
@@ -415,10 +416,10 @@
                 </div>
 
                 <!-- Access Point Configuration -->
-                <div class="project-item glass-card" data-category="networking">
+                <div class="project-item glass-card min-w-0" data-category="networking">
                     <div class="project-images">
                         <img src="projects/ap1.jpg" alt="Access Point Config" class="project-main-img" loading="lazy" decoding="async">
-                        <div class="project-gallery">
+                        <div class="project-gallery grid grid-cols-4 gap-1.5 sm:gap-2">
                             <button type="button" class="project-thumb" onclick="openProjectModal('accesspoint', 0, this)" aria-label="Open photo 1"><img src="projects/ap1.jpg" alt="" loading="lazy" decoding="async"></button>
                             <button type="button" class="project-thumb" onclick="openProjectModal('accesspoint', 1, this)" aria-label="Open photo 2"><img src="projects/ap2.jpg" alt="" loading="lazy" decoding="async"></button>
                             <button type="button" class="project-thumb" onclick="openProjectModal('accesspoint', 2, this)" aria-label="Open photo 3"><img src="projects/ap3.jpg" alt="" loading="lazy" decoding="async"></button>
@@ -441,10 +442,10 @@
                 </div>
 
                 <!-- CCNA Practical Assessment -->
-                <div class="project-item glass-card" data-category="networking">
+                <div class="project-item glass-card min-w-0" data-category="networking">
                     <div class="project-images">
                         <img src="projects/ccna1.jpg" alt="CCNA Assessment" class="project-main-img" loading="lazy" decoding="async">
-                        <div class="project-gallery">
+                        <div class="project-gallery grid grid-cols-4 gap-1.5 sm:gap-2">
                             <button type="button" class="project-thumb" onclick="openProjectModal('ccnatest', 0, this)" aria-label="Open photo 1"><img src="projects/ccna1.jpg" alt="" loading="lazy" decoding="async"></button>
                             <button type="button" class="project-thumb" onclick="openProjectModal('ccnatest', 1, this)" aria-label="Open photo 2"><img src="projects/ccna2.jpg" alt="" loading="lazy" decoding="async"></button>
                             <button type="button" class="project-thumb" onclick="openProjectModal('ccnatest', 2, this)" aria-label="Open photo 3"><img src="projects/ccna3.jpg" alt="" loading="lazy" decoding="async"></button>
@@ -468,10 +469,10 @@
                 </div>
 
                 <!-- CCTV DVR Setup -->
-                <div class="project-item glass-card" data-category="security">
+                <div class="project-item glass-card min-w-0" data-category="security">
                     <div class="project-images">
                         <img src="projects/dvr1.jpg" alt="CCTV DVR" class="project-main-img" loading="lazy" decoding="async">
-                        <div class="project-gallery">
+                        <div class="project-gallery grid grid-cols-4 gap-1.5 sm:gap-2">
                             <button type="button" class="project-thumb" onclick="openProjectModal('cctv', 0, this)" aria-label="Open photo 1"><img src="projects/dvr1.jpg" alt="" loading="lazy" decoding="async"></button>
                             <button type="button" class="project-thumb" onclick="openProjectModal('cctv', 1, this)" aria-label="Open photo 2"><img src="projects/dvr2.jpg" alt="" loading="lazy" decoding="async"></button>
                             <button type="button" class="project-thumb" onclick="openProjectModal('cctv', 2, this)" aria-label="Open photo 3"><img src="projects/dvr3.jpg" alt="" loading="lazy" decoding="async"></button>
@@ -494,10 +495,10 @@
                 </div>
 
                 <!-- DHCP Relay Agent -->
-                <div class="project-item glass-card" data-category="networking">
+                <div class="project-item glass-card min-w-0" data-category="networking">
                     <div class="project-images">
                         <img src="projects/dhcp1.jpg" alt="DHCP Relay" class="project-main-img" loading="lazy" decoding="async">
-                        <div class="project-gallery">
+                        <div class="project-gallery grid grid-cols-4 gap-1.5 sm:gap-2">
                             <button type="button" class="project-thumb" onclick="openProjectModal('dhcprelay', 0, this)" aria-label="Open photo 1"><img src="projects/dhcp1.jpg" alt="" loading="lazy" decoding="async"></button>
                             <button type="button" class="project-thumb" onclick="openProjectModal('dhcprelay', 1, this)" aria-label="Open photo 2"><img src="projects/dhcp2.jpg" alt="" loading="lazy" decoding="async"></button>
                             <button type="button" class="project-thumb" onclick="openProjectModal('dhcprelay', 2, this)" aria-label="Open photo 3"><img src="projects/dhcp3.jpg" alt="" loading="lazy" decoding="async"></button>
@@ -521,10 +522,10 @@
 
                 <!-- EXISTING PROJECTS -->
                 <!-- Project: Server Deployment -->
-                <div class="project-item glass-card" data-category="server">
+                <div class="project-item glass-card min-w-0" data-category="server">
                     <div class="project-images">
                         <img src="projects/server1.jpg" alt="Server Project" class="project-main-img" loading="lazy" decoding="async">
-                        <div class="project-gallery">
+                        <div class="project-gallery grid grid-cols-4 gap-1.5 sm:gap-2">
                             <button type="button" class="project-thumb" onclick="openProjectModal('server', 0, this)" aria-label="Open photo 1"><img src="projects/server1.jpg" alt="" loading="lazy" decoding="async"></button>
                             <button type="button" class="project-thumb" onclick="openProjectModal('server', 1, this)" aria-label="Open photo 2"><img src="projects/server2.jpg" alt="" loading="lazy" decoding="async"></button>
                             <button type="button" class="project-thumb" onclick="openProjectModal('server', 2, this)" aria-label="Open photo 3"><img src="projects/server3.jpg" alt="" loading="lazy" decoding="async"></button>
@@ -547,10 +548,10 @@
                 </div>
 
                 <!-- Project: Cisco ACLs -->
-                <div class="project-item glass-card" data-category="networking">
+                <div class="project-item glass-card min-w-0" data-category="networking">
                     <div class="project-images">
                         <img src="projects/cisco1.jpg" alt="Cisco Project" class="project-main-img" loading="lazy" decoding="async">
-                        <div class="project-gallery">
+                        <div class="project-gallery grid grid-cols-4 gap-1.5 sm:gap-2">
                             <button type="button" class="project-thumb" onclick="openProjectModal('cisco', 0, this)" aria-label="Open photo 1"><img src="projects/cisco1.jpg" alt="" loading="lazy" decoding="async"></button>
                             <button type="button" class="project-thumb" onclick="openProjectModal('cisco', 1, this)" aria-label="Open photo 2"><img src="projects/cisco2.jpg" alt="" loading="lazy" decoding="async"></button>
                             <button type="button" class="project-thumb" onclick="openProjectModal('cisco', 2, this)" aria-label="Open photo 3"><img src="projects/cisco3.jpg" alt="" loading="lazy" decoding="async"></button>
@@ -573,10 +574,10 @@
                 </div>
 
                 <!-- Project: Mac Repair -->
-                <div class="project-item glass-card" data-category="hardware">
+                <div class="project-item glass-card min-w-0" data-category="hardware">
                     <div class="project-images">
                         <img src="projects/mac1.jpg" alt="Mac Repair" class="project-main-img" loading="lazy" decoding="async">
-                        <div class="project-gallery">
+                        <div class="project-gallery grid grid-cols-4 gap-1.5 sm:gap-2">
                             <button type="button" class="project-thumb" onclick="openProjectModal('mac', 0, this)" aria-label="Open photo 1"><img src="projects/mac1.jpg" alt="" loading="lazy" decoding="async"></button>
                             <button type="button" class="project-thumb" onclick="openProjectModal('mac', 1, this)" aria-label="Open photo 2"><img src="projects/mac2.jpg" alt="" loading="lazy" decoding="async"></button>
                             <button type="button" class="project-thumb" onclick="openProjectModal('mac', 2, this)" aria-label="Open photo 3"><img src="projects/mac3.jpg" alt="" loading="lazy" decoding="async"></button>
@@ -598,10 +599,10 @@
                 </div>
 
                 <!-- Project: ISP Lab -->
-                <div class="project-item glass-card" data-category="networking">
+                <div class="project-item glass-card min-w-0" data-category="networking">
                     <div class="project-images">
                         <img src="projects/isp1.jpg" alt="ISP Lab" class="project-main-img" loading="lazy" decoding="async">
-                        <div class="project-gallery">
+                        <div class="project-gallery grid grid-cols-4 gap-1.5 sm:gap-2">
                             <button type="button" class="project-thumb" onclick="openProjectModal('isp', 0, this)" aria-label="Open photo 1"><img src="projects/isp1.jpg" alt="" loading="lazy" decoding="async"></button>
                             <button type="button" class="project-thumb" onclick="openProjectModal('isp', 1, this)" aria-label="Open photo 2"><img src="projects/isp2.jpg" alt="" loading="lazy" decoding="async"></button>
                             <button type="button" class="project-thumb" onclick="openProjectModal('isp', 2, this)" aria-label="Open photo 3"><img src="projects/isp3.jpg" alt="" loading="lazy" decoding="async"></button>
@@ -624,10 +625,10 @@
                 </div>
 
                 <!-- Project: NAT OSPF -->
-                <div class="project-item glass-card" data-category="networking">
+                <div class="project-item glass-card min-w-0" data-category="networking">
                     <div class="project-images">
                         <img src="projects/nat1.jpg" alt="NAT OSPF" class="project-main-img" loading="lazy" decoding="async">
-                        <div class="project-gallery">
+                        <div class="project-gallery grid grid-cols-4 gap-1.5 sm:gap-2">
                             <button type="button" class="project-thumb" onclick="openProjectModal('nat', 0, this)" aria-label="Open photo 1"><img src="projects/nat1.jpg" alt="" loading="lazy" decoding="async"></button>
                             <button type="button" class="project-thumb" onclick="openProjectModal('nat', 1, this)" aria-label="Open photo 2"><img src="projects/nat2.jpg" alt="" loading="lazy" decoding="async"></button>
                             <button type="button" class="project-thumb" onclick="openProjectModal('nat', 2, this)" aria-label="Open photo 3"><img src="projects/nat3.jpg" alt="" loading="lazy" decoding="async"></button>
@@ -677,25 +678,25 @@
     </dialog>
 
     <!-- Certificates Section -->
-    <section id="certificates" class="modern-section fade-in">
-        <div class="container">
+    <section id="certificates" class="modern-section fade-in px-3 py-12 sm:px-6 sm:py-16 lg:py-20">
+        <div class="mx-auto w-full max-w-6xl">
             <div class="section-header">
 
-                <h2 class="section-title">Certifications</h2>
+                <h2 class="section-title text-3xl sm:text-4xl lg:text-5xl">Certifications</h2>
                 <div class="title-underline"></div>
             </div>
 
             <div class="certificates-carousel" role="region" aria-label="Certificate carousel">
-                <div class="carousel-main">
-                    <button class="carousel-btn prev-btn" onclick="navigateCert(-1)" aria-label="Previous certificate">
+                <div class="relative grid grid-cols-2 items-center gap-2 sm:flex sm:gap-5">
+                    <button class="carousel-btn prev-btn col-start-1 row-start-2 justify-self-end flex-shrink-0 w-11 h-11 sm:w-14 sm:h-14" onclick="navigateCert(-1)" aria-label="Previous certificate">
                         <i class="fas fa-chevron-left"></i>
                     </button>
-                    <div class="certificate-display" aria-live="polite"></div>
-                    <button class="carousel-btn next-btn" onclick="navigateCert(1)" aria-label="Next certificate">
+                    <div class="certificate-display col-span-2 row-start-1 min-w-0 flex-1 px-3 py-5 sm:px-8 sm:py-8" aria-live="polite"></div>
+                    <button class="carousel-btn next-btn col-start-2 row-start-2 justify-self-start flex-shrink-0 w-11 h-11 sm:w-14 sm:h-14" onclick="navigateCert(1)" aria-label="Next certificate">
                         <i class="fas fa-chevron-right"></i>
                     </button>
                 </div>
-                <div class="carousel-thumbnails"></div>
+                <div class="carousel-thumbnails mt-4 flex gap-2 overflow-x-auto p-2 sm:mt-6"></div>
                 <div class="carousel-counter">
                     <span class="current-cert">1</span> / <span class="total-certs">30</span>
                 </div>
@@ -704,16 +705,16 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="modern-section fade-in">
-        <div class="container">
+    <section id="contact" class="modern-section fade-in px-3 py-12 sm:px-6 sm:py-16 lg:py-20">
+        <div class="mx-auto w-full max-w-6xl">
             <div class="section-header">
 
-                <h2 class="section-title">Get In Touch</h2>
+                <h2 class="section-title text-3xl sm:text-4xl lg:text-5xl">Get In Touch</h2>
                 <div class="title-underline"></div>
             </div>
             
             <!-- Contact Form -->
-            <div class="contact-grid">
+            <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
                 <div class="contact-card glass-card">
                     <i class="fas fa-envelope"></i>
                     <h3>Email</h3>
@@ -736,29 +737,29 @@
                 </div>
             </div>
 
-            <div class="contact-form-container glass-card" style="margin-top: 50px;">
+            <div class="contact-form-container glass-card mx-auto my-8 p-4 sm:p-8">
                 <h3><i class="fas fa-paper-plane"></i> Send Me a Message</h3>
                 <p class="contact-email-fallback">You can also <a href="mailto:wajiwaleed@gmail.com">email me directly</a>.</p>
                 <form id="contact-form" class="contact-form">
-                    <div class="form-row">
-                        <div class="form-group">
+                    <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+                        <div class="form-group min-w-0">
                             <label for="name"><i class="fas fa-user"></i> Your Name</label>
                             <input type="text" id="name" name="name" required placeholder="Enter your name">
                         </div>
-                        <div class="form-group">
+                        <div class="form-group min-w-0">
                             <label for="email"><i class="fas fa-envelope"></i> Your Email</label>
                             <input type="email" id="email" name="email" required placeholder="Enter your email">
                         </div>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group min-w-0">
                         <label for="subject"><i class="fas fa-tag"></i> Subject</label>
                         <input type="text" id="subject" name="subject" required placeholder="What's this about?">
                     </div>
-                    <div class="form-group">
+                    <div class="form-group min-w-0">
                         <label for="message"><i class="fas fa-comment-dots"></i> Message</label>
                         <textarea id="message" name="message" rows="6" required placeholder="Write your message here..."></textarea>
                     </div>
-                    <button type="submit" class="submit-btn">
+                    <button type="submit" class="submit-btn w-full sm:w-auto">
                         <i class="fas fa-paper-plane"></i> Send Message
                     </button>
                 </form>
@@ -766,14 +767,14 @@
             </div>
 
             <!-- Social Links -->
-            <div class="social-profile glass-card">
+            <div class="social-profile glass-card p-4 sm:p-8">
                 <div class="social-avatar">
                     <img src="IMG_20240803_165730_105.webp" alt="Mohamed Waleed" loading="lazy" decoding="async">
                 </div>
                 <h2 class="social-name">𝕎𝕒𝕝𝕚𝕚..𝕆𝕗𝕗𝕚𝕔𝕚𝕒𝕝</h2>
                 <p class="social-bio">Connecting the dots between dreams and reality ✨</p>
                 
-                <div class="social-grid">
+                <div class="mb-8 grid grid-cols-2 gap-2 sm:grid-cols-3 sm:gap-4 lg:grid-cols-4">
                     <a href="https://www.credly.com/users/mohamed-wajihadeen-mohamed-waleed" target="_blank" rel="noopener noreferrer" class="social-card">
                         <i class="fas fa-award"></i>
                         <span>Credly</span>
@@ -825,7 +826,7 @@
     <footer class="modern-footer">
         <div class="footer-content">
             <p>&copy; Mohamed Waleed</p>
-            <div class="footer-links">
+            <div class="footer-links flex flex-wrap justify-center gap-4 sm:gap-7">
                 <a href="#about">About</a>
                 <a href="#skills">Skills</a>
                 <a href="#projects">Projects</a>
