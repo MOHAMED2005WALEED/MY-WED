@@ -7,7 +7,7 @@
     <title>Mohamed Waleed | Finance & Technology Portfolio</title>
     <meta name="description" content="Financial Management undergraduate with hands-on experience in networking, server administration, and web development.">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=2">
     <link rel="icon" href="DSC6284_01.jpg">
 </head>
 <body>
@@ -43,10 +43,9 @@
                     <h1 class="hero-name">Mohamed Waleed</h1>
                     <p class="hero-role">Financial Management Undergraduate</p>
                     <p class="subtitle">Sabaragamuwa University of Sri Lanka · Networking, systems and web development</p>
-                    <p class="subtitle">Sabaragamuwa University of Sri Lanka · Networking, systems and web development</p>
                     
                     <div class="header-buttons">
-                        <a href="uploads/Waleed_CV.pdf" target="_blank" rel="noopener noreferrer" rel="noopener noreferrer" class="modern-btn primary-btn">
+                        <a href="uploads/Waleed_CV.pdf" target="_blank" rel="noopener noreferrer" class="modern-btn primary-btn">
                             <i class="fas fa-download"></i> Download CV
                         </a>
                         <a href="#projects" class="modern-btn secondary-btn">
@@ -99,13 +98,13 @@
                     I’m Mohamed Waleed, a Financial Management undergraduate from Sri Lanka with practical experience configuring networks and servers. This portfolio documents work from my technical training and independent projects.
                 </p>
                 <div class="social-links">
-                    <a href="https://github.com/MOHAMED2005WALEED" target="_blank" rel="noopener noreferrer" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
+                    <a href="https://github.com/MOHAMED2005WALEED" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/mohamed-waleed-669457227" target="_blank" rel="noopener noreferrer" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+                    <a href="https://www.linkedin.com/in/mohamed-waleed-669457227" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
                         <i class="fab fa-linkedin"></i>
                     </a>
-                    <a href="https://www.credly.com/users/mohamed-wajihadeen-mohamed-waleed" target="_blank" rel="noopener noreferrer" rel="noopener noreferrer" class="social-icon" aria-label="Credly">
+                    <a href="https://www.credly.com/users/mohamed-wajihadeen-mohamed-waleed" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Credly">
                         <i class="fas fa-award"></i>
                     </a>
                 </div>
@@ -279,19 +278,17 @@
                 <!-- NEW PROJECT 1: OSPF Multi-Area Network -->
                 <div class="project-item glass-card featured-project" data-category="networking">
                     <div class="project-images">
-                        <img src="projects/ospf1.jpg" alt="OSPF Network" class="project-main-img" loading="lazy" decoding="async" loading="lazy" decoding="async">
+                        <img src="projects/ospf1.jpg" alt="OSPF Network" class="project-main-img" loading="lazy" decoding="async">
                         <div class="project-gallery">
-                            <button type="button" class="project-thumb" onclick="openProjectModal('ospf', 0)" aria-label="Open photo 1"><img src="projects/ospf1.jpg" alt="" loading="lazy" decoding="async"></button>
-                            <button type="button" class="project-thumb" onclick="openProjectModal('ospf', 1)" aria-label="Open photo 2"><img src="projects/ospf2.jpg" alt="" loading="lazy" decoding="async"></button>
-                            <button type="button" class="project-thumb" onclick="openProjectModal('ospf', 2)" aria-label="Open photo 3"><img src="projects/ospf3.jpg" alt="" loading="lazy" decoding="async"></button>
+                            <button type="button" class="project-thumb" onclick="openProjectModal('ospf', 0, this)" aria-label="Open photo 1"><img src="projects/ospf1.jpg" alt="" loading="lazy" decoding="async"></button>
+                            <button type="button" class="project-thumb" onclick="openProjectModal('ospf', 1, this)" aria-label="Open photo 2"><img src="projects/ospf2.jpg" alt="" loading="lazy" decoding="async"></button>
+                            <button type="button" class="project-thumb" onclick="openProjectModal('ospf', 2, this)" aria-label="Open photo 3"><img src="projects/ospf3.jpg" alt="" loading="lazy" decoding="async"></button>
                             <span class="more-photos">+9 more</span>
                         </div>
                     </div>
                     <div class="project-info">
                         <h3>OSPF Multi-Area Network Deployment</h3>
                         <p>Connect multiple LANs through a multi-area Cisco network with a shared ISP edge.</p>
-                        <p><strong>My role</strong> Configured the routers and switches for OSPF, DHCP and PAT.</p>
-                        <p><strong>Result</strong> The lab routed traffic between LAN segments and provided access through the shared edge. The gallery documents the Cisco setup.</p>
                         <p><strong>My role</strong> Configured the routers and switches for OSPF, DHCP and PAT.</p>
                         <p><strong>Result</strong> The lab routed traffic between LAN segments and provided access through the shared edge. The gallery documents the Cisco setup.</p>
                         <div class="project-tags">
@@ -301,7 +298,7 @@
                             <span>Cisco Routing</span>
                             <span>Area 0</span>
                         </div>
-                        <button class="view-project-btn" onclick="openProjectModal('ospf', 0)">
+                        <button class="view-project-btn" onclick="openProjectModal('ospf', 0, this)">
                             <i class="fas fa-images"></i> View All Photos
                         </button>
                     </div>
@@ -310,19 +307,17 @@
                 <!-- NEW PROJECT 2: Linux Server Configuration -->
                 <div class="project-item glass-card featured-project" data-category="server">
                     <div class="project-images">
-                        <img src="projects/linux1.jpg" alt="Linux Server" class="project-main-img" loading="lazy" decoding="async" loading="lazy" decoding="async">
+                        <img src="projects/linux1.jpg" alt="Linux Server" class="project-main-img" loading="lazy" decoding="async">
                         <div class="project-gallery">
-                            <button type="button" class="project-thumb" onclick="openProjectModal('linuxserver', 0)" aria-label="Open photo 1"><img src="projects/linux1.jpg" alt="" loading="lazy" decoding="async"></button>
-                            <button type="button" class="project-thumb" onclick="openProjectModal('linuxserver', 1)" aria-label="Open photo 2"><img src="projects/linux2.jpg" alt="" loading="lazy" decoding="async"></button>
-                            <button type="button" class="project-thumb" onclick="openProjectModal('linuxserver', 2)" aria-label="Open photo 3"><img src="projects/linux3.jpg" alt="" loading="lazy" decoding="async"></button>
+                            <button type="button" class="project-thumb" onclick="openProjectModal('linuxserver', 0, this)" aria-label="Open photo 1"><img src="projects/linux1.jpg" alt="" loading="lazy" decoding="async"></button>
+                            <button type="button" class="project-thumb" onclick="openProjectModal('linuxserver', 1, this)" aria-label="Open photo 2"><img src="projects/linux2.jpg" alt="" loading="lazy" decoding="async"></button>
+                            <button type="button" class="project-thumb" onclick="openProjectModal('linuxserver', 2, this)" aria-label="Open photo 3"><img src="projects/linux3.jpg" alt="" loading="lazy" decoding="async"></button>
                             <span class="more-photos">+1 more</span>
                         </div>
                     </div>
                     <div class="project-info">
                         <h3>Ubuntu Server Setup</h3>
                         <p>Bring an Ubuntu Server online on physical hardware and make it manageable remotely.</p>
-                        <p><strong>My role</strong> Installed Ubuntu Server, configured networking and SSH access, and used command-line monitoring tools.</p>
-                        <p><strong>Result</strong> The gallery documents the physical server and its configuration.</p>
                         <p><strong>My role</strong> Installed Ubuntu Server, configured networking and SSH access, and used command-line monitoring tools.</p>
                         <p><strong>Result</strong> The gallery documents the physical server and its configuration.</p>
                         <div class="project-tags">
@@ -332,33 +327,7 @@
                             <span>CLI</span>
                             <span>Network Config</span>
                         </div>
-                        <button class="view-project-btn" onclick="openProjectModal('linuxserver', 0)">
-                            <i class="fas fa-images"></i> View All Photos
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Project: ISP Lab -->
-                <div class="project-item glass-card" data-category="networking">
-                    <div class="project-images">
-                        <img src="projects/isp1.jpg" alt="ISP Lab" class="project-main-img" loading="lazy" decoding="async" loading="lazy" decoding="async">
-                        <div class="project-gallery">
-                            <button type="button" class="project-thumb" onclick="openProjectModal('isp', 0)" aria-label="Open photo 1"><img src="projects/isp1.jpg" alt="" loading="lazy" decoding="async"></button>
-                            <button type="button" class="project-thumb" onclick="openProjectModal('isp', 1)" aria-label="Open photo 2"><img src="projects/isp2.jpg" alt="" loading="lazy" decoding="async"></button>
-                            <button type="button" class="project-thumb" onclick="openProjectModal('isp', 2)" aria-label="Open photo 3"><img src="projects/isp3.jpg" alt="" loading="lazy" decoding="async"></button>
-                            <span class="more-photos">+1 more</span>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>ISP Environment Simulation</h3>
-                        <p>Simulated ISP environment using 4G router, configured Cisco router with NAT overload (PAT)</p>
-                        <div class="project-tags">
-                            <span>4G Router</span>
-                            <span>NAT/PAT</span>
-                            <span>Cisco</span>
-                            <span>Packet Tracer</span>
-                        </div>
-                        <button class="view-project-btn" onclick="openProjectModal('isp', 0)">
+                        <button class="view-project-btn" onclick="openProjectModal('linuxserver', 0, this)">
                             <i class="fas fa-images"></i> View All Photos
                         </button>
                     </div>
@@ -367,11 +336,11 @@
                 <!-- Project: ASD Lab -->
                 <div class="project-item glass-card featured-project" data-category="networking">
                     <div class="project-images">
-                        <img src="projects/asd1.jpg" alt="ASD Lab" class="project-main-img" loading="lazy" decoding="async" loading="lazy" decoding="async">
+                        <img src="projects/asd1.jpg" alt="ASD Lab" class="project-main-img" loading="lazy" decoding="async">
                         <div class="project-gallery">
-                            <button type="button" class="project-thumb" onclick="openProjectModal('asd', 0)" aria-label="Open photo 1"><img src="projects/asd1.jpg" alt="" loading="lazy" decoding="async"></button>
-                            <button type="button" class="project-thumb" onclick="openProjectModal('asd', 1)" aria-label="Open photo 2"><img src="projects/asd2.jpg" alt="" loading="lazy" decoding="async"></button>
-                            <button type="button" class="project-thumb" onclick="openProjectModal('asd', 2)" aria-label="Open photo 3"><img src="projects/asd3.jpg" alt="" loading="lazy" decoding="async"></button>
+                            <button type="button" class="project-thumb" onclick="openProjectModal('asd', 0, this)" aria-label="Open photo 1"><img src="projects/asd1.jpg" alt="" loading="lazy" decoding="async"></button>
+                            <button type="button" class="project-thumb" onclick="openProjectModal('asd', 1, this)" aria-label="Open photo 2"><img src="projects/asd2.jpg" alt="" loading="lazy" decoding="async"></button>
+                            <button type="button" class="project-thumb" onclick="openProjectModal('asd', 2, this)" aria-label="Open photo 3"><img src="projects/asd3.jpg" alt="" loading="lazy" decoding="async"></button>
                             <span class="more-photos">+17 more</span>
                         </div>
                     </div>
@@ -380,15 +349,13 @@
                         <p>Build wired and wireless access for the ASD computer lab.</p>
                         <p><strong>My role</strong> Installed CAT6 cabling and access points for the lab LAN.</p>
                         <p><strong>Result</strong> The gallery documents the cabling and access point installation.</p>
-                        <p><strong>My role</strong> Installed CAT6 cabling and access points for the lab LAN.</p>
-                        <p><strong>Result</strong> The gallery documents the cabling and access point installation.</p>
                         <div class="project-tags">
                             <span>CAT6 Cabling</span>
                             <span>Access Points</span>
                             <span>LAN Setup</span>
                             <span>NVTI</span>
                         </div>
-                        <button class="view-project-btn" onclick="openProjectModal('asd', 0)">
+                        <button class="view-project-btn" onclick="openProjectModal('asd', 0, this)">
                             <i class="fas fa-images"></i> View All Photos
                         </button>
                     </div>
@@ -397,11 +364,11 @@
                 <!-- NEW PROJECT 3: IP Surveillance PTZ Cameras -->
                 <div class="project-item glass-card" data-category="security">
                     <div class="project-images">
-                        <img src="projects/ptz1.jpg" alt="PTZ Cameras" class="project-main-img" loading="lazy" decoding="async" loading="lazy" decoding="async">
+                        <img src="projects/ptz1.jpg" alt="PTZ Cameras" class="project-main-img" loading="lazy" decoding="async">
                         <div class="project-gallery">
-                            <button type="button" class="project-thumb" onclick="openProjectModal('ptzcam', 0)" aria-label="Open photo 1"><img src="projects/ptz1.jpg" alt="" loading="lazy" decoding="async"></button>
-                            <button type="button" class="project-thumb" onclick="openProjectModal('ptzcam', 1)" aria-label="Open photo 2"><img src="projects/ptz2.jpg" alt="" loading="lazy" decoding="async"></button>
-                            <button type="button" class="project-thumb" onclick="openProjectModal('ptzcam', 2)" aria-label="Open photo 3"><img src="projects/ptz3.jpg" alt="" loading="lazy" decoding="async"></button>
+                            <button type="button" class="project-thumb" onclick="openProjectModal('ptzcam', 0, this)" aria-label="Open photo 1"><img src="projects/ptz1.jpg" alt="" loading="lazy" decoding="async"></button>
+                            <button type="button" class="project-thumb" onclick="openProjectModal('ptzcam', 1, this)" aria-label="Open photo 2"><img src="projects/ptz2.jpg" alt="" loading="lazy" decoding="async"></button>
+                            <button type="button" class="project-thumb" onclick="openProjectModal('ptzcam', 2, this)" aria-label="Open photo 3"><img src="projects/ptz3.jpg" alt="" loading="lazy" decoding="async"></button>
                             <span class="more-photos">+4 more</span>
                         </div>
                     </div>
@@ -415,7 +382,7 @@
                             <span>Mobile Access</span>
                             <span>CCNA</span>
                         </div>
-                        <button class="view-project-btn" onclick="openProjectModal('ptzcam', 0)">
+                        <button class="view-project-btn" onclick="openProjectModal('ptzcam', 0, this)">
                             <i class="fas fa-images"></i> View All Photos
                         </button>
                     </div>
@@ -424,11 +391,11 @@
                 <!-- Existing Wi-Fi NVR Project -->
                 <div class="project-item glass-card" data-category="networking">
                     <div class="project-images">
-                        <img src="projects/nvr1.jpg" alt="Wi-Fi NVR System" class="project-main-img" loading="lazy" decoding="async" loading="lazy" decoding="async">
+                        <img src="projects/nvr1.jpg" alt="Wi-Fi NVR System" class="project-main-img" loading="lazy" decoding="async">
                         <div class="project-gallery">
-                            <button type="button" class="project-thumb" onclick="openProjectModal('nvr', 0)" aria-label="Open photo 1"><img src="projects/nvr1.jpg" alt="" loading="lazy" decoding="async"></button>
-                            <button type="button" class="project-thumb" onclick="openProjectModal('nvr', 1)" aria-label="Open photo 2"><img src="projects/nvr2.jpg" alt="" loading="lazy" decoding="async"></button>
-                            <button type="button" class="project-thumb" onclick="openProjectModal('nvr', 2)" aria-label="Open photo 3"><img src="projects/nvr3.jpg" alt="" loading="lazy" decoding="async"></button>
+                            <button type="button" class="project-thumb" onclick="openProjectModal('nvr', 0, this)" aria-label="Open photo 1"><img src="projects/nvr1.jpg" alt="" loading="lazy" decoding="async"></button>
+                            <button type="button" class="project-thumb" onclick="openProjectModal('nvr', 1, this)" aria-label="Open photo 2"><img src="projects/nvr2.jpg" alt="" loading="lazy" decoding="async"></button>
+                            <button type="button" class="project-thumb" onclick="openProjectModal('nvr', 2, this)" aria-label="Open photo 3"><img src="projects/nvr3.jpg" alt="" loading="lazy" decoding="async"></button>
                             <span class="more-photos">+6 more</span>
                         </div>
                     </div>
@@ -441,7 +408,7 @@
                             <span>CCTV</span>
                             <span>Remote Monitoring</span>
                         </div>
-                        <button class="view-project-btn" onclick="openProjectModal('nvr', 0)">
+                        <button class="view-project-btn" onclick="openProjectModal('nvr', 0, this)">
                             <i class="fas fa-images"></i> View All Photos
                         </button>
                     </div>
@@ -450,11 +417,11 @@
                 <!-- Access Point Configuration -->
                 <div class="project-item glass-card" data-category="networking">
                     <div class="project-images">
-                        <img src="projects/ap1.jpg" alt="Access Point Config" class="project-main-img" loading="lazy" decoding="async" loading="lazy" decoding="async">
+                        <img src="projects/ap1.jpg" alt="Access Point Config" class="project-main-img" loading="lazy" decoding="async">
                         <div class="project-gallery">
-                            <button type="button" class="project-thumb" onclick="openProjectModal('accesspoint', 0)" aria-label="Open photo 1"><img src="projects/ap1.jpg" alt="" loading="lazy" decoding="async"></button>
-                            <button type="button" class="project-thumb" onclick="openProjectModal('accesspoint', 1)" aria-label="Open photo 2"><img src="projects/ap2.jpg" alt="" loading="lazy" decoding="async"></button>
-                            <button type="button" class="project-thumb" onclick="openProjectModal('accesspoint', 2)" aria-label="Open photo 3"><img src="projects/ap3.jpg" alt="" loading="lazy" decoding="async"></button>
+                            <button type="button" class="project-thumb" onclick="openProjectModal('accesspoint', 0, this)" aria-label="Open photo 1"><img src="projects/ap1.jpg" alt="" loading="lazy" decoding="async"></button>
+                            <button type="button" class="project-thumb" onclick="openProjectModal('accesspoint', 1, this)" aria-label="Open photo 2"><img src="projects/ap2.jpg" alt="" loading="lazy" decoding="async"></button>
+                            <button type="button" class="project-thumb" onclick="openProjectModal('accesspoint', 2, this)" aria-label="Open photo 3"><img src="projects/ap3.jpg" alt="" loading="lazy" decoding="async"></button>
                             <span class="more-photos">+1 more</span>
                         </div>
                     </div>
@@ -467,7 +434,7 @@
                             <span>Wireless</span>
                             <span>SSID Config</span>
                         </div>
-                        <button class="view-project-btn" onclick="openProjectModal('accesspoint', 0)">
+                        <button class="view-project-btn" onclick="openProjectModal('accesspoint', 0, this)">
                             <i class="fas fa-images"></i> View All Photos
                         </button>
                     </div>
@@ -476,11 +443,11 @@
                 <!-- CCNA Practical Assessment -->
                 <div class="project-item glass-card" data-category="networking">
                     <div class="project-images">
-                        <img src="projects/ccna1.jpg" alt="CCNA Assessment" class="project-main-img" loading="lazy" decoding="async" loading="lazy" decoding="async">
+                        <img src="projects/ccna1.jpg" alt="CCNA Assessment" class="project-main-img" loading="lazy" decoding="async">
                         <div class="project-gallery">
-                            <button type="button" class="project-thumb" onclick="openProjectModal('ccnatest', 0)" aria-label="Open photo 1"><img src="projects/ccna1.jpg" alt="" loading="lazy" decoding="async"></button>
-                            <button type="button" class="project-thumb" onclick="openProjectModal('ccnatest', 1)" aria-label="Open photo 2"><img src="projects/ccna2.jpg" alt="" loading="lazy" decoding="async"></button>
-                            <button type="button" class="project-thumb" onclick="openProjectModal('ccnatest', 2)" aria-label="Open photo 3"><img src="projects/ccna3.jpg" alt="" loading="lazy" decoding="async"></button>
+                            <button type="button" class="project-thumb" onclick="openProjectModal('ccnatest', 0, this)" aria-label="Open photo 1"><img src="projects/ccna1.jpg" alt="" loading="lazy" decoding="async"></button>
+                            <button type="button" class="project-thumb" onclick="openProjectModal('ccnatest', 1, this)" aria-label="Open photo 2"><img src="projects/ccna2.jpg" alt="" loading="lazy" decoding="async"></button>
+                            <button type="button" class="project-thumb" onclick="openProjectModal('ccnatest', 2, this)" aria-label="Open photo 3"><img src="projects/ccna3.jpg" alt="" loading="lazy" decoding="async"></button>
                             <span class="more-photos">+1 more</span>
                         </div>
                     </div>
@@ -494,7 +461,7 @@
                             <span>IPv6</span>
                             <span>Port Security</span>
                         </div>
-                        <button class="view-project-btn" onclick="openProjectModal('ccnatest', 0)">
+                        <button class="view-project-btn" onclick="openProjectModal('ccnatest', 0, this)">
                             <i class="fas fa-images"></i> View All Photos
                         </button>
                     </div>
@@ -503,11 +470,11 @@
                 <!-- CCTV DVR Setup -->
                 <div class="project-item glass-card" data-category="security">
                     <div class="project-images">
-                        <img src="projects/dvr1.jpg" alt="CCTV DVR" class="project-main-img" loading="lazy" decoding="async" loading="lazy" decoding="async">
+                        <img src="projects/dvr1.jpg" alt="CCTV DVR" class="project-main-img" loading="lazy" decoding="async">
                         <div class="project-gallery">
-                            <button type="button" class="project-thumb" onclick="openProjectModal('cctv', 0)" aria-label="Open photo 1"><img src="projects/dvr1.jpg" alt="" loading="lazy" decoding="async"></button>
-                            <button type="button" class="project-thumb" onclick="openProjectModal('cctv', 1)" aria-label="Open photo 2"><img src="projects/dvr2.jpg" alt="" loading="lazy" decoding="async"></button>
-                            <button type="button" class="project-thumb" onclick="openProjectModal('cctv', 2)" aria-label="Open photo 3"><img src="projects/dvr3.jpg" alt="" loading="lazy" decoding="async"></button>
+                            <button type="button" class="project-thumb" onclick="openProjectModal('cctv', 0, this)" aria-label="Open photo 1"><img src="projects/dvr1.jpg" alt="" loading="lazy" decoding="async"></button>
+                            <button type="button" class="project-thumb" onclick="openProjectModal('cctv', 1, this)" aria-label="Open photo 2"><img src="projects/dvr2.jpg" alt="" loading="lazy" decoding="async"></button>
+                            <button type="button" class="project-thumb" onclick="openProjectModal('cctv', 2, this)" aria-label="Open photo 3"><img src="projects/dvr3.jpg" alt="" loading="lazy" decoding="async"></button>
                             <span class="more-photos">+2 more</span>
                         </div>
                     </div>
@@ -520,7 +487,7 @@
                             <span>Remote Access</span>
                             <span>Surveillance</span>
                         </div>
-                        <button class="view-project-btn" onclick="openProjectModal('cctv', 0)">
+                        <button class="view-project-btn" onclick="openProjectModal('cctv', 0, this)">
                             <i class="fas fa-images"></i> View All Photos
                         </button>
                     </div>
@@ -529,11 +496,11 @@
                 <!-- DHCP Relay Agent -->
                 <div class="project-item glass-card" data-category="networking">
                     <div class="project-images">
-                        <img src="projects/dhcp1.jpg" alt="DHCP Relay" class="project-main-img" loading="lazy" decoding="async" loading="lazy" decoding="async">
+                        <img src="projects/dhcp1.jpg" alt="DHCP Relay" class="project-main-img" loading="lazy" decoding="async">
                         <div class="project-gallery">
-                            <button type="button" class="project-thumb" onclick="openProjectModal('dhcprelay', 0)" aria-label="Open photo 1"><img src="projects/dhcp1.jpg" alt="" loading="lazy" decoding="async"></button>
-                            <button type="button" class="project-thumb" onclick="openProjectModal('dhcprelay', 1)" aria-label="Open photo 2"><img src="projects/dhcp2.jpg" alt="" loading="lazy" decoding="async"></button>
-                            <button type="button" class="project-thumb" onclick="openProjectModal('dhcprelay', 2)" aria-label="Open photo 3"><img src="projects/dhcp3.jpg" alt="" loading="lazy" decoding="async"></button>
+                            <button type="button" class="project-thumb" onclick="openProjectModal('dhcprelay', 0, this)" aria-label="Open photo 1"><img src="projects/dhcp1.jpg" alt="" loading="lazy" decoding="async"></button>
+                            <button type="button" class="project-thumb" onclick="openProjectModal('dhcprelay', 1, this)" aria-label="Open photo 2"><img src="projects/dhcp2.jpg" alt="" loading="lazy" decoding="async"></button>
+                            <button type="button" class="project-thumb" onclick="openProjectModal('dhcprelay', 2, this)" aria-label="Open photo 3"><img src="projects/dhcp3.jpg" alt="" loading="lazy" decoding="async"></button>
                             <span class="more-photos">+1 more</span>
                         </div>
                     </div>
@@ -546,7 +513,7 @@
                             <span>Server OS</span>
                             <span>Multi-Router</span>
                         </div>
-                        <button class="view-project-btn" onclick="openProjectModal('dhcprelay', 0)">
+                        <button class="view-project-btn" onclick="openProjectModal('dhcprelay', 0, this)">
                             <i class="fas fa-images"></i> View All Photos
                         </button>
                     </div>
@@ -556,11 +523,11 @@
                 <!-- Project: Server Deployment -->
                 <div class="project-item glass-card" data-category="server">
                     <div class="project-images">
-                        <img src="projects/server1.jpg" alt="Server Project" class="project-main-img" loading="lazy" decoding="async" loading="lazy" decoding="async">
+                        <img src="projects/server1.jpg" alt="Server Project" class="project-main-img" loading="lazy" decoding="async">
                         <div class="project-gallery">
-                            <button type="button" class="project-thumb" onclick="openProjectModal('server', 0)" aria-label="Open photo 1"><img src="projects/server1.jpg" alt="" loading="lazy" decoding="async"></button>
-                            <button type="button" class="project-thumb" onclick="openProjectModal('server', 1)" aria-label="Open photo 2"><img src="projects/server2.jpg" alt="" loading="lazy" decoding="async"></button>
-                            <button type="button" class="project-thumb" onclick="openProjectModal('server', 2)" aria-label="Open photo 3"><img src="projects/server3.jpg" alt="" loading="lazy" decoding="async"></button>
+                            <button type="button" class="project-thumb" onclick="openProjectModal('server', 0, this)" aria-label="Open photo 1"><img src="projects/server1.jpg" alt="" loading="lazy" decoding="async"></button>
+                            <button type="button" class="project-thumb" onclick="openProjectModal('server', 1, this)" aria-label="Open photo 2"><img src="projects/server2.jpg" alt="" loading="lazy" decoding="async"></button>
+                            <button type="button" class="project-thumb" onclick="openProjectModal('server', 2, this)" aria-label="Open photo 3"><img src="projects/server3.jpg" alt="" loading="lazy" decoding="async"></button>
                             <span class="more-photos">+6 more</span>
                         </div>
                     </div>
@@ -573,7 +540,7 @@
                             <span>Active Directory</span>
                             <span>DNS/DHCP</span>
                         </div>
-                        <button class="view-project-btn" onclick="openProjectModal('server', 0)">
+                        <button class="view-project-btn" onclick="openProjectModal('server', 0, this)">
                             <i class="fas fa-images"></i> View All Photos
                         </button>
                     </div>
@@ -582,11 +549,11 @@
                 <!-- Project: Cisco ACLs -->
                 <div class="project-item glass-card" data-category="networking">
                     <div class="project-images">
-                        <img src="projects/cisco1.jpg" alt="Cisco Project" class="project-main-img" loading="lazy" decoding="async" loading="lazy" decoding="async">
+                        <img src="projects/cisco1.jpg" alt="Cisco Project" class="project-main-img" loading="lazy" decoding="async">
                         <div class="project-gallery">
-                            <button type="button" class="project-thumb" onclick="openProjectModal('cisco', 0)" aria-label="Open photo 1"><img src="projects/cisco1.jpg" alt="" loading="lazy" decoding="async"></button>
-                            <button type="button" class="project-thumb" onclick="openProjectModal('cisco', 1)" aria-label="Open photo 2"><img src="projects/cisco2.jpg" alt="" loading="lazy" decoding="async"></button>
-                            <button type="button" class="project-thumb" onclick="openProjectModal('cisco', 2)" aria-label="Open photo 3"><img src="projects/cisco3.jpg" alt="" loading="lazy" decoding="async"></button>
+                            <button type="button" class="project-thumb" onclick="openProjectModal('cisco', 0, this)" aria-label="Open photo 1"><img src="projects/cisco1.jpg" alt="" loading="lazy" decoding="async"></button>
+                            <button type="button" class="project-thumb" onclick="openProjectModal('cisco', 1, this)" aria-label="Open photo 2"><img src="projects/cisco2.jpg" alt="" loading="lazy" decoding="async"></button>
+                            <button type="button" class="project-thumb" onclick="openProjectModal('cisco', 2, this)" aria-label="Open photo 3"><img src="projects/cisco3.jpg" alt="" loading="lazy" decoding="async"></button>
                             <span class="more-photos">+2 more</span>
                         </div>
                     </div>
@@ -599,7 +566,7 @@
                             <span>Security</span>
                             <span>Wi-Fi</span>
                         </div>
-                        <button class="view-project-btn" onclick="openProjectModal('cisco', 0)">
+                        <button class="view-project-btn" onclick="openProjectModal('cisco', 0, this)">
                             <i class="fas fa-images"></i> View All Photos
                         </button>
                     </div>
@@ -608,11 +575,11 @@
                 <!-- Project: Mac Repair -->
                 <div class="project-item glass-card" data-category="hardware">
                     <div class="project-images">
-                        <img src="projects/mac1.jpg" alt="Mac Repair" class="project-main-img" loading="lazy" decoding="async" loading="lazy" decoding="async">
+                        <img src="projects/mac1.jpg" alt="Mac Repair" class="project-main-img" loading="lazy" decoding="async">
                         <div class="project-gallery">
-                            <button type="button" class="project-thumb" onclick="openProjectModal('mac', 0)" aria-label="Open photo 1"><img src="projects/mac1.jpg" alt="" loading="lazy" decoding="async"></button>
-                            <button type="button" class="project-thumb" onclick="openProjectModal('mac', 1)" aria-label="Open photo 2"><img src="projects/mac2.jpg" alt="" loading="lazy" decoding="async"></button>
-                            <button type="button" class="project-thumb" onclick="openProjectModal('mac', 2)" aria-label="Open photo 3"><img src="projects/mac3.jpg" alt="" loading="lazy" decoding="async"></button>
+                            <button type="button" class="project-thumb" onclick="openProjectModal('mac', 0, this)" aria-label="Open photo 1"><img src="projects/mac1.jpg" alt="" loading="lazy" decoding="async"></button>
+                            <button type="button" class="project-thumb" onclick="openProjectModal('mac', 1, this)" aria-label="Open photo 2"><img src="projects/mac2.jpg" alt="" loading="lazy" decoding="async"></button>
+                            <button type="button" class="project-thumb" onclick="openProjectModal('mac', 2, this)" aria-label="Open photo 3"><img src="projects/mac3.jpg" alt="" loading="lazy" decoding="async"></button>
                             <span class="more-photos">+1 more</span>
                         </div>
                     </div>
@@ -624,7 +591,33 @@
                             <span>Hardware</span>
                             <span>Repair</span>
                         </div>
-                        <button class="view-project-btn" onclick="openProjectModal('mac', 0)">
+                        <button class="view-project-btn" onclick="openProjectModal('mac', 0, this)">
+                            <i class="fas fa-images"></i> View All Photos
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project: ISP Lab -->
+                <div class="project-item glass-card" data-category="networking">
+                    <div class="project-images">
+                        <img src="projects/isp1.jpg" alt="ISP Lab" class="project-main-img" loading="lazy" decoding="async">
+                        <div class="project-gallery">
+                            <button type="button" class="project-thumb" onclick="openProjectModal('isp', 0, this)" aria-label="Open photo 1"><img src="projects/isp1.jpg" alt="" loading="lazy" decoding="async"></button>
+                            <button type="button" class="project-thumb" onclick="openProjectModal('isp', 1, this)" aria-label="Open photo 2"><img src="projects/isp2.jpg" alt="" loading="lazy" decoding="async"></button>
+                            <button type="button" class="project-thumb" onclick="openProjectModal('isp', 2, this)" aria-label="Open photo 3"><img src="projects/isp3.jpg" alt="" loading="lazy" decoding="async"></button>
+                            <span class="more-photos">+1 more</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>ISP Environment Simulation</h3>
+                        <p>Simulated ISP environment using 4G router, configured Cisco router with NAT overload (PAT)</p>
+                        <div class="project-tags">
+                            <span>4G Router</span>
+                            <span>NAT/PAT</span>
+                            <span>Cisco</span>
+                            <span>Packet Tracer</span>
+                        </div>
+                        <button class="view-project-btn" onclick="openProjectModal('isp', 0, this)">
                             <i class="fas fa-images"></i> View All Photos
                         </button>
                     </div>
@@ -633,11 +626,11 @@
                 <!-- Project: NAT OSPF -->
                 <div class="project-item glass-card" data-category="networking">
                     <div class="project-images">
-                        <img src="projects/nat1.jpg" alt="NAT OSPF" class="project-main-img" loading="lazy" decoding="async" loading="lazy" decoding="async">
+                        <img src="projects/nat1.jpg" alt="NAT OSPF" class="project-main-img" loading="lazy" decoding="async">
                         <div class="project-gallery">
-                            <button type="button" class="project-thumb" onclick="openProjectModal('nat', 0)" aria-label="Open photo 1"><img src="projects/nat1.jpg" alt="" loading="lazy" decoding="async"></button>
-                            <button type="button" class="project-thumb" onclick="openProjectModal('nat', 1)" aria-label="Open photo 2"><img src="projects/nat2.jpg" alt="" loading="lazy" decoding="async"></button>
-                            <button type="button" class="project-thumb" onclick="openProjectModal('nat', 2)" aria-label="Open photo 3"><img src="projects/nat3.jpg" alt="" loading="lazy" decoding="async"></button>
+                            <button type="button" class="project-thumb" onclick="openProjectModal('nat', 0, this)" aria-label="Open photo 1"><img src="projects/nat1.jpg" alt="" loading="lazy" decoding="async"></button>
+                            <button type="button" class="project-thumb" onclick="openProjectModal('nat', 1, this)" aria-label="Open photo 2"><img src="projects/nat2.jpg" alt="" loading="lazy" decoding="async"></button>
+                            <button type="button" class="project-thumb" onclick="openProjectModal('nat', 2, this)" aria-label="Open photo 3"><img src="projects/nat3.jpg" alt="" loading="lazy" decoding="async"></button>
                             <span class="more-photos">+2 more</span>
                         </div>
                     </div>
@@ -650,7 +643,7 @@
                             <span>Cisco CCNAv7 Coursework</span>
                             <span>Routing</span>
                         </div>
-                        <button class="view-project-btn" onclick="openProjectModal('nat', 0)">
+                        <button class="view-project-btn" onclick="openProjectModal('nat', 0, this)">
                             <i class="fas fa-images"></i> View All Photos
                         </button>
                     </div>
@@ -729,23 +722,22 @@
                 <div class="contact-card glass-card">
                     <i class="fas fa-phone"></i>
                     <h3>WhatsApp</h3>
-                    <a href="https://wa.me/message/MEXSYHLOWL5CD1" target="_blank" rel="noopener noreferrer" rel="noopener noreferrer">+94 76 850 350 8</a>
+                    <a href="https://wa.me/message/MEXSYHLOWL5CD1" target="_blank" rel="noopener noreferrer">+94 76 850 350 8</a>
                 </div>
                 <div class="contact-card glass-card">
                     <i class="fab fa-linkedin"></i>
                     <h3>LinkedIn</h3>
-                    <a href="https://www.linkedin.com/in/mohamed-waleed-669457227" target="_blank" rel="noopener noreferrer" rel="noopener noreferrer">Connect on LinkedIn</a>
+                    <a href="https://www.linkedin.com/in/mohamed-waleed-669457227" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a>
                 </div>
                 <div class="contact-card glass-card">
                     <i class="fab fa-github"></i>
                     <h3>GitHub</h3>
-                    <a href="https://github.com/MOHAMED2005WALEED" target="_blank" rel="noopener noreferrer" rel="noopener noreferrer">View My Projects</a>
+                    <a href="https://github.com/MOHAMED2005WALEED" target="_blank" rel="noopener noreferrer">View My Projects</a>
                 </div>
             </div>
 
             <div class="contact-form-container glass-card" style="margin-top: 50px;">
                 <h3><i class="fas fa-paper-plane"></i> Send Me a Message</h3>
-                <p class="contact-email-fallback">You can also <a href="mailto:wajiwaleed@gmail.com">email me directly</a>.</p>
                 <p class="contact-email-fallback">You can also <a href="mailto:wajiwaleed@gmail.com">email me directly</a>.</p>
                 <form id="contact-form" class="contact-form">
                     <div class="form-row">
@@ -782,35 +774,35 @@
                 <p class="social-bio">Connecting the dots between dreams and reality ✨</p>
                 
                 <div class="social-grid">
-                    <a href="https://www.credly.com/users/mohamed-wajihadeen-mohamed-waleed" target="_blank" rel="noopener noreferrer" rel="noopener noreferrer" class="social-card">
+                    <a href="https://www.credly.com/users/mohamed-wajihadeen-mohamed-waleed" target="_blank" rel="noopener noreferrer" class="social-card">
                         <i class="fas fa-award"></i>
                         <span>Credly</span>
                     </a>
-                    <a href="https://www.instagram.com/waleed_2005" target="_blank" rel="noopener noreferrer" rel="noopener noreferrer" class="social-card">
+                    <a href="https://www.instagram.com/waleed_2005" target="_blank" rel="noopener noreferrer" class="social-card">
                         <i class="fab fa-instagram"></i>
                         <span>Instagram</span>
                     </a>
-                    <a href="https://www.tiktok.com/@walii..official" target="_blank" rel="noopener noreferrer" rel="noopener noreferrer" class="social-card">
+                    <a href="https://www.tiktok.com/@walii..official" target="_blank" rel="noopener noreferrer" class="social-card">
                         <i class="fab fa-tiktok"></i>
                         <span>TikTok</span>
                     </a>
-                    <a href="https://wa.me/message/MEXSYHLOWL5CD1" target="_blank" rel="noopener noreferrer" rel="noopener noreferrer" class="social-card">
+                    <a href="https://wa.me/message/MEXSYHLOWL5CD1" target="_blank" rel="noopener noreferrer" class="social-card">
                         <i class="fab fa-whatsapp"></i>
                         <span>WhatsApp</span>
                     </a>
-                    <a href="https://www.facebook.com/profile.php?id=100075124244357" target="_blank" rel="noopener noreferrer" rel="noopener noreferrer" class="social-card">
+                    <a href="https://www.facebook.com/profile.php?id=100075124244357" target="_blank" rel="noopener noreferrer" class="social-card">
                         <i class="fab fa-facebook"></i>
                         <span>Facebook</span>
                     </a>
-                    <a href="https://x.com/WALEED_2005" target="_blank" rel="noopener noreferrer" rel="noopener noreferrer" class="social-card">
+                    <a href="https://x.com/WALEED_2005" target="_blank" rel="noopener noreferrer" class="social-card">
                         <i class="fab fa-twitter"></i>
                         <span>Twitter</span>
                     </a>
-                    <a href="https://www.snapchat.com/add/waleed20050325" target="_blank" rel="noopener noreferrer" rel="noopener noreferrer" class="social-card">
+                    <a href="https://www.snapchat.com/add/waleed20050325" target="_blank" rel="noopener noreferrer" class="social-card">
                         <i class="fab fa-snapchat"></i>
                         <span>Snapchat</span>
                     </a>
-                    <a href="https://github.com/MOHAMED2005WALEED" target="_blank" rel="noopener noreferrer" rel="noopener noreferrer" class="social-card">
+                    <a href="https://github.com/MOHAMED2005WALEED" target="_blank" rel="noopener noreferrer" class="social-card">
                         <i class="fab fa-github"></i>
                         <span>GitHub</span>
                     </a>
@@ -849,6 +841,6 @@
     </button>
 
     <script defer src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script defer src="script.js"></script>
+    <script defer src="script.js?v=2"></script>
 </body>
 </html>

@@ -634,7 +634,7 @@ const projectModal = document.getElementById('projectModal');
 let galleryTrigger;
 let previousBodyOverflow;
 
-function openProjectModal(projectName, photoIndex) {
+function openProjectModal(projectName, photoIndex, trigger) {
     const photos = projectPhotos[projectName];
     currentProject = projectName;
 
@@ -645,7 +645,7 @@ function openProjectModal(projectName, photoIndex) {
     document.getElementById('totalPhotos').textContent = photos.length;
     selectProjectPhoto(photoIndex);
 
-    galleryTrigger = document.activeElement;
+    galleryTrigger = trigger;
     previousBodyOverflow = document.body.style.overflow;
     projectModal.showModal();
     document.body.style.overflow = 'hidden';
@@ -653,11 +653,13 @@ function openProjectModal(projectName, photoIndex) {
 
 function closeProjectModal() {
     projectModal.close();
+    document.body.style.overflow = previousBodyOverflow;
+    galleryTrigger.focus({ preventScroll: true });
 }
 
-projectModal.addEventListener('close', () => {
-    document.body.style.overflow = previousBodyOverflow;
-    galleryTrigger?.focus();
+projectModal.addEventListener('cancel', (event) => {
+    event.preventDefault();
+    closeProjectModal();
 });
 
 function changeProjectPhoto(direction) {
