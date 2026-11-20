@@ -1,107 +1,52 @@
-// ============================================
-// MODERN PORTFOLIO - COMPLETE JAVASCRIPT
-// With Loading Animation & EmailJS Contact Form
-// ============================================
+// EmailJS settings for the public portfolio contact form.
+function initContactForm() {
+    const form = document.getElementById('contact-form');
+    const status = document.getElementById('form-status');
+    const submit = form.querySelector('.submit-btn');
+    const initialLabel = submit.innerHTML;
 
-// ============================================
-// LOADING SCREEN
-// ============================================
-window.addEventListener('load', () => {
-    const loadingScreen = document.getElementById('loading-screen');
-    
-    setTimeout(() => {
-        loadingScreen.classList.add('hidden');
-    }, 2000);
-    
-    // Performance monitoring
-    if (window.performance) {
-        const perfData = window.performance.timing;
-        const pageLoadTime = perfData.loadEventEnd - perfData.navigationStart;
-        console.log(`⚡ Page Load Time: ${pageLoadTime}ms`);
+    if (window.emailjs) {
+        emailjs.init("vm4pR01WuWObBIS3W");
     }
-});
 
-// ============================================
-// EMAIL JS CONTACT FORM WITH AUTO REPLY
-// ============================================
-document.addEventListener('DOMContentLoaded', function() {
-    const contactForm = document.getElementById('contact-form');
-    const formStatus = document.getElementById('form-status');
-    
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const submitBtn = contactForm.querySelector('.submit-btn');
-            const originalText = submitBtn.innerHTML;
-            
-            // Disable button and show loading
-            submitBtn.disabled = true;
-            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
-            
-            // Get form data
-            const templateParams = {
-                from_name: document.getElementById('name').value,
-                from_email: document.getElementById('email').value,
-                subject: document.getElementById('subject').value,
-                message: document.getElementById('message').value,
-                to_name: 'Mohamed Waleed'
-            };
-            
-            // Send email to you
-            emailjs.send('service_yvkz2tu', 'template_qc0v5uk', templateParams)
-                .then(function(response) {
-                    console.log('Main email sent!', response.status);
-                    
-                    // Send Auto Reply to User
-                    const autoReplyParams = {
-                        from_name: templateParams.from_name,
-                        from_email: templateParams.from_email,
-                        subject: templateParams.subject,
-                        message: templateParams.message
-                    };
-                    
-                    // Send auto reply
-                    return emailjs.send('service_yvkz2tu', 'template_autoreply', autoReplyParams);
-                })
-                .then(function(autoResponse) {
-                    console.log('Auto-reply sent!', autoResponse.status);
-                    
-                    // Show success message
-                    formStatus.className = 'form-status success';
-                    formStatus.innerHTML = '<i class="fas fa-check-circle"></i> Message sent! Check your email for confirmation.';
-                    
-                    // Reset form
-                    contactForm.reset();
-                    
-                    // Re-enable button
-                    submitBtn.disabled = false;
-                    submitBtn.innerHTML = originalText;
-                    
-                    // Hide success message after 5 seconds
-                    setTimeout(() => {
-                        formStatus.style.display = 'none';
-                    }, 5000);
-                })
-                .catch(function(error) {
-                    console.log('FAILED...', error);
-                    
-                    // Show error message
-                    formStatus.className = 'form-status error';
-                    formStatus.innerHTML = '<i class="fas fa-exclamation-circle"></i> Failed to send. Please try again.';
-                    
-                    // Re-enable button
-                    submitBtn.disabled = false;
-                    submitBtn.innerHTML = originalText;
-                    
-                    // Hide error message after 5 seconds
-                    setTimeout(() => {
-                        formStatus.style.display = 'none';
-                    }, 5000);
-                });
-        });
-    }
-});
+    form.addEventListener('submit', async (event) => {
+        event.preventDefault();
+        if (submit.disabled) return;
+
+        const params = {
+            from_name: form.querySelector('#name').value.trim(),
+            from_email: form.querySelector('#email').value.trim(),
+            subject: form.querySelector('#subject').value.trim(),
+            message: form.querySelector('#message').value.trim(),
+            to_name: 'Mohamed Waleed'
+        };
+
+        submit.disabled = true;
+        submit.textContent = 'Sending…';
+        status.className = 'form-status pending';
+        status.textContent = 'Sending your message…';
+
+        try {
+            await emailjs.send('service_yvkz2tu', 'template_qc0v5uk', params);
+            form.reset();
+            status.className = 'form-status success';
+            status.textContent = 'Message sent. Thank you for getting in touch.';
+        } catch {
+            status.className = 'form-status error';
+            status.textContent = 'Your message could not be sent. Please try again or use the direct email link.';
+            return;
+        } finally {
+            submit.disabled = false;
+            submit.innerHTML = initialLabel;
+        }
+
+        try {
+            await emailjs.send('service_yvkz2tu', 'template_autoreply', params);
+        } catch (error) {
+            console.warn('Contact confirmation email could not be sent.', error.status);
+        }
+    });
+}
 
 // Certificate Data
 const certificates = [
@@ -253,7 +198,7 @@ const certificates = [
         title: "Streamlining Your Work with Microsoft Copilot",
         issuer: "LinkedIn Learning",
         image: "uploads/CertificateOfCompletion_Streamlining Your Work with Microsoft Copilot.png",
-        pdf: "uploads/Streamlining Your Work with Microsoft Copilot.pdf"
+        pdf: "uploads/CertificateOfCompletion_Streamlining Your Work with Microsoft Copilot.pdf"
     },
     {
         title: "Introduction to Artificial Intelligence (2023)",
@@ -559,93 +504,6 @@ let currentProject = '';
 let currentPhotoIndex = 0;
 
 // ============================================
-// TYPING ANIMATION
-// ============================================
-const typingTexts = [
-    "Full-Stack Web Developer",
-    "Network Technician",
-    "CCNA Student",
-    "Tech Enthusiast",
-    "Problem Solver",
-    "Open Source Contributor"
-];
-let textIndex = 0;
-let charIndex = 0;
-let isDeleting = false;
-
-function typeText() {
-    const typingElement = document.querySelector('.typing-text');
-    if (!typingElement) return;
-
-    const currentText = typingTexts[textIndex];
-    
-    if (isDeleting) {
-        typingElement.textContent = currentText.substring(0, charIndex - 1);
-        charIndex--;
-    } else {
-        typingElement.textContent = currentText.substring(0, charIndex + 1);
-        charIndex++;
-    }
-
-    let typeSpeed = 100;
-
-    if (isDeleting) {
-        typeSpeed /= 2;
-    }
-
-    if (!isDeleting && charIndex === currentText.length) {
-        typeSpeed = 2000;
-        isDeleting = true;
-    } else if (isDeleting && charIndex === 0) {
-        isDeleting = false;
-        textIndex = (textIndex + 1) % typingTexts.length;
-        typeSpeed = 500;
-    }
-
-    setTimeout(typeText, typeSpeed);
-}
-
-// ============================================
-// SCROLL ANIMATIONS
-// ============================================
-function initScrollAnimations() {
-    const sections = document.querySelectorAll('.modern-section');
-    
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('fade-in');
-            }
-        });
-    }, {
-        threshold: 0.1,
-        rootMargin: '0px 0px -100px 0px'
-    });
-
-    sections.forEach(section => {
-        observer.observe(section);
-    });
-}
-
-// ============================================
-// SMOOTH SCROLL FOR NAV LINKS
-// ============================================
-function initSmoothScroll() {
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
-        });
-    });
-}
-
-// ============================================
 // SCROLL TO TOP BUTTON
 // ============================================
 function initScrollToTop() {
@@ -663,7 +521,7 @@ function initScrollToTop() {
 function scrollToTop() {
     window.scrollTo({
         top: 0,
-        behavior: 'smooth'
+        behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'
     });
 }
 
@@ -677,8 +535,8 @@ function displayCertificate(index) {
     display.innerHTML = `
         <h2>${cert.title}</h2>
         <p style="color: var(--text-secondary); margin-bottom: 20px;">${cert.issuer}</p>
-        <img src="${cert.image}" alt="${cert.title}">
-        <a href="${cert.pdf}" target="_blank">
+        <img src="${cert.image}" alt="${cert.title}" loading="lazy" decoding="async">
+        <a href="${cert.pdf}" target="_blank" rel="noopener noreferrer">
             <i class="fas fa-download"></i> Download Certificate
         </a>
     `;
@@ -690,13 +548,9 @@ function displayCertificate(index) {
 }
 
 function updateThumbnails(activeIndex) {
-    const thumbnails = document.querySelectorAll('.carousel-thumbnails img');
+    const thumbnails = document.querySelectorAll('.carousel-thumbnails button');
     thumbnails.forEach((thumb, index) => {
-        if (index === activeIndex) {
-            thumb.classList.add('active');
-        } else {
-            thumb.classList.remove('active');
-        }
+        thumb.setAttribute('aria-pressed', String(index === activeIndex));
     });
 }
 
@@ -721,13 +575,13 @@ function initCertificateCarousel() {
     const thumbnailsContainer = document.querySelector('.carousel-thumbnails');
     
     certificates.forEach((cert, index) => {
-        const thumb = document.createElement('img');
-        thumb.src = cert.image;
-        thumb.alt = cert.title;
-        thumb.onclick = () => selectCertificate(index);
-        thumbnailsContainer.appendChild(thumb);
+        thumbnailsContainer.appendChild(createThumbnail(cert.image, cert.title, () => selectCertificate(index)));
     });
-    
+
+    document.querySelector('.certificates-carousel').addEventListener('keydown', (event) => {
+        handleArrowKeys(event, navigateCert);
+    });
+
     displayCertificate(0);
 }
 
@@ -740,142 +594,107 @@ function initProjectFilter() {
     const filterBtns = document.querySelectorAll('.filter-btn');
     const projectItems = document.querySelectorAll('.project-item');
 
-    filterBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-            filterBtns.forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
+    document.querySelectorAll('[data-count]').forEach((count) => {
+        const category = count.dataset.count;
+        count.textContent = category === 'all'
+            ? projectItems.length
+            : [...projectItems].filter((item) => item.dataset.category === category).length;
+    });
 
-            const filter = btn.getAttribute('data-filter');
+    filterBtns.forEach((button) => {
+        button.addEventListener('click', () => {
+            filterBtns.forEach((filter) => {
+                filter.classList.toggle('active', filter === button);
+                filter.setAttribute('aria-pressed', String(filter === button));
+            });
 
-            projectItems.forEach(item => {
-                const category = item.getAttribute('data-category');
-                
-                if (filter === 'all' || category === filter) {
-                    item.classList.remove('hidden');
-                    item.style.animation = 'fadeIn 0.6s ease-out';
-                } else {
-                    item.classList.add('hidden');
-                }
+            projectItems.forEach((item) => {
+                item.classList.toggle('hidden', button.dataset.filter !== 'all' && item.dataset.category !== button.dataset.filter);
             });
         });
     });
 }
 
-// Open project modal
+function createThumbnail(source, label, onClick) {
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.setAttribute('aria-label', label);
+    button.addEventListener('click', onClick);
+
+    const image = document.createElement('img');
+    image.src = source;
+    image.alt = '';
+    image.loading = 'lazy';
+    image.decoding = 'async';
+    button.appendChild(image);
+    return button;
+}
+
+const projectModal = document.getElementById('projectModal');
+let galleryTrigger;
+let previousBodyOverflow;
+
 function openProjectModal(projectName, photoIndex) {
-    const modal = document.getElementById('projectModal');
-    const modalImage = document.getElementById('modalImage');
-    const modalTitle = document.getElementById('modalTitle');
-    const modalDescription = document.getElementById('modalDescription');
-    const currentPhotoSpan = document.getElementById('currentPhoto');
-    const totalPhotosSpan = document.getElementById('totalPhotos');
-    const thumbnailsContainer = document.getElementById('modalThumbnails');
-
-    currentProject = projectName;
-    currentPhotoIndex = photoIndex;
-
     const photos = projectPhotos[projectName];
-    const photo = photos[photoIndex];
+    currentProject = projectName;
 
-    modalImage.src = photo.src;
-    modalTitle.textContent = photo.title;
-    modalDescription.textContent = photo.desc;
-    currentPhotoSpan.textContent = photoIndex + 1;
-    totalPhotosSpan.textContent = photos.length;
+    const thumbnails = document.getElementById('modalThumbnails');
+    thumbnails.replaceChildren(...photos.map((photo, index) =>
+        createThumbnail(photo.src, photo.title, () => selectProjectPhoto(index))
+    ));
+    document.getElementById('totalPhotos').textContent = photos.length;
+    selectProjectPhoto(photoIndex);
 
-    thumbnailsContainer.innerHTML = '';
-    photos.forEach((p, index) => {
-        const thumb = document.createElement('img');
-        thumb.src = p.src;
-        thumb.alt = p.title;
-        if (index === photoIndex) thumb.classList.add('active');
-        thumb.onclick = () => selectProjectPhoto(index);
-        thumbnailsContainer.appendChild(thumb);
-    });
-
-    modal.classList.add('active');
+    galleryTrigger = document.activeElement;
+    previousBodyOverflow = document.body.style.overflow;
+    projectModal.showModal();
     document.body.style.overflow = 'hidden';
 }
 
-// Close project modal
 function closeProjectModal() {
-    const modal = document.getElementById('projectModal');
-    modal.classList.remove('active');
-    document.body.style.overflow = 'auto';
+    projectModal.close();
 }
 
-// Change project photo
+projectModal.addEventListener('close', () => {
+    document.body.style.overflow = previousBodyOverflow;
+    galleryTrigger?.focus();
+});
+
 function changeProjectPhoto(direction) {
-    const photos = projectPhotos[currentProject];
-    currentPhotoIndex += direction;
-
-    if (currentPhotoIndex < 0) {
-        currentPhotoIndex = photos.length - 1;
-    } else if (currentPhotoIndex >= photos.length) {
-        currentPhotoIndex = 0;
-    }
-
-    const photo = photos[currentPhotoIndex];
-    document.getElementById('modalImage').src = photo.src;
-    document.getElementById('modalTitle').textContent = photo.title;
-    document.getElementById('modalDescription').textContent = photo.desc;
-    document.getElementById('currentPhoto').textContent = currentPhotoIndex + 1;
-
-    const thumbnails = document.querySelectorAll('.modal-thumbnails img');
-    thumbnails.forEach((thumb, index) => {
-        thumb.classList.toggle('active', index === currentPhotoIndex);
-    });
+    const total = projectPhotos[currentProject].length;
+    selectProjectPhoto((currentPhotoIndex + direction + total) % total);
 }
 
-// Select specific photo
 function selectProjectPhoto(index) {
     currentPhotoIndex = index;
     const photo = projectPhotos[currentProject][index];
-    document.getElementById('modalImage').src = photo.src;
+    const image = document.getElementById('modalImage');
+    image.src = photo.src;
+    image.alt = photo.title;
     document.getElementById('modalTitle').textContent = photo.title;
     document.getElementById('modalDescription').textContent = photo.desc;
     document.getElementById('currentPhoto').textContent = index + 1;
 
-    const thumbnails = document.querySelectorAll('.modal-thumbnails img');
-    thumbnails.forEach((thumb, idx) => {
-        thumb.classList.toggle('active', idx === index);
+    document.querySelectorAll('.modal-thumbnails button').forEach((thumb, position) => {
+        thumb.setAttribute('aria-pressed', String(position === index));
     });
 }
 
-// ============================================
-// KEYBOARD NAVIGATION
-// ============================================
-document.addEventListener('keydown', (e) => {
-    // Certificate carousel navigation
-    if (e.key === 'ArrowLeft' && !document.getElementById('projectModal').classList.contains('active')) {
-        navigateCert(-1);
-    } else if (e.key === 'ArrowRight' && !document.getElementById('projectModal').classList.contains('active')) {
-        navigateCert(1);
+function handleArrowKeys(event, navigate) {
+    if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
+        event.preventDefault();
+        navigate(event.key === 'ArrowLeft' ? -1 : 1);
     }
-    
-    // Project modal navigation
-    const modal = document.getElementById('projectModal');
-    if (modal.classList.contains('active')) {
-        if (e.key === 'Escape') {
-            closeProjectModal();
-        } else if (e.key === 'ArrowLeft') {
-            changeProjectPhoto(-1);
-        } else if (e.key === 'ArrowRight') {
-            changeProjectPhoto(1);
-        }
-    }
+}
+
+projectModal.addEventListener('keydown', (event) => {
+    handleArrowKeys(event, changeProjectPhoto);
 });
 
-// Close modal on outside click
-document.getElementById('projectModal')?.addEventListener('click', (e) => {
-    if (e.target.id === 'projectModal') {
-        closeProjectModal();
-    }
+projectModal.addEventListener('click', (event) => {
+    if (event.target === projectModal) closeProjectModal();
 });
 
-// ============================================
-// ACTIVE NAV LINK HIGHLIGHTING
-// ============================================
 function highlightActiveNav() {
     const sections = document.querySelectorAll('.modern-section');
     const navLinks = document.querySelectorAll('.nav-link');
@@ -903,26 +722,8 @@ function highlightActiveNav() {
 // ============================================
 // INITIALIZE EVERYTHING
 // ============================================
-function init() {
-    console.log('🚀 Initializing Modern Portfolio...');
-    
-    setTimeout(typeText, 1000);
-    initScrollAnimations();
-    initSmoothScroll();
-    initScrollToTop();
-    initCertificateCarousel();
-    initProjectFilter();
-    highlightActiveNav();
-    
-    console.log('✅ Portfolio Initialized Successfully!');
-    console.log('📊 Total Projects: ' + Object.keys(projectPhotos).length);
-    console.log('🎓 Total Certificates: ' + certificates.length);
-    console.log('📧 EmailJS Configured');
-}
-
-// Run initialization
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
-} else {
-    init();
-}
+initContactForm();
+initScrollToTop();
+initCertificateCarousel();
+initProjectFilter();
+highlightActiveNav();
